@@ -1,0 +1,47 @@
+additional_kwargs={
+    "refusal": None
+} 
+
+response_metadata={
+    "token_usage": {
+        "completion_tokens": 78,
+        "prompt_tokens": 15,
+        "total_tokens": 93,
+        "completion_tokens_details": {
+            "accepted_prediction_tokens": None,
+            "audio_tokens": None,
+            "reasoning_tokens": 45,
+            "rejected_prediction_tokens": None
+        },
+        "prompt_tokens_details": {
+            "audio_tokens": None,
+            "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 15
+    },
+    "model_provider": "openai",
+    "model_name": "deepseek-v4-flash",
+    "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+    "id": "2eb911f2-956b-4a24-9439-4de219a0977e",
+    "finish_reason": "stop",
+    "logprobs": None
+} 
+
+id="lc_run--019f1443-eba5-7c42-8f28-5e5ea64f6644-0" 
+
+tool_calls=[] 
+
+invalid_tool_calls=[] 
+
+usage_metadata={
+    "input_tokens": 15,
+    "output_tokens": 78,
+    "total_tokens": 93,
+    "input_token_details": {
+        "cache_read": 0
+    },
+    "output_token_details": {
+        "reasoning": 45
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "company": "科技有限公司",
+    "founded": 2020,
+    "products": [
+        {"name": "产品A", "price": 99.9, "category": "软件"},
+        {"name": "产品B", "price": 199.9, "category": "服务"},
+        {"name": "产品C", "price": 299.9, "category": "硬件"}
+    ],
+    "locations": ["北京", "上海", "深圳"]
+}

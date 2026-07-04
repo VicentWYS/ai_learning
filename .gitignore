@@ -1,0 +1,30 @@
+# VS Code
+.vscode/
+
+# JetBrains IDE（PyCharm / IDEA）
+.idea/
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 虚拟环境
+venv/
+.env/
+.venv/
+
+# 日志
+*.log
+logs/
+
+# 本地配置
+.env
+*.env
+config.local.*
+
+# 数据库文件
+*.sqlite
+
+# 思维导图文件
+*.drawio/

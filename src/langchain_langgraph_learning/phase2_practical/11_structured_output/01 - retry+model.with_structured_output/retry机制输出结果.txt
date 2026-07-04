@@ -1,0 +1,9 @@
+--------------------- 第1次尝试 ---------------------
+error_msg: Input should be greater than 0
+text: 产品价格是 -23 元
+注意：Input should be greater than 0，按照提示将输入内容进行修改完善以适配要求。
+
+--------------------- 第2次尝试 ---------------------
+AI 回复：name='产品' price=23.0
+{'name': '产品', 'price': 23.0}
+name: 产品, price: 23.0
