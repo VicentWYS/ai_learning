@@ -1,0 +1,2714 @@
+{
+  "apifoxProject": "1.0.0",
+  "$schema": {
+    "app": "apifox",
+    "type": "project",
+    "version": "1.2.0"
+  },
+  "info": {
+    "name": "FastAPI",
+    "description": "",
+    "mockRule": {
+      "rules": [],
+      "enableSystemRule": true
+    }
+  },
+  "projectSetting": {
+    "id": "8585682",
+    "auth": {},
+    "securityScheme": {},
+    "gateway": [],
+    "language": "zh-CN",
+    "apiStatuses": [
+      "developing",
+      "testing",
+      "released",
+      "deprecated"
+    ],
+    "mockSettings": {},
+    "preProcessors": [],
+    "postProcessors": [],
+    "advancedSettings": {
+      "allowAutomationWriteAutomationCreatedSprintBranch": true,
+      "enableJsonc": false,
+      "enableBigint": false,
+      "responseValidate": true,
+      "enableTestScenarioSetting": false,
+      "enableYAPICompatScript": false,
+      "isDefaultUrlEncoding": 2,
+      "publishedDocUrlRules": {
+        "defaultRule": "RESOURCE_KEY_ONLY",
+        "resourceKeyStandard": "NEW"
+      }
+    },
+    "initialDisabledMockIds": [],
+    "servers": [
+      {
+        "id": "default",
+        "name": "默认服务",
+        "moduleId": 8127149
+      }
+    ],
+    "cloudMock": {
+      "enable": false,
+      "security": "free",
+      "tokenKey": "apifoxToken",
+      "isCreatedAutomaticallyByDefaultConfigFromAdmin": true
+    }
+  },
+  "apiCollection": [
+    {
+      "name": "根目录",
+      "id": 90093413,
+      "auth": {},
+      "securityScheme": {},
+      "parentId": 0,
+      "serverId": "",
+      "description": "",
+      "identityPattern": {
+        "httpApi": {
+          "type": "methodAndPath",
+          "bodyType": "",
+          "fields": []
+        }
+      },
+      "shareSettings": {},
+      "visibility": "SHARED",
+      "moduleId": 8127149,
+      "preProcessors": [
+        {
+          "id": "inheritProcessors",
+          "type": "inheritProcessors",
+          "data": {}
+        }
+      ],
+      "postProcessors": [
+        {
+          "id": "inheritProcessors",
+          "type": "inheritProcessors",
+          "data": {}
+        }
+      ],
+      "inheritPostProcessors": {},
+      "inheritPreProcessors": {},
+      "items": [
+        {
+          "name": "5 - 查询参数和字符串验证",
+          "id": 90306676,
+          "auth": {},
+          "securityScheme": {},
+          "parentId": 0,
+          "serverId": "",
+          "description": "",
+          "identityPattern": {
+            "httpApi": {
+              "type": "inherit",
+              "bodyType": "",
+              "fields": []
+            }
+          },
+          "shareSettings": {},
+          "visibility": "INHERITED",
+          "moduleId": 8127149,
+          "preProcessors": [
+            {
+              "id": "inheritProcessors",
+              "type": "inheritProcessors",
+              "data": {}
+            }
+          ],
+          "postProcessors": [
+            {
+              "id": "inheritProcessors",
+              "type": "inheritProcessors",
+              "data": {}
+            }
+          ],
+          "inheritPostProcessors": {},
+          "inheritPreProcessors": {},
+          "items": [
+            {
+              "name": "1 - 验证参数类型",
+              "api": {
+                "id": "483689037",
+                "method": "get",
+                "path": "http://127.0.0.1:8000/items/",
+                "parameters": {
+                  "query": [
+                    {
+                      "id": "bdeUcYUX6q",
+                      "name": "q",
+                      "example": "tom",
+                      "required": false,
+                      "description": "",
+                      "enable": true,
+                      "type": "string"
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "153495037",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "itemSchema": {},
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": ""
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "required": true,
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 10,
+                "cases": [
+                  {
+                    "id": 391597846,
+                    "type": "DEBUG_CASE",
+                    "path": null,
+                    "name": "成功",
+                    "responseId": "153495037",
+                    "parameters": {
+                      "query": [
+                        {
+                          "id": "rcK0TPZHqt",
+                          "relatedId": "bdeUcYUX6q",
+                          "relatedName": "q",
+                          "value": "tom",
+                          "enable": true,
+                          "isDelete": false
+                        }
+                      ],
+                      "path": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "header": [],
+                      "cookie": []
+                    },
+                    "requestBody": {
+                      "parameters": [],
+                      "data": "",
+                      "generateMode": "normal"
+                    },
+                    "auth": {},
+                    "securityScheme": {},
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "requestResult": "{\"id\":\"temp.405bfc2a-2aa2-43a8-9f13-f47accdea0c4\",\"cursor\":{\"position\":0,\"iteration\":0,\"length\":1,\"cycles\":1,\"empty\":false,\"eof\":false,\"bof\":true,\"cr\":false,\"ref\":\"405bfc2a-2aa2-43a8-9f13-f47accdea0c4\",\"requestIndex\":0,\"httpRequestId\":\"cdabe5c9-19fb-4d69-9118-087d8b4ae8b8\"},\"type\":\"http\",\"response\":{\"id\":\"8222642a-d67b-4f4d-8111-dc2de60ab143\",\"status\":\"OK\",\"code\":200,\"header\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:04:20 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"57\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"trailer\":[],\"stream\":{\"type\":\"Buffer\",\"data\":[123,34,105,116,101,109,115,34,58,91,123,34,105,116,101,109,95,105,100,34,58,34,70,111,111,34,125,44,123,34,105,116,101,109,95,105,100,34,58,34,66,97,114,34,125,93,44,34,113,34,58,34,116,111,109,34,125]},\"cookie\":[],\"responseTime\":50,\"responseSize\":57,\"downloadedBytes\":57,\"type\":\"http\",\"tempFilePath\":\"\",\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}},\"timingPhases\":{\"prepare\":0.6720000000204891,\"wait\":1.0677999998442829,\"dns\":0,\"tcp\":0.21650000009685755,\"firstByte\":47.79269999987446,\"download\":0.9070000001229346,\"process\":0.09250000002793968,\"total\":50.74849999998696}},\"request\":{\"url\":{\"protocol\":\"http\",\"port\":\"8000\",\"path\":[\"items\",\"\"],\"host\":[\"127\",\"0\",\"0\",\"1\"],\"query\":[{\"key\":\"q\",\"value\":\"tom\"}],\"variable\":[]},\"header\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\",\"system\":true},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\",\"system\":true},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\",\"system\":true},{\"key\":\"Connection\",\"value\":\"keep-alive\",\"system\":true}],\"method\":\"GET\",\"body\":{},\"type\":\"http\"},\"history\":{\"execution\":{\"verbose\":true,\"sessions\":{\"493b9bde-0cb5-4afb-9364-fd9895f0614f\":{\"addresses\":{\"local\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":9340},\"remote\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":8000}}}},\"data\":[{\"request\":{\"method\":\"GET\",\"href\":\"http://127.0.0.1:8000/items/?q=tom\",\"headers\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\"},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\"},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\"},{\"key\":\"Connection\",\"value\":\"keep-alive\"}],\"httpVersion\":\"1.1\"},\"response\":{\"statusCode\":200,\"headers\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:04:20 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"57\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"httpVersion\":\"1.1\",\"downloadedBytes\":57},\"timings\":{\"start\":1783440261003,\"requestStart\":1783440261003,\"offset\":{\"request\":0.6720000000204891,\"socket\":1.739799999864772,\"connect\":1.9562999999616295,\"response\":49.74899999983609,\"end\":50.65599999995902,\"lookup\":1.739799999864772,\"done\":50.74849999998696}},\"session\":{\"id\":\"493b9bde-0cb5-4afb-9364-fd9895f0614f\",\"reused\":false}}]}},\"responseValidation\":{\"schema\":{\"valid\":true,\"message\":\"\",\"errors\":null},\"responseCode\":{\"valid\":true}},\"passed\":true,\"timings\":{\"started\":1783440260998,\"preProcessorsStarted\":1783440260999,\"preProcessorsCompleted\":1783440260999,\"postProcessorsStarted\":1783440261055,\"postProcessorsCompleted\":1783440261055,\"completed\":1783440261057},\"metaInfo\":{\"httpApiId\":483689037,\"httpApiCaseId\":391597840,\"httpApiName\":\"1 - 验证参数类型\",\"httpApiPath\":\"http://127.0.0.1:8000/items/\",\"httpApiMethod\":\"get\",\"httpApiCaseName\":\"\",\"moduleId\":8127149,\"serverId\":\"\"},\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}}}",
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "categoryId": 0,
+                    "tagIds": [],
+                    "apiTestDataList": [],
+                    "preProcessors": [],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  },
+                  {
+                    "id": 391597854,
+                    "type": "DEBUG_CASE",
+                    "path": null,
+                    "name": "允许数据为空",
+                    "responseId": "153495037",
+                    "parameters": {
+                      "query": [
+                        {
+                          "id": "rcK0TPZHqt",
+                          "relatedId": "bdeUcYUX6q",
+                          "relatedName": "q",
+                          "value": "",
+                          "enable": true,
+                          "isDelete": false
+                        }
+                      ],
+                      "path": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "header": [],
+                      "cookie": []
+                    },
+                    "requestBody": {
+                      "parameters": [],
+                      "data": "",
+                      "generateMode": "normal"
+                    },
+                    "auth": {},
+                    "securityScheme": {},
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "requestResult": "{\"id\":\"temp.f9d3c6b2-e65e-4d65-9fb9-6ebe23d69242\",\"cursor\":{\"position\":0,\"iteration\":0,\"length\":1,\"cycles\":1,\"empty\":false,\"eof\":false,\"bof\":true,\"cr\":false,\"ref\":\"f9d3c6b2-e65e-4d65-9fb9-6ebe23d69242\",\"requestIndex\":0,\"httpRequestId\":\"da06258f-b03d-45a0-8656-30ecf367136d\"},\"type\":\"http\",\"response\":{\"id\":\"617d244f-98bf-474e-9afe-46b27ee2423e\",\"status\":\"OK\",\"code\":200,\"header\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:04:49 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"47\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"trailer\":[],\"stream\":{\"type\":\"Buffer\",\"data\":[123,34,105,116,101,109,115,34,58,91,123,34,105,116,101,109,95,105,100,34,58,34,70,111,111,34,125,44,123,34,105,116,101,109,95,105,100,34,58,34,66,97,114,34,125,93,125]},\"cookie\":[],\"responseTime\":3,\"responseSize\":47,\"downloadedBytes\":47,\"type\":\"http\",\"tempFilePath\":\"\",\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}},\"timingPhases\":{\"prepare\":0.43880000011995435,\"wait\":0.558699999935925,\"dns\":0,\"tcp\":0.12440000008791685,\"firstByte\":1.0541000000666827,\"download\":0.5248999998439103,\"process\":0.05520000006072223,\"total\":2.7561000001151115}},\"request\":{\"url\":{\"protocol\":\"http\",\"port\":\"8000\",\"path\":[\"items\",\"\"],\"host\":[\"127\",\"0\",\"0\",\"1\"],\"query\":[{\"key\":\"q\",\"value\":\"\"}],\"variable\":[]},\"header\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\",\"system\":true},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\",\"system\":true},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\",\"system\":true},{\"key\":\"Connection\",\"value\":\"keep-alive\",\"system\":true}],\"method\":\"GET\",\"body\":{},\"type\":\"http\"},\"history\":{\"execution\":{\"verbose\":true,\"sessions\":{\"32f5438b-6bfe-48d7-8df1-c3113e05f7fe\":{\"addresses\":{\"local\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":9368},\"remote\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":8000}}}},\"data\":[{\"request\":{\"method\":\"GET\",\"href\":\"http://127.0.0.1:8000/items/?q=\",\"headers\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\"},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\"},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\"},{\"key\":\"Connection\",\"value\":\"keep-alive\"}],\"httpVersion\":\"1.1\"},\"response\":{\"statusCode\":200,\"headers\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:04:49 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"47\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"httpVersion\":\"1.1\",\"downloadedBytes\":47},\"timings\":{\"start\":1783440290657,\"requestStart\":1783440290657,\"offset\":{\"request\":0.43880000011995435,\"socket\":0.9975000000558794,\"connect\":1.1219000001437962,\"response\":2.176000000210479,\"end\":2.7009000000543892,\"lookup\":0.9975000000558794,\"done\":2.7561000001151115}},\"session\":{\"id\":\"32f5438b-6bfe-48d7-8df1-c3113e05f7fe\",\"reused\":false}}]}},\"responseValidation\":{\"schema\":{\"valid\":true,\"message\":\"\",\"errors\":null},\"responseCode\":{\"valid\":true}},\"passed\":true,\"timings\":{\"started\":1783440290649,\"preProcessorsStarted\":1783440290650,\"preProcessorsCompleted\":1783440290650,\"postProcessorsStarted\":1783440290670,\"postProcessorsCompleted\":1783440290670,\"completed\":1783440290672},\"metaInfo\":{\"httpApiId\":483689037,\"httpApiCaseId\":391597840,\"httpApiName\":\"1 - 验证参数类型\",\"httpApiPath\":\"http://127.0.0.1:8000/items/\",\"httpApiMethod\":\"get\",\"httpApiCaseName\":\"\",\"moduleId\":8127149,\"serverId\":\"\"},\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}}}",
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "categoryId": 0,
+                    "tagIds": [],
+                    "apiTestDataList": [],
+                    "preProcessors": [],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  },
+                  {
+                    "id": 391597904,
+                    "type": "TEST_CASE",
+                    "path": "http://127.0.0.1:8000/items/",
+                    "name": "成功",
+                    "responseId": "153495037",
+                    "parameters": {
+                      "query": [
+                        {
+                          "id": "rcK0TPZHqt",
+                          "relatedId": "bdeUcYUX6q",
+                          "relatedName": "q",
+                          "name": "q",
+                          "value": "tom",
+                          "type": "string",
+                          "description": "",
+                          "enable": true,
+                          "isDelete": false
+                        }
+                      ],
+                      "header": [],
+                      "cookie": [],
+                      "path": []
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "header": [],
+                      "cookie": []
+                    },
+                    "requestBody": {
+                      "parameters": [],
+                      "type": "none",
+                      "data": "",
+                      "generateMode": "normal"
+                    },
+                    "auth": {},
+                    "securityScheme": {
+                      "scopes": {},
+                      "schemeGroups": [],
+                      "required": false
+                    },
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "requestResult": null,
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "categoryId": 11777195,
+                    "tagIds": [],
+                    "apiTestDataList": [],
+                    "preProcessors": [
+                      {
+                        "type": "placeholder",
+                        "renderType": "dynamicValueDivider",
+                        "defaultEnable": false,
+                        "enable": false
+                      }
+                    ],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  },
+                  {
+                    "id": 391597905,
+                    "type": "TEST_CASE",
+                    "path": "http://127.0.0.1:8000/items/",
+                    "name": "允许数据为空",
+                    "responseId": "153495037",
+                    "parameters": {
+                      "query": [
+                        {
+                          "id": "rcK0TPZHqt",
+                          "relatedId": "bdeUcYUX6q",
+                          "relatedName": "q",
+                          "name": "q",
+                          "value": "",
+                          "type": "string",
+                          "description": "",
+                          "enable": true,
+                          "isDelete": false
+                        }
+                      ],
+                      "header": [],
+                      "cookie": [],
+                      "path": []
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "header": [],
+                      "cookie": []
+                    },
+                    "requestBody": {
+                      "parameters": [],
+                      "type": "none",
+                      "data": "",
+                      "generateMode": "normal"
+                    },
+                    "auth": {},
+                    "securityScheme": {
+                      "scopes": {},
+                      "schemeGroups": [],
+                      "required": false
+                    },
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "requestResult": null,
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "categoryId": 11777195,
+                    "tagIds": [],
+                    "apiTestDataList": [],
+                    "preProcessors": [
+                      {
+                        "type": "placeholder",
+                        "renderType": "dynamicValueDivider",
+                        "defaultEnable": false,
+                        "enable": false
+                      }
+                    ],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  }
+                ],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 8127149,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "2 - 使用Annotated更细致地约束",
+              "api": {
+                "id": "483689096",
+                "method": "get",
+                "path": "http://127.0.0.1:8000/items/",
+                "parameters": {
+                  "query": [
+                    {
+                      "id": "wazgNddr64",
+                      "name": "q",
+                      "example": "tom",
+                      "required": false,
+                      "description": "",
+                      "enable": true,
+                      "type": "string"
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "101586754",
+                    "code": 200,
+                    "name": "成功",
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "itemSchema": {},
+                    "contentType": "json"
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "required": true,
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 20,
+                "cases": [
+                  {
+                    "id": 391598181,
+                    "type": "DEBUG_CASE",
+                    "path": null,
+                    "name": "成功",
+                    "responseId": "101586754",
+                    "parameters": {
+                      "query": [
+                        {
+                          "id": "4X3jxN7Cr8",
+                          "relatedId": "wazgNddr64",
+                          "relatedName": "q",
+                          "value": "tom",
+                          "enable": true,
+                          "isDelete": false
+                        }
+                      ],
+                      "path": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "header": [],
+                      "cookie": []
+                    },
+                    "requestBody": {
+                      "parameters": [],
+                      "data": "",
+                      "generateMode": "normal"
+                    },
+                    "auth": {},
+                    "securityScheme": {},
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "requestResult": "{\"id\":\"temp.cd4754b5-a839-4f2c-be01-4869fc69c1d8\",\"cursor\":{\"position\":0,\"iteration\":0,\"length\":1,\"cycles\":1,\"empty\":false,\"eof\":false,\"bof\":true,\"cr\":false,\"ref\":\"cd4754b5-a839-4f2c-be01-4869fc69c1d8\",\"requestIndex\":0,\"httpRequestId\":\"7d90d432-c090-4d5f-b163-d977fff62225\"},\"type\":\"http\",\"response\":{\"id\":\"fb66efd3-e35e-4a8c-8634-7fdf33fae07c\",\"status\":\"Unprocessable Entity\",\"code\":422,\"header\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:21:18 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"154\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"trailer\":[],\"stream\":{\"type\":\"Buffer\",\"data\":[123,34,100,101,116,97,105,108,34,58,91,123,34,116,121,112,101,34,58,34,115,116,114,105,110,103,95,116,111,111,95,108,111,110,103,34,44,34,108,111,99,34,58,91,34,113,117,101,114,121,34,44,34,113,34,93,44,34,109,115,103,34,58,34,83,116,114,105,110,103,32,115,104,111,117,108,100,32,104,97,118,101,32,97,116,32,109,111,115,116,32,49,48,32,99,104,97,114,97,99,116,101,114,115,34,44,34,105,110,112,117,116,34,58,34,116,111,109,49,50,51,52,53,54,55,56,34,44,34,99,116,120,34,58,123,34,109,97,120,95,108,101,110,103,116,104,34,58,49,48,125,125,93,125]},\"cookie\":[],\"responseTime\":5,\"responseSize\":154,\"downloadedBytes\":154,\"type\":\"http\",\"tempFilePath\":\"\",\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}},\"timingPhases\":{\"prepare\":0.7581999995745718,\"wait\":1.0932000000029802,\"dns\":0,\"tcp\":0.3738000001758337,\"firstByte\":2.353200000245124,\"download\":0.8173999995924532,\"process\":0.09060000022873282,\"total\":5.486399999819696}},\"request\":{\"url\":{\"protocol\":\"http\",\"port\":\"8000\",\"path\":[\"items\",\"\"],\"host\":[\"127\",\"0\",\"0\",\"1\"],\"query\":[{\"key\":\"q\",\"value\":\"tom12345678\"}],\"variable\":[]},\"header\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\",\"system\":true},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\",\"system\":true},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\",\"system\":true},{\"key\":\"Connection\",\"value\":\"keep-alive\",\"system\":true}],\"method\":\"GET\",\"body\":{},\"type\":\"http\"},\"history\":{\"execution\":{\"verbose\":true,\"sessions\":{\"6fd9f6b7-c69a-4bae-a816-912bd179b70c\":{\"addresses\":{\"local\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":1932},\"remote\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":8000}}}},\"data\":[{\"request\":{\"method\":\"GET\",\"href\":\"http://127.0.0.1:8000/items/?q=tom12345678\",\"headers\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\"},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\"},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\"},{\"key\":\"Connection\",\"value\":\"keep-alive\"}],\"httpVersion\":\"1.1\"},\"response\":{\"statusCode\":422,\"headers\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:21:18 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"154\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"httpVersion\":\"1.1\",\"downloadedBytes\":154},\"timings\":{\"start\":1783441279395,\"requestStart\":1783441279396,\"offset\":{\"request\":0.7581999995745718,\"socket\":1.851399999577552,\"connect\":2.225199999753386,\"response\":4.57839999999851,\"end\":5.395799999590963,\"lookup\":1.851399999577552,\"done\":5.486399999819696}},\"session\":{\"id\":\"6fd9f6b7-c69a-4bae-a816-912bd179b70c\",\"reused\":false}}]}},\"responseValidation\":{\"schema\":{\"valid\":true,\"message\":\"\",\"errors\":null},\"responseCode\":{\"valid\":false,\"result\":{\"actual\":422,\"expect\":200},\"message\":\"应当是 200 实际却是 422\"}},\"passed\":false,\"timings\":{\"started\":1783441279390,\"preProcessorsStarted\":1783441279392,\"preProcessorsCompleted\":1783441279392,\"postProcessorsStarted\":1783441279402,\"postProcessorsCompleted\":1783441279402,\"completed\":1783441279403},\"metaInfo\":{\"httpApiId\":483689096,\"httpApiCaseId\":391598181,\"httpApiName\":\"2 - 使用Annotated更细致地约束\",\"httpApiPath\":\"http://127.0.0.1:8000/items/\",\"httpApiMethod\":\"get\",\"httpApiCaseName\":\"成功-符合给定长度\",\"moduleId\":8127149,\"serverId\":\"default\"},\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}}}",
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "categoryId": 0,
+                    "tagIds": [],
+                    "apiTestDataList": [],
+                    "preProcessors": [],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  },
+                  {
+                    "id": 391598184,
+                    "type": "DEBUG_CASE",
+                    "path": null,
+                    "name": "参数有误-字数超出",
+                    "responseId": "101586754",
+                    "parameters": {
+                      "query": [
+                        {
+                          "id": "4X3jxN7Cr8",
+                          "relatedId": "wazgNddr64",
+                          "value": "tom12345678",
+                          "enable": true,
+                          "isDelete": false,
+                          "relatedName": "q"
+                        }
+                      ],
+                      "path": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "header": [],
+                      "cookie": []
+                    },
+                    "requestBody": {
+                      "parameters": [],
+                      "data": "",
+                      "generateMode": "normal"
+                    },
+                    "auth": {},
+                    "securityScheme": {},
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "requestResult": "{\"id\":\"temp.b7f178fc-06f0-43a4-9d87-39aea92b3b06\",\"cursor\":{\"position\":0,\"iteration\":0,\"length\":1,\"cycles\":1,\"empty\":false,\"eof\":false,\"bof\":true,\"cr\":false,\"ref\":\"b7f178fc-06f0-43a4-9d87-39aea92b3b06\",\"requestIndex\":0,\"httpRequestId\":\"aac74e48-1d30-4e1f-97f7-136bcdecbfb0\"},\"type\":\"http\",\"response\":{\"id\":\"7b85e34b-213f-46b0-8d2d-9bb3d704989d\",\"status\":\"Unprocessable Entity\",\"code\":422,\"header\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:21:34 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"154\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"trailer\":[],\"stream\":{\"type\":\"Buffer\",\"data\":[123,34,100,101,116,97,105,108,34,58,91,123,34,116,121,112,101,34,58,34,115,116,114,105,110,103,95,116,111,111,95,108,111,110,103,34,44,34,108,111,99,34,58,91,34,113,117,101,114,121,34,44,34,113,34,93,44,34,109,115,103,34,58,34,83,116,114,105,110,103,32,115,104,111,117,108,100,32,104,97,118,101,32,97,116,32,109,111,115,116,32,49,48,32,99,104,97,114,97,99,116,101,114,115,34,44,34,105,110,112,117,116,34,58,34,116,111,109,49,50,51,52,53,54,55,56,34,44,34,99,116,120,34,58,123,34,109,97,120,95,108,101,110,103,116,104,34,58,49,48,125,125,93,125]},\"cookie\":[],\"responseTime\":3,\"responseSize\":154,\"downloadedBytes\":154,\"type\":\"http\",\"tempFilePath\":\"\",\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}},\"timingPhases\":{\"prepare\":0.47879999969154596,\"wait\":0.6228000000119209,\"dns\":0,\"tcp\":0.13480000011622906,\"firstByte\":1.0438999999314547,\"download\":0.5463999998755753,\"process\":0.06310000037774444,\"total\":2.8898000000044703}},\"request\":{\"url\":{\"protocol\":\"http\",\"port\":\"8000\",\"path\":[\"items\",\"\"],\"host\":[\"127\",\"0\",\"0\",\"1\"],\"query\":[{\"key\":\"q\",\"value\":\"tom12345678\"}],\"variable\":[]},\"header\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\",\"system\":true},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\",\"system\":true},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\",\"system\":true},{\"key\":\"Connection\",\"value\":\"keep-alive\",\"system\":true}],\"method\":\"GET\",\"body\":{},\"type\":\"http\"},\"history\":{\"execution\":{\"verbose\":true,\"sessions\":{\"78b31b7e-33aa-41bf-a7b9-1a64efb56e92\":{\"addresses\":{\"local\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":1942},\"remote\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":8000}}}},\"data\":[{\"request\":{\"method\":\"GET\",\"href\":\"http://127.0.0.1:8000/items/?q=tom12345678\",\"headers\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\"},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\"},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\"},{\"key\":\"Connection\",\"value\":\"keep-alive\"}],\"httpVersion\":\"1.1\"},\"response\":{\"statusCode\":422,\"headers\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:21:34 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"154\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"httpVersion\":\"1.1\",\"downloadedBytes\":154},\"timings\":{\"start\":1783441295548,\"requestStart\":1783441295548,\"offset\":{\"request\":0.47879999969154596,\"socket\":1.101599999703467,\"connect\":1.236399999819696,\"response\":2.2802999997511506,\"end\":2.826699999626726,\"lookup\":1.101599999703467,\"done\":2.8898000000044703}},\"session\":{\"id\":\"78b31b7e-33aa-41bf-a7b9-1a64efb56e92\",\"reused\":false}}]}},\"responseValidation\":{\"schema\":{\"valid\":true,\"message\":\"\",\"errors\":null},\"responseCode\":{\"valid\":false,\"result\":{\"actual\":422,\"expect\":200},\"message\":\"应当是 200 实际却是 422\"}},\"passed\":false,\"timings\":{\"started\":1783441295516,\"preProcessorsStarted\":1783441295518,\"preProcessorsCompleted\":1783441295518,\"postProcessorsStarted\":1783441295552,\"postProcessorsCompleted\":1783441295552,\"completed\":1783441295553},\"metaInfo\":{\"httpApiId\":483689096,\"httpApiCaseId\":0,\"httpApiName\":\"2 - 使用Annotated更细致地约束\",\"httpApiPath\":\"http://127.0.0.1:8000/items/\",\"httpApiMethod\":\"get\",\"httpApiCaseName\":\"\",\"moduleId\":8127149,\"serverId\":\"default\"},\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}}}",
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "categoryId": 0,
+                    "tagIds": [],
+                    "apiTestDataList": [],
+                    "preProcessors": [],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  },
+                  {
+                    "id": 391598197,
+                    "type": "TEST_CASE",
+                    "path": "http://127.0.0.1:8000/items/",
+                    "name": "成功-字数符合长度",
+                    "responseId": "101586754",
+                    "parameters": {
+                      "query": [
+                        {
+                          "id": "4X3jxN7Cr8",
+                          "relatedId": "wazgNddr64",
+                          "relatedName": "q",
+                          "name": "q",
+                          "value": "tom",
+                          "type": "string",
+                          "description": "",
+                          "enable": true,
+                          "isDelete": false
+                        }
+                      ],
+                      "header": [],
+                      "cookie": [],
+                      "path": []
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "header": [],
+                      "cookie": []
+                    },
+                    "requestBody": {
+                      "parameters": [],
+                      "type": "none",
+                      "data": "",
+                      "generateMode": "normal"
+                    },
+                    "auth": {},
+                    "securityScheme": {
+                      "scopes": {},
+                      "schemeGroups": [],
+                      "required": false
+                    },
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "requestResult": null,
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "categoryId": 11777195,
+                    "tagIds": [],
+                    "apiTestDataList": [],
+                    "preProcessors": [
+                      {
+                        "type": "placeholder",
+                        "renderType": "dynamicValueDivider",
+                        "defaultEnable": false,
+                        "enable": false
+                      }
+                    ],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  },
+                  {
+                    "id": 391598198,
+                    "type": "TEST_CASE",
+                    "path": "http://127.0.0.1:8000/items/",
+                    "name": "参数有误-字数超出",
+                    "responseId": "101586754",
+                    "parameters": {
+                      "query": [
+                        {
+                          "id": "4X3jxN7Cr8",
+                          "relatedId": "wazgNddr64",
+                          "relatedName": "q",
+                          "name": "q",
+                          "value": "tom12345678",
+                          "type": "string",
+                          "description": "",
+                          "enable": true,
+                          "isDelete": false
+                        }
+                      ],
+                      "header": [],
+                      "cookie": [],
+                      "path": []
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "header": [],
+                      "cookie": []
+                    },
+                    "requestBody": {
+                      "parameters": [],
+                      "type": "none",
+                      "data": "",
+                      "generateMode": "normal"
+                    },
+                    "auth": {},
+                    "securityScheme": {
+                      "scopes": {},
+                      "schemeGroups": [],
+                      "required": false
+                    },
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "requestResult": null,
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "categoryId": 11777195,
+                    "tagIds": [],
+                    "apiTestDataList": [],
+                    "preProcessors": [
+                      {
+                        "type": "placeholder",
+                        "renderType": "dynamicValueDivider",
+                        "defaultEnable": false,
+                        "enable": false
+                      }
+                    ],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  }
+                ],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 8127149,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "3 - 使用Annotated限制参数的最大最小字符数",
+              "api": {
+                "id": "483689534",
+                "method": "get",
+                "path": "http://127.0.0.1:8000/items/",
+                "parameters": {
+                  "query": [
+                    {
+                      "id": "bN2i4RoXWy",
+                      "name": "q",
+                      "example": "tom",
+                      "required": false,
+                      "description": "",
+                      "enable": true,
+                      "type": "string"
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "148568608",
+                    "code": 200,
+                    "name": "成功",
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "itemSchema": {},
+                    "contentType": "json"
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "required": true,
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 30,
+                "cases": [
+                  {
+                    "id": 391598202,
+                    "type": "DEBUG_CASE",
+                    "path": null,
+                    "name": "成功",
+                    "responseId": "148568608",
+                    "parameters": {
+                      "query": [
+                        {
+                          "id": "A0mhZJvqeb",
+                          "relatedId": "bN2i4RoXWy",
+                          "value": "tom",
+                          "enable": true,
+                          "isDelete": false,
+                          "relatedName": "q"
+                        }
+                      ],
+                      "path": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "header": [],
+                      "cookie": []
+                    },
+                    "requestBody": {
+                      "parameters": [],
+                      "data": "",
+                      "generateMode": "normal"
+                    },
+                    "auth": {},
+                    "securityScheme": {},
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "requestResult": "{\"id\":\"temp.9c5d0eb0-c680-44cc-b32e-07d46638e21e\",\"cursor\":{\"position\":0,\"iteration\":0,\"length\":1,\"cycles\":1,\"empty\":false,\"eof\":false,\"bof\":true,\"cr\":false,\"ref\":\"9c5d0eb0-c680-44cc-b32e-07d46638e21e\",\"requestIndex\":0,\"httpRequestId\":\"15e20c6c-8841-46c4-bbe0-1d7494571d98\"},\"type\":\"http\",\"response\":{\"id\":\"6fbd5c32-a1ee-4688-9dd8-ef8ab1b8543c\",\"status\":\"OK\",\"code\":200,\"header\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:23:28 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"57\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"trailer\":[],\"stream\":{\"type\":\"Buffer\",\"data\":[123,34,105,116,101,109,115,34,58,91,123,34,105,116,101,109,95,105,100,34,58,34,70,111,111,34,125,44,123,34,105,116,101,109,95,105,100,34,58,34,66,97,114,34,125,93,44,34,113,34,58,34,116,111,109,34,125]},\"cookie\":[],\"responseTime\":3,\"responseSize\":57,\"downloadedBytes\":57,\"type\":\"http\",\"tempFilePath\":\"\",\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}},\"timingPhases\":{\"prepare\":0.6406999998725951,\"wait\":0.6603000001050532,\"dns\":0,\"tcp\":0.17680000001564622,\"firstByte\":0.9984999997541308,\"download\":0.5810000002384186,\"process\":0.06490000011399388,\"total\":3.122200000099838}},\"request\":{\"url\":{\"protocol\":\"http\",\"port\":\"8000\",\"path\":[\"items\",\"\"],\"host\":[\"127\",\"0\",\"0\",\"1\"],\"query\":[{\"key\":\"q\",\"value\":\"tom\"}],\"variable\":[]},\"header\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\",\"system\":true},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\",\"system\":true},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\",\"system\":true},{\"key\":\"Connection\",\"value\":\"keep-alive\",\"system\":true}],\"method\":\"GET\",\"body\":{},\"type\":\"http\"},\"history\":{\"execution\":{\"verbose\":true,\"sessions\":{\"60ec19d2-84bf-41db-8cb3-af67871665e4\":{\"addresses\":{\"local\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":2011},\"remote\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":8000}}}},\"data\":[{\"request\":{\"method\":\"GET\",\"href\":\"http://127.0.0.1:8000/items/?q=tom\",\"headers\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\"},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\"},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\"},{\"key\":\"Connection\",\"value\":\"keep-alive\"}],\"httpVersion\":\"1.1\"},\"response\":{\"statusCode\":200,\"headers\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:23:28 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"57\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"httpVersion\":\"1.1\",\"downloadedBytes\":57},\"timings\":{\"start\":1783441408443,\"requestStart\":1783441408443,\"offset\":{\"request\":0.6406999998725951,\"socket\":1.3009999999776483,\"connect\":1.4777999999932945,\"response\":2.4762999997474253,\"end\":3.057299999985844,\"lookup\":1.3009999999776483,\"done\":3.122200000099838}},\"session\":{\"id\":\"60ec19d2-84bf-41db-8cb3-af67871665e4\",\"reused\":false}}]}},\"responseValidation\":{\"schema\":{\"valid\":true,\"message\":\"\",\"errors\":null},\"responseCode\":{\"valid\":true}},\"passed\":true,\"timings\":{\"started\":1783441408435,\"preProcessorsStarted\":1783441408437,\"preProcessorsCompleted\":1783441408437,\"postProcessorsStarted\":1783441408447,\"postProcessorsCompleted\":1783441408447,\"completed\":1783441408448},\"metaInfo\":{\"httpApiId\":483689534,\"httpApiCaseId\":0,\"httpApiName\":\"3 - 使用Annotated限制参数的最大最小字符数\",\"httpApiPath\":\"http://127.0.0.1:8000/items/\",\"httpApiMethod\":\"get\",\"httpApiCaseName\":\"\",\"moduleId\":8127149,\"serverId\":\"default\"},\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}}}",
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "categoryId": 0,
+                    "tagIds": [],
+                    "apiTestDataList": [],
+                    "preProcessors": [],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  },
+                  {
+                    "id": 391598201,
+                    "type": "DEBUG_CASE",
+                    "path": null,
+                    "name": "参数有误-字数过少",
+                    "responseId": "148568608",
+                    "parameters": {
+                      "query": [
+                        {
+                          "id": "A0mhZJvqeb",
+                          "relatedId": "bN2i4RoXWy",
+                          "relatedName": "q",
+                          "value": "t",
+                          "enable": true,
+                          "isDelete": false
+                        }
+                      ],
+                      "path": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "header": [],
+                      "cookie": []
+                    },
+                    "requestBody": {
+                      "parameters": [],
+                      "data": "",
+                      "generateMode": "normal"
+                    },
+                    "auth": {},
+                    "securityScheme": {},
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "requestResult": "{\"id\":\"temp.933c24c0-b637-43df-a939-18607506f324\",\"cursor\":{\"position\":0,\"iteration\":0,\"length\":1,\"cycles\":1,\"empty\":false,\"eof\":false,\"bof\":true,\"cr\":false,\"ref\":\"933c24c0-b637-43df-a939-18607506f324\",\"requestIndex\":0,\"httpRequestId\":\"86268754-7a69-4c45-aad9-457d872fe224\"},\"type\":\"http\",\"response\":{\"id\":\"fc9d4bfb-9cc4-44f8-9afa-b0943f8a126b\",\"status\":\"Unprocessable Entity\",\"code\":422,\"header\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:23:18 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"144\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"trailer\":[],\"stream\":{\"type\":\"Buffer\",\"data\":[123,34,100,101,116,97,105,108,34,58,91,123,34,116,121,112,101,34,58,34,115,116,114,105,110,103,95,116,111,111,95,115,104,111,114,116,34,44,34,108,111,99,34,58,91,34,113,117,101,114,121,34,44,34,113,34,93,44,34,109,115,103,34,58,34,83,116,114,105,110,103,32,115,104,111,117,108,100,32,104,97,118,101,32,97,116,32,108,101,97,115,116,32,50,32,99,104,97,114,97,99,116,101,114,115,34,44,34,105,110,112,117,116,34,58,34,116,34,44,34,99,116,120,34,58,123,34,109,105,110,95,108,101,110,103,116,104,34,58,50,125,125,93,125]},\"cookie\":[],\"responseTime\":3,\"responseSize\":144,\"downloadedBytes\":144,\"type\":\"http\",\"tempFilePath\":\"\",\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}},\"timingPhases\":{\"prepare\":0.45820000022649765,\"wait\":0.21149999974295497,\"dns\":0,\"tcp\":0,\"firstByte\":1.949700000230223,\"download\":0.4564999998547137,\"process\":0.07899999991059303,\"total\":3.1548999999649823}},\"request\":{\"url\":{\"protocol\":\"http\",\"port\":\"8000\",\"path\":[\"items\",\"\"],\"host\":[\"127\",\"0\",\"0\",\"1\"],\"query\":[{\"key\":\"q\",\"value\":\"t\"}],\"variable\":[]},\"header\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\",\"system\":true},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\",\"system\":true},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\",\"system\":true},{\"key\":\"Connection\",\"value\":\"keep-alive\",\"system\":true}],\"method\":\"GET\",\"body\":{},\"type\":\"http\"},\"history\":{\"execution\":{\"verbose\":true,\"sessions\":{\"093feac0-cc26-4c9c-8bc9-a1dde7475276\":{\"addresses\":{\"local\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":2006},\"remote\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":8000}}}},\"data\":[{\"request\":{\"method\":\"GET\",\"href\":\"http://127.0.0.1:8000/items/?q=t\",\"headers\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\"},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\"},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\"},{\"key\":\"Connection\",\"value\":\"keep-alive\"}],\"httpVersion\":\"1.1\"},\"response\":{\"statusCode\":422,\"headers\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:23:18 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"144\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"httpVersion\":\"1.1\",\"downloadedBytes\":144},\"timings\":{\"start\":1783441398589,\"requestStart\":1783441398589,\"offset\":{\"request\":0.45820000022649765,\"socket\":0.6696999999694526,\"response\":2.6194000001996756,\"end\":3.0759000000543892,\"lookup\":0.6696999999694526,\"connect\":0.6696999999694526,\"done\":3.1548999999649823}},\"session\":{\"id\":\"093feac0-cc26-4c9c-8bc9-a1dde7475276\",\"reused\":true}}]}},\"responseValidation\":{\"schema\":{\"valid\":true,\"message\":\"\",\"errors\":null},\"responseCode\":{\"valid\":false,\"result\":{\"actual\":422,\"expect\":200},\"message\":\"应当是 200 实际却是 422\"}},\"passed\":false,\"timings\":{\"started\":1783441398585,\"preProcessorsStarted\":1783441398586,\"preProcessorsCompleted\":1783441398586,\"postProcessorsStarted\":1783441398593,\"postProcessorsCompleted\":1783441398593,\"completed\":1783441398595},\"metaInfo\":{\"httpApiId\":483689534,\"httpApiCaseId\":391598201,\"httpApiName\":\"3 - 使用Annotated限制参数的最大最小字符数\",\"httpApiPath\":\"http://127.0.0.1:8000/items/\",\"httpApiMethod\":\"get\",\"httpApiCaseName\":\"参数有误-字数过少\",\"moduleId\":8127149,\"serverId\":\"default\"},\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}}}",
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "categoryId": 0,
+                    "tagIds": [],
+                    "apiTestDataList": [],
+                    "preProcessors": [],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  },
+                  {
+                    "id": 391598203,
+                    "type": "DEBUG_CASE",
+                    "path": null,
+                    "name": "参数有误-字数超出",
+                    "responseId": "148568608",
+                    "parameters": {
+                      "query": [
+                        {
+                          "id": "A0mhZJvqeb",
+                          "relatedId": "bN2i4RoXWy",
+                          "value": "tom12345678",
+                          "enable": true,
+                          "isDelete": false,
+                          "relatedName": "q"
+                        }
+                      ],
+                      "path": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "header": [],
+                      "cookie": []
+                    },
+                    "requestBody": {
+                      "parameters": [],
+                      "data": "",
+                      "generateMode": "normal"
+                    },
+                    "auth": {},
+                    "securityScheme": {},
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "requestResult": "{\"id\":\"temp.56d77a37-7885-4ac6-8ab8-4ca78b77e4e4\",\"cursor\":{\"position\":0,\"iteration\":0,\"length\":1,\"cycles\":1,\"empty\":false,\"eof\":false,\"bof\":true,\"cr\":false,\"ref\":\"56d77a37-7885-4ac6-8ab8-4ca78b77e4e4\",\"requestIndex\":0,\"httpRequestId\":\"917a070c-5f2b-4ace-bcc2-d1999bc9e969\"},\"type\":\"http\",\"response\":{\"id\":\"9ded5104-e597-4c71-8f38-a2367748343a\",\"status\":\"Unprocessable Entity\",\"code\":422,\"header\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:23:43 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"154\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"trailer\":[],\"stream\":{\"type\":\"Buffer\",\"data\":[123,34,100,101,116,97,105,108,34,58,91,123,34,116,121,112,101,34,58,34,115,116,114,105,110,103,95,116,111,111,95,108,111,110,103,34,44,34,108,111,99,34,58,91,34,113,117,101,114,121,34,44,34,113,34,93,44,34,109,115,103,34,58,34,83,116,114,105,110,103,32,115,104,111,117,108,100,32,104,97,118,101,32,97,116,32,109,111,115,116,32,49,48,32,99,104,97,114,97,99,116,101,114,115,34,44,34,105,110,112,117,116,34,58,34,116,111,109,49,50,51,52,53,54,55,56,34,44,34,99,116,120,34,58,123,34,109,97,120,95,108,101,110,103,116,104,34,58,49,48,125,125,93,125]},\"cookie\":[],\"responseTime\":3,\"responseSize\":154,\"downloadedBytes\":154,\"type\":\"http\",\"tempFilePath\":\"\",\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}},\"timingPhases\":{\"prepare\":1.0678000003099442,\"wait\":0.5865999995730817,\"dns\":0,\"tcp\":0.10940000042319298,\"firstByte\":1.0448999996297061,\"download\":0.424000000115484,\"process\":0.054899999871850014,\"total\":3.287599999923259}},\"request\":{\"url\":{\"protocol\":\"http\",\"port\":\"8000\",\"path\":[\"items\",\"\"],\"host\":[\"127\",\"0\",\"0\",\"1\"],\"query\":[{\"key\":\"q\",\"value\":\"tom12345678\"}],\"variable\":[]},\"header\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\",\"system\":true},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\",\"system\":true},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\",\"system\":true},{\"key\":\"Connection\",\"value\":\"keep-alive\",\"system\":true}],\"method\":\"GET\",\"body\":{},\"type\":\"http\"},\"history\":{\"execution\":{\"verbose\":true,\"sessions\":{\"c8363c4a-ee18-4d7b-a1a5-a2a1bad43b7f\":{\"addresses\":{\"local\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":8621},\"remote\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":8000}}}},\"data\":[{\"request\":{\"method\":\"GET\",\"href\":\"http://127.0.0.1:8000/items/?q=tom12345678\",\"headers\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\"},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\"},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\"},{\"key\":\"Connection\",\"value\":\"keep-alive\"}],\"httpVersion\":\"1.1\"},\"response\":{\"statusCode\":422,\"headers\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:23:43 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"154\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"httpVersion\":\"1.1\",\"downloadedBytes\":154},\"timings\":{\"start\":1783441423766,\"requestStart\":1783441423767,\"offset\":{\"request\":1.0678000003099442,\"socket\":1.6543999998830259,\"connect\":1.7638000003062189,\"response\":2.808699999935925,\"end\":3.232700000051409,\"lookup\":1.6543999998830259,\"done\":3.287599999923259}},\"session\":{\"id\":\"c8363c4a-ee18-4d7b-a1a5-a2a1bad43b7f\",\"reused\":false}}]}},\"responseValidation\":{\"schema\":{\"valid\":true,\"message\":\"\",\"errors\":null},\"responseCode\":{\"valid\":false,\"result\":{\"actual\":422,\"expect\":200},\"message\":\"应当是 200 实际却是 422\"}},\"passed\":false,\"timings\":{\"started\":1783441423758,\"preProcessorsStarted\":1783441423759,\"preProcessorsCompleted\":1783441423759,\"postProcessorsStarted\":1783441423771,\"postProcessorsCompleted\":1783441423771,\"completed\":1783441423772},\"metaInfo\":{\"httpApiId\":483689534,\"httpApiCaseId\":0,\"httpApiName\":\"3 - 使用Annotated限制参数的最大最小字符数\",\"httpApiPath\":\"http://127.0.0.1:8000/items/\",\"httpApiMethod\":\"get\",\"httpApiCaseName\":\"\",\"moduleId\":8127149,\"serverId\":\"default\"},\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}}}",
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "categoryId": 0,
+                    "tagIds": [],
+                    "apiTestDataList": [],
+                    "preProcessors": [],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  }
+                ],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 8127149,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "4 - 使用Annotated限制参数符合正则表达式",
+              "api": {
+                "id": "483689641",
+                "method": "get",
+                "path": "http://127.0.0.1:8000/items/",
+                "parameters": {
+                  "query": [
+                    {
+                      "id": "bN2i4RoXWy",
+                      "name": "q",
+                      "example": "tom",
+                      "required": false,
+                      "description": "",
+                      "enable": true,
+                      "type": "string"
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "148568608",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "itemSchema": {},
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": ""
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "required": true,
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 36,
+                "cases": [
+                  {
+                    "id": 391597749,
+                    "type": "DEBUG_CASE",
+                    "path": null,
+                    "name": "参数有误-不符合正则要求",
+                    "responseId": "148568608",
+                    "parameters": {
+                      "query": [
+                        {
+                          "id": "J2GReiKzcp",
+                          "relatedId": "bN2i4RoXWy",
+                          "value": "1234user_name",
+                          "enable": true,
+                          "isDelete": false,
+                          "relatedName": "q"
+                        }
+                      ],
+                      "path": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "header": [],
+                      "cookie": []
+                    },
+                    "requestBody": {
+                      "parameters": [],
+                      "data": "",
+                      "generateMode": "normal"
+                    },
+                    "auth": {},
+                    "securityScheme": {},
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "requestResult": "{\"id\":\"temp.d07bb1d8-dbb1-4984-907a-596c3e2aeb53\",\"cursor\":{\"position\":0,\"iteration\":0,\"length\":1,\"cycles\":1,\"empty\":false,\"eof\":false,\"bof\":true,\"cr\":false,\"ref\":\"d07bb1d8-dbb1-4984-907a-596c3e2aeb53\",\"requestIndex\":0,\"httpRequestId\":\"08b49a35-b697-4d7d-983c-1fc47649dc01\"},\"type\":\"http\",\"response\":{\"id\":\"5621c55d-f718-4a53-badb-61383943a409\",\"status\":\"Unprocessable Entity\",\"code\":422,\"header\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 15:57:09 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"173\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"trailer\":[],\"stream\":{\"type\":\"Buffer\",\"data\":[123,34,100,101,116,97,105,108,34,58,91,123,34,116,121,112,101,34,58,34,115,116,114,105,110,103,95,112,97,116,116,101,114,110,95,109,105,115,109,97,116,99,104,34,44,34,108,111,99,34,58,91,34,113,117,101,114,121,34,44,34,113,34,93,44,34,109,115,103,34,58,34,83,116,114,105,110,103,32,115,104,111,117,108,100,32,109,97,116,99,104,32,112,97,116,116,101,114,110,32,39,94,117,115,101,114,95,110,97,109,101,36,39,34,44,34,105,110,112,117,116,34,58,34,49,50,51,52,117,115,101,114,95,110,97,109,101,34,44,34,99,116,120,34,58,123,34,112,97,116,116,101,114,110,34,58,34,94,117,115,101,114,95,110,97,109,101,36,34,125,125,93,125]},\"cookie\":[],\"responseTime\":3,\"responseSize\":173,\"downloadedBytes\":173,\"type\":\"http\",\"tempFilePath\":\"\",\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}},\"timingPhases\":{\"prepare\":0.5828999999212101,\"wait\":0.6472000000067055,\"dns\":0,\"tcp\":0.1615999999921769,\"firstByte\":1.1942000000271946,\"download\":0.46950000000651926,\"process\":0.05810000002384186,\"total\":3.1134999999776483}},\"request\":{\"url\":{\"protocol\":\"http\",\"port\":\"8000\",\"path\":[\"items\",\"\"],\"host\":[\"127\",\"0\",\"0\",\"1\"],\"query\":[{\"key\":\"q\",\"value\":\"1234user_name\"}],\"variable\":[]},\"header\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\",\"system\":true},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\",\"system\":true},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\",\"system\":true},{\"key\":\"Connection\",\"value\":\"keep-alive\",\"system\":true}],\"method\":\"GET\",\"body\":{},\"type\":\"http\"},\"history\":{\"execution\":{\"verbose\":true,\"sessions\":{\"3c8111f6-ced5-4d04-8cbb-827f6ebde7ba\":{\"addresses\":{\"local\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":5514},\"remote\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":8000}}}},\"data\":[{\"request\":{\"method\":\"GET\",\"href\":\"http://127.0.0.1:8000/items/?q=1234user_name\",\"headers\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\"},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\"},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\"},{\"key\":\"Connection\",\"value\":\"keep-alive\"}],\"httpVersion\":\"1.1\"},\"response\":{\"statusCode\":422,\"headers\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 15:57:09 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"173\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"httpVersion\":\"1.1\",\"downloadedBytes\":173},\"timings\":{\"start\":1783439830120,\"requestStart\":1783439830121,\"offset\":{\"request\":0.5828999999212101,\"socket\":1.2300999999279156,\"connect\":1.3916999999200925,\"response\":2.585899999947287,\"end\":3.0553999999538064,\"lookup\":1.2300999999279156,\"done\":3.1134999999776483}},\"session\":{\"id\":\"3c8111f6-ced5-4d04-8cbb-827f6ebde7ba\",\"reused\":false}}]}},\"responseValidation\":{\"schema\":{\"valid\":true,\"message\":\"\",\"errors\":null},\"responseCode\":{\"valid\":false,\"result\":{\"actual\":422,\"expect\":200},\"message\":\"应当是 200 实际却是 422\"}},\"passed\":false,\"timings\":{\"started\":1783439830059,\"preProcessorsStarted\":1783439830072,\"preProcessorsCompleted\":1783439830072,\"postProcessorsStarted\":1783439830136,\"postProcessorsCompleted\":1783439830136,\"completed\":1783439830138},\"metaInfo\":{\"httpApiId\":483689641,\"httpApiCaseId\":0,\"httpApiName\":\"3 - 使用Annotated限制参数符合正则表达式\",\"httpApiPath\":\"http://127.0.0.1:8000/items/\",\"httpApiMethod\":\"get\",\"httpApiCaseName\":\"\",\"moduleId\":8127149,\"serverId\":\"\"},\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}}}",
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "categoryId": 0,
+                    "tagIds": [],
+                    "apiTestDataList": [],
+                    "preProcessors": [],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  },
+                  {
+                    "id": 391597779,
+                    "type": "DEBUG_CASE",
+                    "path": null,
+                    "name": "成功",
+                    "responseId": "148568608",
+                    "parameters": {
+                      "query": [
+                        {
+                          "id": "KfZ40NfHcE",
+                          "relatedId": "bN2i4RoXWy",
+                          "relatedName": "q",
+                          "value": "user_name",
+                          "enable": true,
+                          "isDelete": false
+                        }
+                      ],
+                      "path": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "header": [],
+                      "cookie": []
+                    },
+                    "requestBody": {
+                      "parameters": [],
+                      "data": "",
+                      "generateMode": "normal"
+                    },
+                    "auth": {},
+                    "securityScheme": {},
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {},
+                      "isDefaultUrlEncoding": 2,
+                      "disableUrlEncoding": false
+                    },
+                    "requestResult": "{\"id\":\"temp.7fc58e55-e7e9-479d-be31-b0e12f336e21\",\"cursor\":{\"position\":0,\"iteration\":0,\"length\":1,\"cycles\":1,\"empty\":false,\"eof\":false,\"bof\":true,\"cr\":false,\"ref\":\"7fc58e55-e7e9-479d-be31-b0e12f336e21\",\"requestIndex\":0,\"httpRequestId\":\"e099c5ae-cf9c-45ca-9fc5-5c5a4b9f0b39\"},\"type\":\"http\",\"response\":{\"id\":\"141386f4-3dc1-45e8-b674-5483dbbf5bc0\",\"status\":\"OK\",\"code\":200,\"header\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 15:59:41 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"63\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"trailer\":[],\"stream\":{\"type\":\"Buffer\",\"data\":[123,34,105,116,101,109,115,34,58,91,123,34,105,116,101,109,95,105,100,34,58,34,70,111,111,34,125,44,123,34,105,116,101,109,95,105,100,34,58,34,66,97,114,34,125,93,44,34,113,34,58,34,117,115,101,114,95,110,97,109,101,34,125]},\"cookie\":[],\"responseTime\":5,\"responseSize\":63,\"downloadedBytes\":63,\"type\":\"http\",\"tempFilePath\":\"\",\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}},\"timingPhases\":{\"prepare\":0.7704000000376254,\"wait\":1.0074000000022352,\"dns\":0,\"tcp\":0.30229999986477196,\"firstByte\":1.5550999999977648,\"download\":1.27530000009574,\"process\":0.2171000000089407,\"total\":5.127600000007078}},\"request\":{\"url\":{\"protocol\":\"http\",\"port\":\"8000\",\"path\":[\"items\",\"\"],\"host\":[\"127\",\"0\",\"0\",\"1\"],\"query\":[{\"key\":\"q\",\"value\":\"user_name\"}],\"variable\":[]},\"header\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\",\"system\":true},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\",\"system\":true},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\",\"system\":true},{\"key\":\"Connection\",\"value\":\"keep-alive\",\"system\":true}],\"method\":\"GET\",\"body\":{},\"type\":\"http\"},\"history\":{\"execution\":{\"verbose\":true,\"sessions\":{\"d023a1ca-03b6-4c71-9c3e-ac5662af7cc2\":{\"addresses\":{\"local\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":5575},\"remote\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":8000}}}},\"data\":[{\"request\":{\"method\":\"GET\",\"href\":\"http://127.0.0.1:8000/items/?q=user_name\",\"headers\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\"},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\"},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\"},{\"key\":\"Connection\",\"value\":\"keep-alive\"}],\"httpVersion\":\"1.1\"},\"response\":{\"statusCode\":200,\"headers\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 15:59:41 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"63\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"httpVersion\":\"1.1\",\"downloadedBytes\":63},\"timings\":{\"start\":1783439982312,\"requestStart\":1783439982313,\"offset\":{\"request\":0.7704000000376254,\"socket\":1.7778000000398606,\"connect\":2.0800999999046326,\"response\":3.6351999999023974,\"end\":4.910499999998137,\"lookup\":1.7778000000398606,\"done\":5.127600000007078}},\"session\":{\"id\":\"d023a1ca-03b6-4c71-9c3e-ac5662af7cc2\",\"reused\":false}}]}},\"responseValidation\":{\"schema\":{\"valid\":true,\"message\":\"\",\"errors\":null},\"responseCode\":{\"valid\":true}},\"passed\":true,\"timings\":{\"started\":1783439982274,\"preProcessorsStarted\":1783439982282,\"preProcessorsCompleted\":1783439982282,\"postProcessorsStarted\":1783439982330,\"postProcessorsCompleted\":1783439982330,\"completed\":1783439982332},\"metaInfo\":{\"httpApiId\":483689641,\"httpApiCaseId\":391597779,\"httpApiName\":\"4 - 使用Annotated限制参数符合正则表达式\",\"httpApiPath\":\"http://127.0.0.1:8000/items/\",\"httpApiMethod\":\"get\",\"httpApiCaseName\":\"成功\",\"moduleId\":8127149,\"serverId\":\"\"},\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}}}",
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "categoryId": 0,
+                    "tagIds": [],
+                    "apiTestDataList": [],
+                    "preProcessors": [],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  },
+                  {
+                    "id": 391597746,
+                    "type": "TEST_CASE",
+                    "path": "http://127.0.0.1:8000/items/",
+                    "name": "参数有误",
+                    "responseId": "148568608",
+                    "parameters": {
+                      "query": [
+                        {
+                          "id": "tuSbZvdjAx",
+                          "relatedId": "bN2i4RoXWy",
+                          "relatedName": "q",
+                          "name": "q",
+                          "value": "1234user_name",
+                          "type": "string",
+                          "description": "",
+                          "enable": true,
+                          "isDelete": false
+                        }
+                      ],
+                      "header": [],
+                      "cookie": [],
+                      "path": []
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "header": [],
+                      "cookie": []
+                    },
+                    "requestBody": {
+                      "parameters": [],
+                      "type": "none",
+                      "data": "",
+                      "generateMode": "normal"
+                    },
+                    "auth": {},
+                    "securityScheme": {
+                      "scopes": {},
+                      "schemeGroups": [],
+                      "required": false
+                    },
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "requestResult": null,
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "categoryId": 11777196,
+                    "tagIds": [],
+                    "apiTestDataList": [],
+                    "preProcessors": [
+                      {
+                        "type": "placeholder",
+                        "renderType": "dynamicValueDivider",
+                        "defaultEnable": false,
+                        "enable": false
+                      }
+                    ],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  },
+                  {
+                    "id": 391597811,
+                    "type": "TEST_CASE",
+                    "path": "http://127.0.0.1:8000/items/",
+                    "name": "成功",
+                    "responseId": "148568608",
+                    "parameters": {
+                      "query": [
+                        {
+                          "id": "KfZ40NfHcE",
+                          "relatedId": "bN2i4RoXWy",
+                          "relatedName": "q",
+                          "name": "q",
+                          "value": "user_name",
+                          "type": "string",
+                          "description": "",
+                          "enable": true,
+                          "isDelete": false
+                        }
+                      ],
+                      "header": [],
+                      "cookie": [],
+                      "path": []
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "header": [],
+                      "cookie": []
+                    },
+                    "requestBody": {
+                      "parameters": [],
+                      "type": "none",
+                      "data": "",
+                      "generateMode": "normal"
+                    },
+                    "auth": {},
+                    "securityScheme": {
+                      "scopes": {},
+                      "schemeGroups": [],
+                      "required": false
+                    },
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {},
+                      "isDefaultUrlEncoding": 2,
+                      "disableUrlEncoding": false
+                    },
+                    "requestResult": null,
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "categoryId": 11777195,
+                    "tagIds": [],
+                    "apiTestDataList": [],
+                    "preProcessors": [
+                      {
+                        "type": "placeholder",
+                        "renderType": "dynamicValueDivider",
+                        "defaultEnable": false,
+                        "enable": false
+                      }
+                    ],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  }
+                ],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 8127149,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "5 - 为参数添加默认值",
+              "api": {
+                "id": "483690644",
+                "method": "get",
+                "path": "/items/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": false,
+                      "description": "",
+                      "type": "string",
+                      "id": "H3njDMYVRJ",
+                      "enable": true,
+                      "name": "q",
+                      "example": "tom"
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "134264552",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "itemSchema": {},
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": ""
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "required": true,
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 46,
+                "cases": [
+                  {
+                    "id": 391598224,
+                    "type": "DEBUG_CASE",
+                    "path": null,
+                    "name": "成功",
+                    "responseId": "134264552",
+                    "parameters": {
+                      "query": [
+                        {
+                          "id": "lD8mjRIFow",
+                          "relatedId": "H3njDMYVRJ",
+                          "relatedName": "q",
+                          "value": "",
+                          "enable": true,
+                          "isDelete": true
+                        }
+                      ],
+                      "path": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "header": [],
+                      "cookie": []
+                    },
+                    "requestBody": {
+                      "parameters": [],
+                      "data": "",
+                      "generateMode": "normal"
+                    },
+                    "auth": {},
+                    "securityScheme": {},
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "requestResult": "{\"id\":\"temp.d9eeabfa-beac-4438-a157-3a9ce0608803\",\"cursor\":{\"position\":0,\"iteration\":0,\"length\":1,\"cycles\":1,\"empty\":false,\"eof\":false,\"bof\":true,\"cr\":false,\"ref\":\"d9eeabfa-beac-4438-a157-3a9ce0608803\",\"requestIndex\":0,\"httpRequestId\":\"60f86bc9-f1ae-4774-85c1-f01092fc99f6\"},\"type\":\"http\",\"response\":{\"id\":\"1c333e89-f0b1-4bd2-81ed-9e88ab1e7681\",\"status\":\"OK\",\"code\":200,\"header\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:35:53 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"59\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"trailer\":[],\"stream\":{\"type\":\"Buffer\",\"data\":[123,34,105,116,101,109,115,34,58,91,123,34,105,116,101,109,95,105,100,34,58,34,70,111,111,34,125,44,123,34,105,116,101,109,95,105,100,34,58,34,66,97,114,34,125,93,44,34,113,34,58,34,104,101,108,108,111,34,125]},\"cookie\":[],\"responseTime\":2,\"responseSize\":59,\"downloadedBytes\":59,\"type\":\"http\",\"tempFilePath\":\"\",\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}},\"timingPhases\":{\"prepare\":0.3908999999985099,\"wait\":0.17269999999552965,\"dns\":0,\"tcp\":0,\"firstByte\":0.9735000003129244,\"download\":0.43049999978393316,\"process\":0.07810000004246831,\"total\":2.0457000001333654}},\"request\":{\"url\":{\"protocol\":\"http\",\"port\":\"8000\",\"path\":[\"items\",\"\"],\"host\":[\"127\",\"0\",\"0\",\"1\"],\"query\":[],\"variable\":[]},\"header\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\",\"system\":true},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\",\"system\":true},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\",\"system\":true},{\"key\":\"Connection\",\"value\":\"keep-alive\",\"system\":true}],\"method\":\"GET\",\"baseUrl\":\"http://127.0.0.1:8000\",\"body\":{},\"type\":\"http\"},\"history\":{\"execution\":{\"verbose\":true,\"sessions\":{\"a67323bd-f222-4a21-b630-ffd0cbdcc476\":{\"addresses\":{\"local\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":12632},\"remote\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":8000}}}},\"data\":[{\"request\":{\"method\":\"GET\",\"href\":\"http://127.0.0.1:8000/items/\",\"headers\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\"},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\"},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\"},{\"key\":\"Connection\",\"value\":\"keep-alive\"}],\"httpVersion\":\"1.1\"},\"response\":{\"statusCode\":200,\"headers\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:35:53 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"59\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"httpVersion\":\"1.1\",\"downloadedBytes\":59},\"timings\":{\"start\":1783442153236,\"requestStart\":1783442153236,\"offset\":{\"request\":0.3908999999985099,\"socket\":0.5635999999940395,\"response\":1.537100000306964,\"end\":1.967600000090897,\"lookup\":0.5635999999940395,\"connect\":0.5635999999940395,\"done\":2.0457000001333654}},\"session\":{\"id\":\"a67323bd-f222-4a21-b630-ffd0cbdcc476\",\"reused\":true}}]}},\"responseValidation\":{\"schema\":{\"valid\":true,\"message\":\"\",\"errors\":null},\"responseCode\":{\"valid\":true}},\"passed\":true,\"timings\":{\"started\":1783442153202,\"preProcessorsStarted\":1783442153203,\"preProcessorsCompleted\":1783442153203,\"postProcessorsStarted\":1783442153239,\"postProcessorsCompleted\":1783442153239,\"completed\":1783442153240},\"metaInfo\":{\"httpApiId\":483690644,\"httpApiCaseId\":391598224,\"httpApiName\":\"5 - 为参数添加默认值\",\"httpApiPath\":\"/items/\",\"httpApiMethod\":\"get\",\"httpApiCaseName\":\"成功\",\"moduleId\":8127149,\"serverId\":\"default\"},\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}}}",
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "categoryId": 0,
+                    "tagIds": [],
+                    "apiTestDataList": [],
+                    "preProcessors": [],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  },
+                  {
+                    "id": 391598241,
+                    "type": "DEBUG_CASE",
+                    "path": null,
+                    "name": "成功",
+                    "responseId": "134264552",
+                    "parameters": {
+                      "query": [
+                        {
+                          "id": "7pYbscutOd",
+                          "relatedId": "H3njDMYVRJ",
+                          "value": "tom",
+                          "enable": true,
+                          "isDelete": false,
+                          "relatedName": "q"
+                        }
+                      ],
+                      "path": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "header": [],
+                      "cookie": []
+                    },
+                    "requestBody": {
+                      "parameters": [],
+                      "data": "",
+                      "generateMode": "normal"
+                    },
+                    "auth": {},
+                    "securityScheme": {},
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "requestResult": "{\"id\":\"temp.a2395374-af2c-488c-bcfe-1337e5df4b05\",\"cursor\":{\"position\":0,\"iteration\":0,\"length\":1,\"cycles\":1,\"empty\":false,\"eof\":false,\"bof\":true,\"cr\":false,\"ref\":\"a2395374-af2c-488c-bcfe-1337e5df4b05\",\"requestIndex\":0,\"httpRequestId\":\"c360771c-8e01-46c7-9fba-5031ea09f288\"},\"type\":\"http\",\"response\":{\"id\":\"22262665-49f9-4a54-9715-7539eead24d8\",\"status\":\"OK\",\"code\":200,\"header\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:29:41 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"57\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"trailer\":[],\"stream\":{\"type\":\"Buffer\",\"data\":[123,34,105,116,101,109,115,34,58,91,123,34,105,116,101,109,95,105,100,34,58,34,70,111,111,34,125,44,123,34,105,116,101,109,95,105,100,34,58,34,66,97,114,34,125,93,44,34,113,34,58,34,116,111,109,34,125]},\"cookie\":[],\"responseTime\":3,\"responseSize\":57,\"downloadedBytes\":57,\"type\":\"http\",\"tempFilePath\":\"\",\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}},\"timingPhases\":{\"prepare\":0.5855000000447035,\"wait\":0.6307999999262393,\"dns\":0,\"tcp\":0.12680000020191073,\"firstByte\":0.9246999998576939,\"download\":0.4763000002130866,\"process\":0.06099999975413084,\"total\":2.805099999997765}},\"request\":{\"url\":{\"protocol\":\"http\",\"port\":\"8000\",\"path\":[\"items\",\"\"],\"host\":[\"127\",\"0\",\"0\",\"1\"],\"query\":[{\"key\":\"q\",\"value\":\"tom\"}],\"variable\":[]},\"header\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\",\"system\":true},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\",\"system\":true},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\",\"system\":true},{\"key\":\"Connection\",\"value\":\"keep-alive\",\"system\":true}],\"method\":\"GET\",\"baseUrl\":\"http://127.0.0.1:8000\",\"body\":{},\"type\":\"http\"},\"history\":{\"execution\":{\"verbose\":true,\"sessions\":{\"183a60e9-3d0e-470c-8ee8-e4bccdc5bbd6\":{\"addresses\":{\"local\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":10628},\"remote\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":8000}}}},\"data\":[{\"request\":{\"method\":\"GET\",\"href\":\"http://127.0.0.1:8000/items/?q=tom\",\"headers\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\"},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\"},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\"},{\"key\":\"Connection\",\"value\":\"keep-alive\"}],\"httpVersion\":\"1.1\"},\"response\":{\"statusCode\":200,\"headers\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:29:41 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"57\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"httpVersion\":\"1.1\",\"downloadedBytes\":57},\"timings\":{\"start\":1783441781561,\"requestStart\":1783441781562,\"offset\":{\"request\":0.5855000000447035,\"socket\":1.2162999999709427,\"connect\":1.3431000001728535,\"response\":2.2678000000305474,\"end\":2.744100000243634,\"lookup\":1.2162999999709427,\"done\":2.805099999997765}},\"session\":{\"id\":\"183a60e9-3d0e-470c-8ee8-e4bccdc5bbd6\",\"reused\":false}}]}},\"responseValidation\":{\"schema\":{\"valid\":true,\"message\":\"\",\"errors\":null},\"responseCode\":{\"valid\":true}},\"passed\":true,\"timings\":{\"started\":1783441781520,\"preProcessorsStarted\":1783441781521,\"preProcessorsCompleted\":1783441781521,\"postProcessorsStarted\":1783441781577,\"postProcessorsCompleted\":1783441781577,\"completed\":1783441781579},\"metaInfo\":{\"httpApiId\":483690644,\"httpApiCaseId\":0,\"httpApiName\":\"5 - 为参数添加默认值\",\"httpApiPath\":\"/items/\",\"httpApiMethod\":\"get\",\"httpApiCaseName\":\"\",\"moduleId\":8127149,\"serverId\":\"default\"},\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}}}",
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "categoryId": 0,
+                    "tagIds": [],
+                    "apiTestDataList": [],
+                    "preProcessors": [],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  }
+                ],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 8127149,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "6 - 设置参数为必须且默认值可为None",
+              "api": {
+                "id": "483690733",
+                "method": "get",
+                "path": "/items/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": false,
+                      "description": "",
+                      "type": "string",
+                      "id": "wuxdXPCoY2",
+                      "enable": true,
+                      "name": "q",
+                      "example": "tom"
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "181586818",
+                    "code": 200,
+                    "name": "成功",
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "itemSchema": {},
+                    "contentType": "json"
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "required": true,
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 56,
+                "cases": [
+                  {
+                    "id": 391598303,
+                    "type": "DEBUG_CASE",
+                    "path": null,
+                    "name": "成功",
+                    "responseId": "181586818",
+                    "parameters": {
+                      "query": [
+                        {
+                          "id": "FvcAqE0AMJ",
+                          "relatedId": "wuxdXPCoY2",
+                          "relatedName": "q",
+                          "value": "tom",
+                          "enable": true,
+                          "isDelete": false
+                        }
+                      ],
+                      "path": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "header": [],
+                      "cookie": []
+                    },
+                    "requestBody": {
+                      "parameters": [],
+                      "data": "",
+                      "generateMode": "normal"
+                    },
+                    "auth": {},
+                    "securityScheme": {},
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "requestResult": "{\"id\":\"temp.aeaffb3e-2506-44af-8051-b1ed10fca888\",\"cursor\":{\"position\":0,\"iteration\":0,\"length\":1,\"cycles\":1,\"empty\":false,\"eof\":false,\"bof\":true,\"cr\":false,\"ref\":\"aeaffb3e-2506-44af-8051-b1ed10fca888\",\"requestIndex\":0,\"httpRequestId\":\"5574df15-9130-4268-a1d2-52b9387f18dc\"},\"type\":\"http\",\"response\":{\"id\":\"5adc707c-bac7-4c6d-a5fa-e49f52ca4b78\",\"status\":\"OK\",\"code\":200,\"header\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:33:31 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"57\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"trailer\":[],\"stream\":{\"type\":\"Buffer\",\"data\":[123,34,105,116,101,109,115,34,58,91,123,34,105,116,101,109,95,105,100,34,58,34,70,111,111,34,125,44,123,34,105,116,101,109,95,105,100,34,58,34,66,97,114,34,125,93,44,34,113,34,58,34,116,111,109,34,125]},\"cookie\":[],\"responseTime\":3,\"responseSize\":57,\"downloadedBytes\":57,\"type\":\"http\",\"tempFilePath\":\"\",\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}},\"timingPhases\":{\"prepare\":0.7316000000573695,\"wait\":0.6517999996431172,\"dns\":0,\"tcp\":0.2543000001460314,\"firstByte\":1.243199999909848,\"download\":0.45870000030845404,\"process\":0.053700000047683716,\"total\":3.3933000001125038}},\"request\":{\"url\":{\"protocol\":\"http\",\"port\":\"8000\",\"path\":[\"items\",\"\"],\"host\":[\"127\",\"0\",\"0\",\"1\"],\"query\":[{\"key\":\"q\",\"value\":\"tom\"}],\"variable\":[]},\"header\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\",\"system\":true},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\",\"system\":true},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\",\"system\":true},{\"key\":\"Connection\",\"value\":\"keep-alive\",\"system\":true}],\"method\":\"GET\",\"baseUrl\":\"http://127.0.0.1:8000\",\"body\":{},\"type\":\"http\"},\"history\":{\"execution\":{\"verbose\":true,\"sessions\":{\"4a46e7a0-c0ee-46ca-9150-e1d3e07beac2\":{\"addresses\":{\"local\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":11858},\"remote\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":8000}}}},\"data\":[{\"request\":{\"method\":\"GET\",\"href\":\"http://127.0.0.1:8000/items/?q=tom\",\"headers\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\"},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\"},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\"},{\"key\":\"Connection\",\"value\":\"keep-alive\"}],\"httpVersion\":\"1.1\"},\"response\":{\"statusCode\":200,\"headers\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:33:31 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"57\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"httpVersion\":\"1.1\",\"downloadedBytes\":57},\"timings\":{\"start\":1783442012338,\"requestStart\":1783442012339,\"offset\":{\"request\":0.7316000000573695,\"socket\":1.3833999997004867,\"connect\":1.637699999846518,\"response\":2.880899999756366,\"end\":3.33960000006482,\"lookup\":1.3833999997004867,\"done\":3.3933000001125038}},\"session\":{\"id\":\"4a46e7a0-c0ee-46ca-9150-e1d3e07beac2\",\"reused\":false}}]}},\"responseValidation\":{\"schema\":{\"valid\":true,\"message\":\"\",\"errors\":null},\"responseCode\":{\"valid\":true}},\"passed\":true,\"timings\":{\"started\":1783442012300,\"preProcessorsStarted\":1783442012307,\"preProcessorsCompleted\":1783442012307,\"postProcessorsStarted\":1783442012353,\"postProcessorsCompleted\":1783442012353,\"completed\":1783442012355},\"metaInfo\":{\"httpApiId\":483690733,\"httpApiCaseId\":391598303,\"httpApiName\":\"6 - 设置参数为必须且默认值可为None\",\"httpApiPath\":\"/items/\",\"httpApiMethod\":\"get\",\"httpApiCaseName\":\"成功\",\"moduleId\":8127149,\"serverId\":\"default\"},\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}}}",
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "categoryId": 0,
+                    "tagIds": [],
+                    "apiTestDataList": [],
+                    "preProcessors": [],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  },
+                  {
+                    "id": 391598346,
+                    "type": "DEBUG_CASE",
+                    "path": null,
+                    "name": "缺少参数",
+                    "responseId": "181586818",
+                    "parameters": {
+                      "query": [
+                        {
+                          "id": "FvcAqE0AMJ",
+                          "relatedId": "wuxdXPCoY2",
+                          "relatedName": "q",
+                          "value": "",
+                          "enable": true,
+                          "isDelete": false
+                        }
+                      ],
+                      "path": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "header": [],
+                      "cookie": []
+                    },
+                    "requestBody": {
+                      "parameters": [],
+                      "data": "",
+                      "generateMode": "normal"
+                    },
+                    "auth": {},
+                    "securityScheme": {},
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "requestResult": "{\"id\":\"temp.dbaa8782-db12-4aa5-9e54-f171d2a11609\",\"cursor\":{\"position\":0,\"iteration\":0,\"length\":1,\"cycles\":1,\"empty\":false,\"eof\":false,\"bof\":true,\"cr\":false,\"ref\":\"dbaa8782-db12-4aa5-9e54-f171d2a11609\",\"requestIndex\":0,\"httpRequestId\":\"eb751a24-bda5-45e9-ade1-8224e686a971\"},\"type\":\"http\",\"response\":{\"id\":\"bc02a7b7-54f7-477c-8bce-9ffc944b26a1\",\"status\":\"Unprocessable Entity\",\"code\":422,\"header\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:33:40 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"143\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"trailer\":[],\"stream\":{\"type\":\"Buffer\",\"data\":[123,34,100,101,116,97,105,108,34,58,91,123,34,116,121,112,101,34,58,34,115,116,114,105,110,103,95,116,111,111,95,115,104,111,114,116,34,44,34,108,111,99,34,58,91,34,113,117,101,114,121,34,44,34,113,34,93,44,34,109,115,103,34,58,34,83,116,114,105,110,103,32,115,104,111,117,108,100,32,104,97,118,101,32,97,116,32,108,101,97,115,116,32,50,32,99,104,97,114,97,99,116,101,114,115,34,44,34,105,110,112,117,116,34,58,34,34,44,34,99,116,120,34,58,123,34,109,105,110,95,108,101,110,103,116,104,34,58,50,125,125,93,125]},\"cookie\":[],\"responseTime\":3,\"responseSize\":143,\"downloadedBytes\":143,\"type\":\"http\",\"tempFilePath\":\"\",\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}}},\"request\":{\"url\":{\"protocol\":\"http\",\"port\":\"8000\",\"path\":[\"items\",\"\"],\"host\":[\"127\",\"0\",\"0\",\"1\"],\"query\":[{\"key\":\"q\",\"value\":\"\"}],\"variable\":[]},\"header\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\",\"system\":true},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\",\"system\":true},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\",\"system\":true},{\"key\":\"Connection\",\"value\":\"keep-alive\",\"system\":true}],\"method\":\"GET\",\"baseUrl\":\"http://127.0.0.1:8000\",\"body\":{},\"type\":\"http\"},\"history\":{\"execution\":{\"verbose\":true,\"sessions\":{\"d6a379c2-dce1-4c94-b029-6887061cccf0\":{\"addresses\":{\"local\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":11860},\"remote\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":8000}}}},\"data\":[{\"request\":{\"method\":\"GET\",\"href\":\"http://127.0.0.1:8000/items/?q=\",\"headers\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\"},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\"},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\"},{\"key\":\"Connection\",\"value\":\"keep-alive\"}],\"httpVersion\":\"1.1\"},\"response\":{\"statusCode\":422,\"headers\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:33:40 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"143\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"httpVersion\":\"1.1\",\"downloadedBytes\":143},\"timings\":{\"start\":1783442020766,\"requestStart\":1783442020767,\"offset\":{\"request\":0.846299999859184,\"socket\":1.5137000000104308,\"connect\":1.920899999793619,\"response\":2.8196999998763204,\"end\":3.2991999997757375,\"lookup\":1.5137000000104308,\"done\":3.359900000039488}},\"session\":{\"id\":\"d6a379c2-dce1-4c94-b029-6887061cccf0\",\"reused\":false}}]}},\"responseValidation\":{\"schema\":{\"valid\":true,\"message\":\"\",\"errors\":null},\"responseCode\":{\"valid\":false,\"result\":{\"actual\":422,\"expect\":200},\"message\":\"应当是 200 实际却是 422\"}},\"passed\":false,\"timings\":{\"started\":1783442020734,\"preProcessorsStarted\":1783442020736,\"preProcessorsCompleted\":1783442020736,\"postProcessorsStarted\":1783442020781,\"postProcessorsCompleted\":1783442020781,\"completed\":1783442020783},\"metaInfo\":{\"httpApiId\":483690733,\"httpApiCaseId\":0,\"httpApiName\":\"6 - 设置参数为必须且默认值可为None\",\"httpApiPath\":\"/items/\",\"httpApiMethod\":\"get\",\"httpApiCaseName\":\"\",\"moduleId\":8127149,\"serverId\":\"default\"},\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}}}",
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "categoryId": 0,
+                    "tagIds": [],
+                    "apiTestDataList": [],
+                    "preProcessors": [],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  }
+                ],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 8127149,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "7 - 查询参数为一个列表.py",
+              "api": {
+                "id": "483690898",
+                "method": "get",
+                "path": "/items/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": false,
+                      "description": "",
+                      "type": "array",
+                      "id": "rm6qu7bGdo",
+                      "enable": true,
+                      "name": "q",
+                      "example": [
+                        "tom",
+                        "jerry"
+                      ]
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "148439140",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "itemSchema": {},
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": ""
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "required": true,
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 66,
+                "cases": [
+                  {
+                    "id": 391598374,
+                    "type": "DEBUG_CASE",
+                    "path": null,
+                    "name": "成功",
+                    "responseId": "148439140",
+                    "parameters": {
+                      "query": [
+                        {
+                          "id": "na06Hx3ARE",
+                          "relatedId": "rm6qu7bGdo",
+                          "relatedName": "q",
+                          "value": [
+                            "tom",
+                            "jerry"
+                          ],
+                          "enable": true,
+                          "isDelete": false
+                        }
+                      ],
+                      "path": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "header": [],
+                      "cookie": []
+                    },
+                    "requestBody": {
+                      "parameters": [],
+                      "data": "",
+                      "generateMode": "normal"
+                    },
+                    "auth": {},
+                    "securityScheme": {},
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "requestResult": "{\"id\":\"temp.e6b9b2cc-26d7-48f6-a91e-8e4dbcef4e8d\",\"cursor\":{\"position\":0,\"iteration\":0,\"length\":1,\"cycles\":1,\"empty\":false,\"eof\":false,\"bof\":true,\"cr\":false,\"ref\":\"e6b9b2cc-26d7-48f6-a91e-8e4dbcef4e8d\",\"requestIndex\":0,\"httpRequestId\":\"438944e0-b095-45d7-86b6-15a1817b1bd2\"},\"type\":\"http\",\"response\":{\"id\":\"d2e90947-f2d6-41b3-b645-d32ae4a84962\",\"status\":\"OK\",\"code\":200,\"header\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:40:52 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"21\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"trailer\":[],\"stream\":{\"type\":\"Buffer\",\"data\":[123,34,113,34,58,91,34,116,111,109,34,44,34,106,101,114,114,121,34,93,125]},\"cookie\":[],\"responseTime\":4,\"responseSize\":21,\"downloadedBytes\":21,\"type\":\"http\",\"tempFilePath\":\"\",\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}},\"timingPhases\":{\"prepare\":0.508899999782443,\"wait\":0.7171999998390675,\"dns\":0,\"tcp\":0.14309999998658895,\"firstByte\":1.87430000025779,\"download\":0.48779999976977706,\"process\":0.11040000012144446,\"total\":3.841699999757111}},\"request\":{\"url\":{\"protocol\":\"http\",\"port\":\"8000\",\"path\":[\"items\",\"\"],\"host\":[\"127\",\"0\",\"0\",\"1\"],\"query\":[{\"key\":\"q\",\"value\":\"tom\"},{\"key\":\"q\",\"value\":\"jerry\"}],\"variable\":[]},\"header\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\",\"system\":true},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\",\"system\":true},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\",\"system\":true},{\"key\":\"Connection\",\"value\":\"keep-alive\",\"system\":true}],\"method\":\"GET\",\"baseUrl\":\"http://127.0.0.1:8000\",\"body\":{},\"type\":\"http\"},\"history\":{\"execution\":{\"verbose\":true,\"sessions\":{\"10e5b206-8ad8-4118-aa1e-d34fc660a6bc\":{\"addresses\":{\"local\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":5995},\"remote\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":8000}}}},\"data\":[{\"request\":{\"method\":\"GET\",\"href\":\"http://127.0.0.1:8000/items/?q=tom&q=jerry\",\"headers\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\"},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\"},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\"},{\"key\":\"Connection\",\"value\":\"keep-alive\"}],\"httpVersion\":\"1.1\"},\"response\":{\"statusCode\":200,\"headers\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:40:52 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"21\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"httpVersion\":\"1.1\",\"downloadedBytes\":21},\"timings\":{\"start\":1783442452020,\"requestStart\":1783442452021,\"offset\":{\"request\":0.508899999782443,\"socket\":1.2260999996215105,\"connect\":1.3691999996080995,\"response\":3.2434999998658895,\"end\":3.7312999996356666,\"lookup\":1.2260999996215105,\"done\":3.841699999757111}},\"session\":{\"id\":\"10e5b206-8ad8-4118-aa1e-d34fc660a6bc\",\"reused\":false}}]}},\"responseValidation\":{\"schema\":{\"valid\":true,\"message\":\"\",\"errors\":null},\"responseCode\":{\"valid\":true}},\"passed\":true,\"timings\":{\"started\":1783442452014,\"preProcessorsStarted\":1783442452015,\"preProcessorsCompleted\":1783442452015,\"postProcessorsStarted\":1783442452025,\"postProcessorsCompleted\":1783442452025,\"completed\":1783442452026},\"metaInfo\":{\"httpApiId\":483690898,\"httpApiCaseId\":391598374,\"httpApiName\":\"7 - 查询多个列表或多个值\",\"httpApiPath\":\"/items/\",\"httpApiMethod\":\"get\",\"httpApiCaseName\":\"成功\",\"moduleId\":8127149,\"serverId\":\"default\"},\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}}}",
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "categoryId": 0,
+                    "tagIds": [],
+                    "apiTestDataList": [],
+                    "preProcessors": [],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  },
+                  {
+                    "id": 391598376,
+                    "type": "DEBUG_CASE",
+                    "path": null,
+                    "name": "成功",
+                    "responseId": "148439140",
+                    "parameters": {
+                      "query": [
+                        {
+                          "id": "na06Hx3ARE",
+                          "relatedId": "rm6qu7bGdo",
+                          "value": [
+                            "tom"
+                          ],
+                          "enable": true,
+                          "isDelete": false,
+                          "relatedName": "q"
+                        }
+                      ],
+                      "path": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "header": [],
+                      "cookie": []
+                    },
+                    "requestBody": {
+                      "parameters": [],
+                      "data": "",
+                      "generateMode": "normal"
+                    },
+                    "auth": {},
+                    "securityScheme": {},
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "requestResult": "{\"id\":\"temp.6aa9e6c6-0e8c-46a7-89c8-b7c017c29144\",\"cursor\":{\"position\":0,\"iteration\":0,\"length\":1,\"cycles\":1,\"empty\":false,\"eof\":false,\"bof\":true,\"cr\":false,\"ref\":\"6aa9e6c6-0e8c-46a7-89c8-b7c017c29144\",\"requestIndex\":0,\"httpRequestId\":\"1c7a9439-44b7-4d40-8ed5-6cfd909d1c08\"},\"type\":\"http\",\"response\":{\"id\":\"1379aca3-ec1e-4390-99de-15608f48eb61\",\"status\":\"OK\",\"code\":200,\"header\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:40:58 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"13\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"trailer\":[],\"stream\":{\"type\":\"Buffer\",\"data\":[123,34,113,34,58,91,34,116,111,109,34,93,125]},\"cookie\":[],\"responseTime\":3,\"responseSize\":13,\"downloadedBytes\":13,\"type\":\"http\",\"tempFilePath\":\"\",\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}},\"timingPhases\":{\"prepare\":0.4808000000193715,\"wait\":0.6667999997735023,\"dns\":0,\"tcp\":0.13310000021010637,\"firstByte\":0.9805999998934567,\"download\":0.7975000003352761,\"process\":0.06259999983012676,\"total\":3.12140000006184}},\"request\":{\"url\":{\"protocol\":\"http\",\"port\":\"8000\",\"path\":[\"items\",\"\"],\"host\":[\"127\",\"0\",\"0\",\"1\"],\"query\":[{\"key\":\"q\",\"value\":\"tom\"}],\"variable\":[]},\"header\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\",\"system\":true},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\",\"system\":true},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\",\"system\":true},{\"key\":\"Connection\",\"value\":\"keep-alive\",\"system\":true}],\"method\":\"GET\",\"baseUrl\":\"http://127.0.0.1:8000\",\"body\":{},\"type\":\"http\"},\"history\":{\"execution\":{\"verbose\":true,\"sessions\":{\"6d270778-0e0a-4f9c-9359-35914b88b216\":{\"addresses\":{\"local\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":6000},\"remote\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":8000}}}},\"data\":[{\"request\":{\"method\":\"GET\",\"href\":\"http://127.0.0.1:8000/items/?q=tom\",\"headers\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\"},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\"},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\"},{\"key\":\"Connection\",\"value\":\"keep-alive\"}],\"httpVersion\":\"1.1\"},\"response\":{\"statusCode\":200,\"headers\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:40:58 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"13\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"httpVersion\":\"1.1\",\"downloadedBytes\":13},\"timings\":{\"start\":1783442458768,\"requestStart\":1783442458769,\"offset\":{\"request\":0.4808000000193715,\"socket\":1.1475999997928739,\"connect\":1.2807000000029802,\"response\":2.261299999896437,\"end\":3.058800000231713,\"lookup\":1.1475999997928739,\"done\":3.12140000006184}},\"session\":{\"id\":\"6d270778-0e0a-4f9c-9359-35914b88b216\",\"reused\":false}}]}},\"responseValidation\":{\"schema\":{\"valid\":true,\"message\":\"\",\"errors\":null},\"responseCode\":{\"valid\":true}},\"passed\":true,\"timings\":{\"started\":1783442458709,\"preProcessorsStarted\":1783442458721,\"preProcessorsCompleted\":1783442458721,\"postProcessorsStarted\":1783442458783,\"postProcessorsCompleted\":1783442458784,\"completed\":1783442458785},\"metaInfo\":{\"httpApiId\":483690898,\"httpApiCaseId\":0,\"httpApiName\":\"7 - 查询多个列表或多个值\",\"httpApiPath\":\"/items/\",\"httpApiMethod\":\"get\",\"httpApiCaseName\":\"\",\"moduleId\":8127149,\"serverId\":\"default\"},\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}}}",
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "categoryId": 0,
+                    "tagIds": [],
+                    "apiTestDataList": [],
+                    "preProcessors": [],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  }
+                ],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 8127149,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "8 - 查询参数为一个列表-设置默认值",
+              "api": {
+                "id": "483690937",
+                "method": "get",
+                "path": "/items/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": false,
+                      "description": "",
+                      "type": "array",
+                      "id": "R4lFqoLJP3",
+                      "enable": true,
+                      "name": "q",
+                      "example": [
+                        "tom",
+                        "jerry"
+                      ],
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "136225988",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "itemSchema": {},
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": ""
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "required": true,
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 76,
+                "cases": [
+                  {
+                    "id": 391598433,
+                    "type": "DEBUG_CASE",
+                    "path": null,
+                    "name": "成功",
+                    "responseId": "136225988",
+                    "parameters": {
+                      "query": [
+                        {
+                          "id": "JXVWbLG7Gh",
+                          "relatedId": "R4lFqoLJP3",
+                          "value": [
+                            ""
+                          ],
+                          "enable": true,
+                          "isDelete": true,
+                          "schema": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "relatedName": "q"
+                        }
+                      ],
+                      "path": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "header": [],
+                      "cookie": []
+                    },
+                    "requestBody": {
+                      "parameters": [],
+                      "data": "",
+                      "generateMode": "normal"
+                    },
+                    "auth": {},
+                    "securityScheme": {},
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "requestResult": "{\"id\":\"temp.b996f7b7-b3ac-4ef1-b0a4-6d99050fdba6\",\"cursor\":{\"position\":0,\"iteration\":0,\"length\":1,\"cycles\":1,\"empty\":false,\"eof\":false,\"bof\":true,\"cr\":false,\"ref\":\"b996f7b7-b3ac-4ef1-b0a4-6d99050fdba6\",\"requestIndex\":0,\"httpRequestId\":\"64c7bc4f-a6f4-4f50-b3da-91fbe391ff6b\"},\"type\":\"http\",\"response\":{\"id\":\"df5bdfad-2fa3-4aba-ab4b-07a3bf7d1933\",\"status\":\"OK\",\"code\":200,\"header\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:47:51 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"23\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"trailer\":[],\"stream\":{\"type\":\"Buffer\",\"data\":[123,34,113,34,58,91,34,104,101,108,108,111,34,44,34,119,111,114,108,100,34,93,125]},\"cookie\":[],\"responseTime\":9,\"responseSize\":23,\"downloadedBytes\":23,\"type\":\"http\",\"tempFilePath\":\"\",\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}},\"timingPhases\":{\"prepare\":0.4043999998830259,\"wait\":0.6676000002771616,\"dns\":0,\"tcp\":0.1578999999910593,\"firstByte\":6.884399999864399,\"download\":1.143099999986589,\"process\":0.11970000015571713,\"total\":9.377100000157952}},\"request\":{\"url\":{\"protocol\":\"http\",\"port\":\"8000\",\"path\":[\"items\",\"\"],\"host\":[\"127\",\"0\",\"0\",\"1\"],\"query\":[],\"variable\":[]},\"header\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\",\"system\":true},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\",\"system\":true},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\",\"system\":true},{\"key\":\"Connection\",\"value\":\"keep-alive\",\"system\":true}],\"method\":\"GET\",\"baseUrl\":\"http://127.0.0.1:8000\",\"body\":{},\"type\":\"http\"},\"history\":{\"execution\":{\"verbose\":true,\"sessions\":{\"5fdf5d05-28fc-4dca-9dbd-409255d003e2\":{\"addresses\":{\"local\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":2693},\"remote\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":8000}}}},\"data\":[{\"request\":{\"method\":\"GET\",\"href\":\"http://127.0.0.1:8000/items/\",\"headers\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\"},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\"},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\"},{\"key\":\"Connection\",\"value\":\"keep-alive\"}],\"httpVersion\":\"1.1\"},\"response\":{\"statusCode\":200,\"headers\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:47:51 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"23\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"httpVersion\":\"1.1\",\"downloadedBytes\":23},\"timings\":{\"start\":1783442872107,\"requestStart\":1783442872107,\"offset\":{\"request\":0.4043999998830259,\"socket\":1.0720000001601875,\"connect\":1.2299000001512468,\"response\":8.114300000015646,\"end\":9.257400000002235,\"lookup\":1.0720000001601875,\"done\":9.377100000157952}},\"session\":{\"id\":\"5fdf5d05-28fc-4dca-9dbd-409255d003e2\",\"reused\":false}}]}},\"responseValidation\":{\"schema\":{\"valid\":true,\"message\":\"\",\"errors\":null},\"responseCode\":{\"valid\":true}},\"passed\":true,\"timings\":{\"started\":1783442872100,\"preProcessorsStarted\":1783442872104,\"preProcessorsCompleted\":1783442872104,\"postProcessorsStarted\":1783442872118,\"postProcessorsCompleted\":1783442872118,\"completed\":1783442872120},\"metaInfo\":{\"httpApiId\":483690937,\"httpApiCaseId\":0,\"httpApiName\":\"8 - 查询参数为一个列表-设置默认值\",\"httpApiPath\":\"/items/\",\"httpApiMethod\":\"get\",\"httpApiCaseName\":\"\",\"moduleId\":8127149,\"serverId\":\"default\"},\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}}}",
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "categoryId": 0,
+                    "tagIds": [],
+                    "apiTestDataList": [],
+                    "preProcessors": [],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  },
+                  {
+                    "id": 391598435,
+                    "type": "DEBUG_CASE",
+                    "path": null,
+                    "name": "成功",
+                    "responseId": "136225988",
+                    "parameters": {
+                      "query": [
+                        {
+                          "id": "JXVWbLG7Gh",
+                          "relatedId": "R4lFqoLJP3",
+                          "value": [
+                            "tom",
+                            "jerry",
+                            "spark"
+                          ],
+                          "enable": true,
+                          "isDelete": false,
+                          "schema": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "relatedName": "q"
+                        }
+                      ],
+                      "path": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "header": [],
+                      "cookie": []
+                    },
+                    "requestBody": {
+                      "parameters": [],
+                      "data": "",
+                      "generateMode": "normal"
+                    },
+                    "auth": {},
+                    "securityScheme": {},
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "requestResult": "{\"id\":\"temp.43e8368b-4743-4d44-821b-1a8dc33db74d\",\"cursor\":{\"position\":0,\"iteration\":0,\"length\":1,\"cycles\":1,\"empty\":false,\"eof\":false,\"bof\":true,\"cr\":false,\"ref\":\"43e8368b-4743-4d44-821b-1a8dc33db74d\",\"requestIndex\":0,\"httpRequestId\":\"49ef8280-7391-4ac6-93c9-d6cba7d86e80\"},\"type\":\"http\",\"response\":{\"id\":\"55d432e1-6aee-464d-ace7-c4d44a1e8a35\",\"status\":\"OK\",\"code\":200,\"header\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:48:31 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"29\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"trailer\":[],\"stream\":{\"type\":\"Buffer\",\"data\":[123,34,113,34,58,91,34,116,111,109,34,44,34,106,101,114,114,121,34,44,34,115,112,97,114,107,34,93,125]},\"cookie\":[],\"responseTime\":3,\"responseSize\":29,\"downloadedBytes\":29,\"type\":\"http\",\"tempFilePath\":\"\",\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}},\"timingPhases\":{\"prepare\":0.7281999997794628,\"wait\":0.9426000001840293,\"dns\":0,\"tcp\":0.23900000005960464,\"firstByte\":1.099999999627471,\"download\":0.6071999999694526,\"process\":0.15510000009089708,\"total\":3.7720999997109175}},\"request\":{\"url\":{\"protocol\":\"http\",\"port\":\"8000\",\"path\":[\"items\",\"\"],\"host\":[\"127\",\"0\",\"0\",\"1\"],\"query\":[{\"key\":\"q\",\"value\":\"tom\"},{\"key\":\"q\",\"value\":\"jerry\"},{\"key\":\"q\",\"value\":\"spark\"}],\"variable\":[]},\"header\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\",\"system\":true},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\",\"system\":true},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\",\"system\":true},{\"key\":\"Connection\",\"value\":\"keep-alive\",\"system\":true}],\"method\":\"GET\",\"baseUrl\":\"http://127.0.0.1:8000\",\"body\":{},\"type\":\"http\"},\"history\":{\"execution\":{\"verbose\":true,\"sessions\":{\"357effb1-4a65-4adb-838f-ab29c8a416e7\":{\"addresses\":{\"local\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":2711},\"remote\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":8000}}}},\"data\":[{\"request\":{\"method\":\"GET\",\"href\":\"http://127.0.0.1:8000/items/?q=tom&q=jerry&q=spark\",\"headers\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\"},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\"},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\"},{\"key\":\"Connection\",\"value\":\"keep-alive\"}],\"httpVersion\":\"1.1\"},\"response\":{\"statusCode\":200,\"headers\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:48:31 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"29\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"httpVersion\":\"1.1\",\"downloadedBytes\":29},\"timings\":{\"start\":1783442911946,\"requestStart\":1783442911947,\"offset\":{\"request\":0.7281999997794628,\"socket\":1.6707999999634922,\"connect\":1.9098000000230968,\"response\":3.0097999996505678,\"end\":3.6169999996200204,\"lookup\":1.6707999999634922,\"done\":3.7720999997109175}},\"session\":{\"id\":\"357effb1-4a65-4adb-838f-ab29c8a416e7\",\"reused\":false}}]}},\"responseValidation\":{\"schema\":{\"valid\":true,\"message\":\"\",\"errors\":null},\"responseCode\":{\"valid\":true}},\"passed\":true,\"timings\":{\"started\":1783442911938,\"preProcessorsStarted\":1783442911941,\"preProcessorsCompleted\":1783442911941,\"postProcessorsStarted\":1783442911952,\"postProcessorsCompleted\":1783442911952,\"completed\":1783442911953},\"metaInfo\":{\"httpApiId\":483690937,\"httpApiCaseId\":0,\"httpApiName\":\"8 - 查询参数为一个列表-设置默认值\",\"httpApiPath\":\"/items/\",\"httpApiMethod\":\"get\",\"httpApiCaseName\":\"\",\"moduleId\":8127149,\"serverId\":\"default\"},\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}}}",
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "categoryId": 0,
+                    "tagIds": [],
+                    "apiTestDataList": [],
+                    "preProcessors": [],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  }
+                ],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 8127149,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "9 - 为请求参数设置元数据",
+              "api": {
+                "id": "483691003",
+                "method": "get",
+                "path": "/items/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": false,
+                      "description": "",
+                      "type": "array",
+                      "id": "YFAZ1xUefd",
+                      "enable": true,
+                      "name": "q",
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "example": [
+                        "name_a",
+                        "name_b"
+                      ]
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "128755224",
+                    "code": 200,
+                    "name": "成功",
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "itemSchema": {},
+                    "contentType": "json"
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "required": true,
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 86,
+                "cases": [
+                  {
+                    "id": 391598494,
+                    "type": "DEBUG_CASE",
+                    "path": null,
+                    "name": "成功",
+                    "responseId": "128755224",
+                    "parameters": {
+                      "query": [
+                        {
+                          "id": "bby7aHTTGH",
+                          "relatedId": "YFAZ1xUefd",
+                          "value": [
+                            "name_a",
+                            "name_b"
+                          ],
+                          "enable": true,
+                          "isDelete": false,
+                          "schema": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "relatedName": "q"
+                        }
+                      ],
+                      "path": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "header": [],
+                      "cookie": []
+                    },
+                    "requestBody": {
+                      "parameters": [],
+                      "data": "",
+                      "generateMode": "normal"
+                    },
+                    "auth": {},
+                    "securityScheme": {},
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "requestResult": "{\"id\":\"temp.9f5518cc-a981-4d1a-8044-5e36cbc5a40e\",\"cursor\":{\"position\":0,\"iteration\":0,\"length\":1,\"cycles\":1,\"empty\":false,\"eof\":false,\"bof\":true,\"cr\":false,\"ref\":\"9f5518cc-a981-4d1a-8044-5e36cbc5a40e\",\"requestIndex\":0,\"httpRequestId\":\"f5f219a8-b036-4a5a-861f-acc1b10ac5a7\"},\"type\":\"http\",\"response\":{\"id\":\"734ef7ce-8b74-44e0-a565-77e65c03d3f6\",\"status\":\"OK\",\"code\":200,\"header\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:52:12 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"25\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"trailer\":[],\"stream\":{\"type\":\"Buffer\",\"data\":[123,34,113,34,58,91,34,110,97,109,101,95,97,34,44,34,110,97,109,101,95,98,34,93,125]},\"cookie\":[],\"responseTime\":6,\"responseSize\":25,\"downloadedBytes\":25,\"type\":\"http\",\"tempFilePath\":\"\",\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}},\"timingPhases\":{\"prepare\":0.47149999998509884,\"wait\":0.6333999997004867,\"dns\":0,\"tcp\":0.12420000042766333,\"firstByte\":4.298700000159442,\"download\":0.5064999992027879,\"process\":0.0660000005736947,\"total\":6.100300000049174}},\"request\":{\"url\":{\"protocol\":\"http\",\"port\":\"8000\",\"path\":[\"items\",\"\"],\"host\":[\"127\",\"0\",\"0\",\"1\"],\"query\":[{\"key\":\"q\",\"value\":\"name_a\"},{\"key\":\"q\",\"value\":\"name_b\"}],\"variable\":[]},\"header\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\",\"system\":true},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\",\"system\":true},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\",\"system\":true},{\"key\":\"Connection\",\"value\":\"keep-alive\",\"system\":true}],\"method\":\"GET\",\"baseUrl\":\"http://127.0.0.1:8000\",\"body\":{},\"type\":\"http\"},\"history\":{\"execution\":{\"verbose\":true,\"sessions\":{\"40598e3e-0531-434e-9ce1-341f9cd793b3\":{\"addresses\":{\"local\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":5996},\"remote\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":8000}}}},\"data\":[{\"request\":{\"method\":\"GET\",\"href\":\"http://127.0.0.1:8000/items/?q=name_a&q=name_b\",\"headers\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\"},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\"},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\"},{\"key\":\"Connection\",\"value\":\"keep-alive\"}],\"httpVersion\":\"1.1\"},\"response\":{\"statusCode\":200,\"headers\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:52:12 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"25\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"httpVersion\":\"1.1\",\"downloadedBytes\":25},\"timings\":{\"start\":1783443132595,\"requestStart\":1783443132596,\"offset\":{\"request\":0.47149999998509884,\"socket\":1.1048999996855855,\"connect\":1.2291000001132488,\"response\":5.527800000272691,\"end\":6.034299999475479,\"lookup\":1.1048999996855855,\"done\":6.100300000049174}},\"session\":{\"id\":\"40598e3e-0531-434e-9ce1-341f9cd793b3\",\"reused\":false}}]}},\"responseValidation\":{\"schema\":{\"valid\":true,\"message\":\"\",\"errors\":null},\"responseCode\":{\"valid\":true}},\"passed\":true,\"timings\":{\"started\":1783443132552,\"preProcessorsStarted\":1783443132563,\"preProcessorsCompleted\":1783443132563,\"postProcessorsStarted\":1783443132612,\"postProcessorsCompleted\":1783443132612,\"completed\":1783443132613},\"metaInfo\":{\"httpApiId\":483691003,\"httpApiCaseId\":0,\"httpApiName\":\"9 - 为请求参数设置元数据\",\"httpApiPath\":\"/items/\",\"httpApiMethod\":\"get\",\"httpApiCaseName\":\"\",\"moduleId\":8127149,\"serverId\":\"default\"},\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}}}",
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "categoryId": 0,
+                    "tagIds": [],
+                    "apiTestDataList": [],
+                    "preProcessors": [],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  }
+                ],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 8127149,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "10 - 设置参数为弃用",
+              "api": {
+                "id": "483691042",
+                "method": "get",
+                "path": "/items/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": false,
+                      "description": "",
+                      "type": "array",
+                      "id": "BS0Q1h1RTR",
+                      "enable": true,
+                      "name": "q",
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "example": [
+                        "name_a",
+                        "name_b"
+                      ]
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "155909258",
+                    "code": 200,
+                    "name": "成功",
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "itemSchema": {},
+                    "contentType": "json"
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "required": true,
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 96,
+                "cases": [
+                  {
+                    "id": 391598531,
+                    "type": "DEBUG_CASE",
+                    "path": null,
+                    "name": "成功",
+                    "responseId": "155909258",
+                    "parameters": {
+                      "query": [
+                        {
+                          "id": "DpmfY1NMON",
+                          "relatedId": "BS0Q1h1RTR",
+                          "value": [
+                            "name_a",
+                            "name_b"
+                          ],
+                          "enable": true,
+                          "isDelete": false,
+                          "schema": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "relatedName": "q"
+                        }
+                      ],
+                      "path": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "header": [],
+                      "cookie": []
+                    },
+                    "requestBody": {
+                      "parameters": [],
+                      "data": "",
+                      "generateMode": "normal"
+                    },
+                    "auth": {},
+                    "securityScheme": {},
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "requestResult": "{\"id\":\"temp.64fc8cb1-2944-4182-a08d-af316c010d58\",\"cursor\":{\"position\":0,\"iteration\":0,\"length\":1,\"cycles\":1,\"empty\":false,\"eof\":false,\"bof\":true,\"cr\":false,\"ref\":\"64fc8cb1-2944-4182-a08d-af316c010d58\",\"requestIndex\":0,\"httpRequestId\":\"a125fea1-0f77-4988-9148-d86104c53a52\"},\"type\":\"http\",\"response\":{\"id\":\"16130960-fbce-47ab-8253-08c900a766b5\",\"status\":\"OK\",\"code\":200,\"header\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:55:01 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"25\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"trailer\":[],\"stream\":{\"type\":\"Buffer\",\"data\":[123,34,113,34,58,91,34,110,97,109,101,95,97,34,44,34,110,97,109,101,95,98,34,93,125]},\"cookie\":[],\"responseTime\":8,\"responseSize\":25,\"downloadedBytes\":25,\"type\":\"http\",\"tempFilePath\":\"\",\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}},\"timingPhases\":{\"prepare\":0.4942999994382262,\"wait\":0.9088000003248453,\"dns\":0,\"tcp\":0.26999999955296516,\"firstByte\":5.243700000457466,\"download\":0.6129999998956919,\"process\":0.07830000016838312,\"total\":7.608099999837577}},\"request\":{\"url\":{\"protocol\":\"http\",\"port\":\"8000\",\"path\":[\"items\",\"\"],\"host\":[\"127\",\"0\",\"0\",\"1\"],\"query\":[{\"key\":\"q\",\"value\":\"name_a\"},{\"key\":\"q\",\"value\":\"name_b\"}],\"variable\":[]},\"header\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\",\"system\":true},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\",\"system\":true},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\",\"system\":true},{\"key\":\"Connection\",\"value\":\"keep-alive\",\"system\":true}],\"method\":\"GET\",\"baseUrl\":\"http://127.0.0.1:8000\",\"body\":{},\"type\":\"http\"},\"history\":{\"execution\":{\"verbose\":true,\"sessions\":{\"9af66824-db56-4046-bea8-eab762672022\":{\"addresses\":{\"local\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":6131},\"remote\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":8000}}}},\"data\":[{\"request\":{\"method\":\"GET\",\"href\":\"http://127.0.0.1:8000/items/?q=name_a&q=name_b\",\"headers\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\"},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\"},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\"},{\"key\":\"Connection\",\"value\":\"keep-alive\"}],\"httpVersion\":\"1.1\"},\"response\":{\"statusCode\":200,\"headers\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 16:55:01 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"25\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"httpVersion\":\"1.1\",\"downloadedBytes\":25},\"timings\":{\"start\":1783443301842,\"requestStart\":1783443301842,\"offset\":{\"request\":0.4942999994382262,\"socket\":1.4030999997630715,\"connect\":1.6730999993160367,\"response\":6.916799999773502,\"end\":7.529799999669194,\"lookup\":1.4030999997630715,\"done\":7.608099999837577}},\"session\":{\"id\":\"9af66824-db56-4046-bea8-eab762672022\",\"reused\":false}}]}},\"responseValidation\":{\"schema\":{\"valid\":true,\"message\":\"\",\"errors\":null},\"responseCode\":{\"valid\":true}},\"passed\":true,\"timings\":{\"started\":1783443301813,\"preProcessorsStarted\":1783443301827,\"preProcessorsCompleted\":1783443301827,\"postProcessorsStarted\":1783443301857,\"postProcessorsCompleted\":1783443301857,\"completed\":1783443301858},\"metaInfo\":{\"httpApiId\":483691042,\"httpApiCaseId\":0,\"httpApiName\":\"10 - 设置参数为弃用\",\"httpApiPath\":\"/items/\",\"httpApiMethod\":\"get\",\"httpApiCaseName\":\"\",\"moduleId\":8127149,\"serverId\":\"default\"},\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}}}",
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "categoryId": 0,
+                    "tagIds": [],
+                    "apiTestDataList": [],
+                    "preProcessors": [],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  }
+                ],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 8127149,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "11 - 为参数设置自定义函数",
+              "api": {
+                "id": "483691355",
+                "method": "get",
+                "path": "/items/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": false,
+                      "description": "",
+                      "type": "string",
+                      "id": "9f3Lo22Ydw",
+                      "enable": true,
+                      "name": "id",
+                      "example": "imdb-13123123"
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "170139163",
+                    "code": 200,
+                    "name": "成功",
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "itemSchema": {},
+                    "contentType": "json"
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "required": true,
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 106,
+                "cases": [
+                  {
+                    "id": 391598825,
+                    "type": "DEBUG_CASE",
+                    "path": null,
+                    "name": "成功",
+                    "responseId": "170139163",
+                    "parameters": {
+                      "query": [
+                        {
+                          "id": "av5pTbHdvq",
+                          "relatedId": "9f3Lo22Ydw",
+                          "value": "imdb-13123123",
+                          "enable": true,
+                          "isDelete": false,
+                          "relatedName": "id"
+                        }
+                      ],
+                      "path": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "header": [],
+                      "cookie": []
+                    },
+                    "requestBody": {
+                      "parameters": [],
+                      "data": "",
+                      "generateMode": "normal"
+                    },
+                    "auth": {},
+                    "securityScheme": {},
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "requestResult": "{\"id\":\"temp.9f6f76c6-1d3a-487a-8a66-6a79de3f82d4\",\"cursor\":{\"position\":0,\"iteration\":0,\"length\":1,\"cycles\":1,\"empty\":false,\"eof\":false,\"bof\":true,\"cr\":false,\"ref\":\"9f6f76c6-1d3a-487a-8a66-6a79de3f82d4\",\"requestIndex\":0,\"httpRequestId\":\"b93e7540-11b7-4c0d-aacb-5fb5ab3546af\"},\"type\":\"http\",\"response\":{\"id\":\"52e2fd43-0eaf-44d9-ad50-74937f3cbd7b\",\"status\":\"OK\",\"code\":200,\"header\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 17:06:13 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"34\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"trailer\":[],\"stream\":{\"type\":\"Buffer\",\"data\":[123,34,105,100,34,58,34,105,109,100,98,45,49,51,49,50,51,49,50,51,34,44,34,105,116,101,109,34,58,110,117,108,108,125]},\"cookie\":[],\"responseTime\":8,\"responseSize\":34,\"downloadedBytes\":34,\"type\":\"http\",\"tempFilePath\":\"\",\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}},\"timingPhases\":{\"prepare\":0.5899999998509884,\"wait\":0.6395000005140901,\"dns\":0,\"tcp\":0.14520000014454126,\"firstByte\":5.789900000207126,\"download\":0.6979000000283122,\"process\":0.09599999990314245,\"total\":7.9585000006482005}},\"request\":{\"url\":{\"protocol\":\"http\",\"port\":\"8000\",\"path\":[\"items\",\"\"],\"host\":[\"127\",\"0\",\"0\",\"1\"],\"query\":[{\"key\":\"id\",\"value\":\"imdb-13123123\"}],\"variable\":[]},\"header\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\",\"system\":true},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\",\"system\":true},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\",\"system\":true},{\"key\":\"Connection\",\"value\":\"keep-alive\",\"system\":true}],\"method\":\"GET\",\"baseUrl\":\"http://127.0.0.1:8000\",\"body\":{},\"type\":\"http\"},\"history\":{\"execution\":{\"verbose\":true,\"sessions\":{\"3072a9b5-6ff7-403d-803b-3905896aead7\":{\"addresses\":{\"local\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":1581},\"remote\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":8000}}}},\"data\":[{\"request\":{\"method\":\"GET\",\"href\":\"http://127.0.0.1:8000/items/?id=imdb-13123123\",\"headers\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\"},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\"},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\"},{\"key\":\"Connection\",\"value\":\"keep-alive\"}],\"httpVersion\":\"1.1\"},\"response\":{\"statusCode\":200,\"headers\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 17:06:13 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"34\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"httpVersion\":\"1.1\",\"downloadedBytes\":34},\"timings\":{\"start\":1783443974820,\"requestStart\":1783443974821,\"offset\":{\"request\":0.5899999998509884,\"socket\":1.2295000003650784,\"connect\":1.3747000005096197,\"response\":7.164600000716746,\"end\":7.862500000745058,\"lookup\":1.2295000003650784,\"done\":7.9585000006482005}},\"session\":{\"id\":\"3072a9b5-6ff7-403d-803b-3905896aead7\",\"reused\":false}}]}},\"responseValidation\":{\"schema\":{\"valid\":true,\"message\":\"\",\"errors\":null},\"responseCode\":{\"valid\":true}},\"passed\":true,\"timings\":{\"started\":1783443974769,\"preProcessorsStarted\":1783443974774,\"preProcessorsCompleted\":1783443974774,\"postProcessorsStarted\":1783443974829,\"postProcessorsCompleted\":1783443974829,\"completed\":1783443974830},\"metaInfo\":{\"httpApiId\":483691355,\"httpApiCaseId\":0,\"httpApiName\":\"11 - 为参数设置自定义函数\",\"httpApiPath\":\"/items/\",\"httpApiMethod\":\"get\",\"httpApiCaseName\":\"\",\"moduleId\":8127149,\"serverId\":\"default\"},\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}}}",
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "categoryId": 0,
+                    "tagIds": [],
+                    "apiTestDataList": [],
+                    "preProcessors": [],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  },
+                  {
+                    "id": 391598826,
+                    "type": "DEBUG_CASE",
+                    "path": null,
+                    "name": "参数有误",
+                    "responseId": "170139163",
+                    "parameters": {
+                      "query": [
+                        {
+                          "id": "av5pTbHdvq",
+                          "relatedId": "9f3Lo22Ydw",
+                          "relatedName": "id",
+                          "value": "adasdadad",
+                          "enable": true,
+                          "isDelete": false
+                        }
+                      ],
+                      "path": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "header": [],
+                      "cookie": []
+                    },
+                    "requestBody": {
+                      "parameters": [],
+                      "data": "",
+                      "generateMode": "normal"
+                    },
+                    "auth": {},
+                    "securityScheme": {},
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "requestResult": "{\"id\":\"temp.ded6dce0-4c39-4cc9-8af5-62f59738e7ae\",\"cursor\":{\"position\":0,\"iteration\":0,\"length\":1,\"cycles\":1,\"empty\":false,\"eof\":false,\"bof\":true,\"cr\":false,\"ref\":\"ded6dce0-4c39-4cc9-8af5-62f59738e7ae\",\"requestIndex\":0,\"httpRequestId\":\"11daf2c0-9463-4ca6-a13d-66641a9066e2\"},\"type\":\"http\",\"response\":{\"id\":\"36a33fd3-0866-4374-8061-3b5d892651b7\",\"status\":\"Unprocessable Entity\",\"code\":422,\"header\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 17:07:33 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"177\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"trailer\":[],\"stream\":{\"type\":\"Buffer\",\"data\":[123,34,100,101,116,97,105,108,34,58,91,123,34,116,121,112,101,34,58,34,118,97,108,117,101,95,101,114,114,111,114,34,44,34,108,111,99,34,58,91,34,113,117,101,114,121,34,44,34,105,100,34,93,44,34,109,115,103,34,58,34,86,97,108,117,101,32,101,114,114,111,114,44,32,73,110,118,97,108,105,100,32,73,68,32,102,111,114,109,97,116,44,32,105,116,32,109,117,115,116,32,115,116,97,114,116,32,119,105,116,104,32,92,34,105,115,98,110,45,92,34,32,111,114,32,92,34,105,109,100,98,45,92,34,34,44,34,105,110,112,117,116,34,58,34,97,100,97,115,100,97,100,97,100,34,44,34,99,116,120,34,58,123,34,101,114,114,111,114,34,58,123,125,125,125,93,125]},\"cookie\":[],\"responseTime\":4,\"responseSize\":177,\"downloadedBytes\":177,\"type\":\"http\",\"tempFilePath\":\"\",\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}},\"timingPhases\":{\"prepare\":0.6019999999552965,\"wait\":0.6804999997839332,\"dns\":0,\"tcp\":0.18350000027567148,\"firstByte\":1.7391999997198582,\"download\":0.46360000036656857,\"process\":0.05590000003576279,\"total\":3.7247000001370907}},\"request\":{\"url\":{\"protocol\":\"http\",\"port\":\"8000\",\"path\":[\"items\",\"\"],\"host\":[\"127\",\"0\",\"0\",\"1\"],\"query\":[{\"key\":\"id\",\"value\":\"adasdadad\"}],\"variable\":[]},\"header\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\",\"system\":true},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\",\"system\":true},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\",\"system\":true},{\"key\":\"Connection\",\"value\":\"keep-alive\",\"system\":true}],\"method\":\"GET\",\"baseUrl\":\"http://127.0.0.1:8000\",\"body\":{},\"type\":\"http\"},\"history\":{\"execution\":{\"verbose\":true,\"sessions\":{\"fa5a3b2a-eb54-4f5a-aaa5-11909da3f447\":{\"addresses\":{\"local\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":12749},\"remote\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":8000}}}},\"data\":[{\"request\":{\"method\":\"GET\",\"href\":\"http://127.0.0.1:8000/items/?id=adasdadad\",\"headers\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\"},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\"},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\"},{\"key\":\"Connection\",\"value\":\"keep-alive\"}],\"httpVersion\":\"1.1\"},\"response\":{\"statusCode\":422,\"headers\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 17:07:33 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"177\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"httpVersion\":\"1.1\",\"downloadedBytes\":177},\"timings\":{\"start\":1783444053745,\"requestStart\":1783444053745,\"offset\":{\"request\":0.6019999999552965,\"socket\":1.2824999997392297,\"connect\":1.4660000000149012,\"response\":3.2051999997347593,\"end\":3.668800000101328,\"lookup\":1.2824999997392297,\"done\":3.7247000001370907}},\"session\":{\"id\":\"fa5a3b2a-eb54-4f5a-aaa5-11909da3f447\",\"reused\":false}}]}},\"responseValidation\":{\"schema\":{\"valid\":true,\"message\":\"\",\"errors\":null},\"responseCode\":{\"valid\":false,\"result\":{\"actual\":422,\"expect\":200},\"message\":\"应当是 200 实际却是 422\"}},\"passed\":false,\"timings\":{\"started\":1783444053738,\"preProcessorsStarted\":1783444053739,\"preProcessorsCompleted\":1783444053739,\"postProcessorsStarted\":1783444053763,\"postProcessorsCompleted\":1783444053763,\"completed\":1783444053764},\"metaInfo\":{\"httpApiId\":483691355,\"httpApiCaseId\":391598826,\"httpApiName\":\"11 - 为参数设置自定义函数\",\"httpApiPath\":\"/items/\",\"httpApiMethod\":\"get\",\"httpApiCaseName\":\"参数有误\",\"moduleId\":8127149,\"serverId\":\"default\"},\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}}}",
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "categoryId": 0,
+                    "tagIds": [],
+                    "apiTestDataList": [],
+                    "preProcessors": [],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  },
+                  {
+                    "id": 391598867,
+                    "type": "DEBUG_CASE",
+                    "path": null,
+                    "name": "成功",
+                    "responseId": "170139163",
+                    "parameters": {
+                      "query": [
+                        {
+                          "id": "av5pTbHdvq",
+                          "relatedId": "9f3Lo22Ydw",
+                          "relatedName": "id",
+                          "value": "isbn-9781529046137",
+                          "enable": true,
+                          "isDelete": false
+                        }
+                      ],
+                      "path": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "header": [],
+                      "cookie": []
+                    },
+                    "requestBody": {
+                      "parameters": [],
+                      "data": "",
+                      "generateMode": "normal"
+                    },
+                    "auth": {},
+                    "securityScheme": {},
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "requestResult": "{\"id\":\"temp.d950cc0b-5fd6-4c53-a898-a9e10386832b\",\"cursor\":{\"position\":0,\"iteration\":0,\"length\":1,\"cycles\":1,\"empty\":false,\"eof\":false,\"bof\":true,\"cr\":false,\"ref\":\"d950cc0b-5fd6-4c53-a898-a9e10386832b\",\"requestIndex\":0,\"httpRequestId\":\"a6086b2c-d0d9-4692-a693-2bc8e6bf2d71\"},\"type\":\"http\",\"response\":{\"id\":\"f10eb65d-ec02-43e6-848d-25325dc2a7a6\",\"status\":\"OK\",\"code\":200,\"header\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 17:08:15 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"73\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"trailer\":[],\"stream\":{\"type\":\"Buffer\",\"data\":[123,34,105,100,34,58,34,105,115,98,110,45,57,55,56,49,53,50,57,48,52,54,49,51,55,34,44,34,105,116,101,109,34,58,34,84,104,101,32,72,105,116,99,104,104,105,107,101,114,39,115,32,71,117,105,100,101,32,116,111,32,116,104,101,32,71,97,108,97,120,121,34,125]},\"cookie\":[],\"responseTime\":3,\"responseSize\":73,\"downloadedBytes\":73,\"type\":\"http\",\"tempFilePath\":\"\",\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}},\"timingPhases\":{\"prepare\":0.6013000002130866,\"wait\":0.769399999640882,\"dns\":0,\"tcp\":0.774100000038743,\"firstByte\":0.8916999995708466,\"download\":0.4559000004082918,\"process\":0.07759999949485064,\"total\":3.5699999993667006}},\"request\":{\"url\":{\"protocol\":\"http\",\"port\":\"8000\",\"path\":[\"items\",\"\"],\"host\":[\"127\",\"0\",\"0\",\"1\"],\"query\":[{\"key\":\"id\",\"value\":\"isbn-9781529046137\"}],\"variable\":[]},\"header\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\",\"system\":true},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\",\"system\":true},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\",\"system\":true},{\"key\":\"Connection\",\"value\":\"keep-alive\",\"system\":true}],\"method\":\"GET\",\"baseUrl\":\"http://127.0.0.1:8000\",\"body\":{},\"type\":\"http\"},\"history\":{\"execution\":{\"verbose\":true,\"sessions\":{\"865befe5-4675-435e-9d0c-516f707a1397\":{\"addresses\":{\"local\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":12778},\"remote\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":8000}}}},\"data\":[{\"request\":{\"method\":\"GET\",\"href\":\"http://127.0.0.1:8000/items/?id=isbn-9781529046137\",\"headers\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\"},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\"},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\"},{\"key\":\"Connection\",\"value\":\"keep-alive\"}],\"httpVersion\":\"1.1\"},\"response\":{\"statusCode\":200,\"headers\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 17:08:15 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"73\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"httpVersion\":\"1.1\",\"downloadedBytes\":73},\"timings\":{\"start\":1783444095853,\"requestStart\":1783444095853,\"offset\":{\"request\":0.6013000002130866,\"socket\":1.3706999998539686,\"connect\":2.1447999998927116,\"response\":3.036499999463558,\"end\":3.49239999987185,\"lookup\":1.3706999998539686,\"done\":3.5699999993667006}},\"session\":{\"id\":\"865befe5-4675-435e-9d0c-516f707a1397\",\"reused\":false}}]}},\"responseValidation\":{\"schema\":{\"valid\":true,\"message\":\"\",\"errors\":null},\"responseCode\":{\"valid\":true}},\"passed\":true,\"timings\":{\"started\":1783444095844,\"preProcessorsStarted\":1783444095846,\"preProcessorsCompleted\":1783444095846,\"postProcessorsStarted\":1783444095864,\"postProcessorsCompleted\":1783444095864,\"completed\":1783444095865},\"metaInfo\":{\"httpApiId\":483691355,\"httpApiCaseId\":391598867,\"httpApiName\":\"11 - 为参数设置自定义函数\",\"httpApiPath\":\"/items/\",\"httpApiMethod\":\"get\",\"httpApiCaseName\":\"成功\",\"moduleId\":8127149,\"serverId\":\"default\"},\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}}}",
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "categoryId": 0,
+                    "tagIds": [],
+                    "apiTestDataList": [],
+                    "preProcessors": [],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  }
+                ],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 8127149,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "socketCollection": [],
+  "docCollection": [],
+  "webSocketCollection": [],
+  "socketIOCollection": [],
+  "mcpClientCollection": [],
+  "responseCollection": [],
+  "schemaCollection": [],
+  "securitySchemeCollection": [],
+  "oasComponentCollection": [],
+  "requestCollection": [
+    {
+      "name": "根目录",
+      "children": [],
+      "ordering": [
+        "requestFolder.9211619"
+      ],
+      "items": []
+    }
+  ],
+  "environments": [],
+  "commonScripts": [],
+  "globalVariables": [],
+  "commonParameters": null,
+  "customFunctions": [],
+  "projectTestCaseCategories": [
+    {
+      "id": 11777195,
+      "name": "正向",
+      "description": "有效的输入和正确的预期结果,代表典型的用法。"
+    },
+    {
+      "id": 11777196,
+      "name": "负向",
+      "description": "消极的、无效的输入,如缺少字段、错误的类型、不支持的方法等。"
+    },
+    {
+      "id": 11777197,
+      "name": "边界值",
+      "description": "极端或边缘条件,如最大字符串长度、空值、零、null等"
+    },
+    {
+      "id": 11777198,
+      "name": "安全性",
+      "description": "可能暴露API安全性风险的测试用例。"
+    },
+    {
+      "id": 11777199,
+      "name": "其他",
+      "description": "其他未归属的测试用例。"
+    }
+  ],
+  "projectTestCaseTags": [
+    {
+      "id": 57082659,
+      "name": "仅传必要字段",
+      "description": "仅发送具有有效值的必填字段,省略所有可选字段,以测试最小有效请求。"
+    },
+    {
+      "id": 57082660,
+      "name": "语义合法",
+      "description": "使用语法正确且在业务逻辑或域上下文中也有意义的值。"
+    },
+    {
+      "id": 57082661,
+      "name": "覆盖枚举组合",
+      "description": "对所有枚举型参数,应用正交设计系统地构建参数及其枚举值的测试用例组合,专用于测试枚举覆盖率"
+    },
+    {
+      "id": 57082662,
+      "name": "其他正向",
+      "description": "提供符合API规范的真实有效的输入,产生正确和预期的结果。"
+    },
+    {
+      "id": 57082663,
+      "name": "缺失必填字段",
+      "description": "在请求主体或参数中省略一个或多个必需字段。"
+    },
+    {
+      "id": 57082664,
+      "name": "无效值",
+      "description": "提供的值类型和格式正确,但在逻辑上对该字段无效。"
+    },
+    {
+      "id": 57082665,
+      "name": "类型错误",
+      "description": "使用数据类型不正确的值,例如发送字符串而不是整数。"
+    },
+    {
+      "id": 57082666,
+      "name": "格式错误",
+      "description": "以不正确的格式提供值,例如,错误的日期模式,格式错误的电子邮件地址。"
+    },
+    {
+      "id": 57082667,
+      "name": "语义非法",
+      "description": "使用语法正确且格式正确的值,这些值在逻辑上不可能或违反域规则。"
+    },
+    {
+      "id": 57082668,
+      "name": "其他负向",
+      "description": "提供无效或意外的输入,应触发错误处理或拒绝API。"
+    },
+    {
+      "id": 57082669,
+      "name": "Null",
+      "description": "必须是 JSON 字面量 `null`(不是空的,也不是 \"null\")。"
+    },
+    {
+      "id": 57082670,
+      "name": "零值",
+      "description": "必须是数字字面值0。"
+    },
+    {
+      "id": 57082671,
+      "name": "空值",
+      "description": "必须是\"\"。"
+    },
+    {
+      "id": 57082672,
+      "name": "极大值",
+      "description": "Max/min值 - 为数字或日期字段提供精确的最小值和最大值。"
+    },
+    {
+      "id": 57082673,
+      "name": "极小值",
+      "description": "Max/min值 - 为数字或日期字段提供精确的最小值和最大值。"
+    },
+    {
+      "id": 57082674,
+      "name": "超出最大边界值",
+      "description": "过长/过短字符串 - 提供超出允许的最小或最大边界的值。"
+    },
+    {
+      "id": 57082675,
+      "name": "超出最小边界值",
+      "description": "过长/过短字符串 - 提供超出允许的最小或最大边界的值。"
+    },
+    {
+      "id": 57082676,
+      "name": "字符串过长",
+      "description": "超出范围的值 - 提供大于允许的最大长度或小于要求的最小长度的字符串。"
+    },
+    {
+      "id": 57082677,
+      "name": "字符串过短",
+      "description": "超出范围的值 - 提供大于允许的最大长度或小于要求的最小长度的字符串。"
+    },
+    {
+      "id": 57082678,
+      "name": "对象级别授权缺失",
+      "description": "对象级别授权缺失 - 用户在没有适当授权的情况下访问或操作数据对象。"
+    },
+    {
+      "id": 57082679,
+      "name": "访问控制",
+      "description": "基于角色、权限或属性来限制用户能访问哪些资源、能执行哪些操作"
+    },
+    {
+      "id": 57082680,
+      "name": "认证失败",
+      "description": "认证失败 - 认证薄弱、配置错误或被绕过,导致未授权访问。"
+    },
+    {
+      "id": 57082681,
+      "name": "SQL注入",
+      "description": "在输入字段中插入恶意SQL代码,测试是否存在SQL注入漏洞。"
+    },
+    {
+      "id": 57082682,
+      "name": "XSS注入",
+      "description": "注入JavaScript或HTML标签来测试跨站点脚本漏洞。"
+    },
+    {
+      "id": 57082683,
+      "name": "模糊输入",
+      "description": "发送大型或随机生成的有效载荷,以测试输入的有效性和稳定性。"
+    },
+    {
+      "id": 57082684,
+      "name": "命令行注入",
+      "description": "将shell命令插入输入以测试命令执行漏洞。"
+    },
+    {
+      "id": 57082685,
+      "name": "JSON注入",
+      "description": "插入恶意或意外的JSON结构来测试解析和验证。"
+    },
+    {
+      "id": 57082686,
+      "name": "NoSQL注入",
+      "description": "提供NoSQL特定的恶意查询或操作符来测试注入漏洞。"
+    },
+    {
+      "id": 57082687,
+      "name": "其他",
+      "description": "其他未归属的测试用例。"
+    }
+  ],
+  "projectAssociations": [],
+  "moduleSettings": [
+    {
+      "id": "8127149",
+      "name": "默认模块",
+      "description": "",
+      "moduleVariables": [],
+      "openApiInfo": {}
+    }
+  ]
+}
