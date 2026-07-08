@@ -35,12 +35,12 @@ if __name__ == "__main__":
 
 """
 # 合法请求 → 200 OK，返回用户数据
-curl -X POST http://127.0.0.1:8000/user \
-  -H "Content-Type: application/json" \
+curl -X POST http://127.0.0.1:8000/user
+  -H "Content-Type: application/json"
   -d '{"name":"张三","age":"12","email":"1234@qq.com"}'
 
 # 非法请求 → age属性值超出了120
-curl -X POST http://127.0.0.1:8000/user \
-  -H "Content-Type: application/json" \
+curl -X POST http://127.0.0.1:8000/user
+  -H "Content-Type: application/json"
   -d '{"name":"张三","age":"200","email":"1234@qq.com"}'
 """
