@@ -2179,7 +2179,7 @@
                   }
                 },
                 {
-                  "name": "2 - 同时包含请求体+路径参数+查询参数",
+                  "name": "3 - 同时包含请求体+路径参数+查询参数",
                   "api": {
                     "id": "484306245",
                     "method": "post",
@@ -2339,6 +2339,247 @@
                           "disabledSystemHeaders": {}
                         },
                         "requestResult": "{\"id\":\"temp.f35273d0-5563-48db-8faa-aea9708afb50\",\"cursor\":{\"position\":0,\"iteration\":0,\"length\":1,\"cycles\":1,\"empty\":false,\"eof\":false,\"bof\":true,\"cr\":false,\"ref\":\"f35273d0-5563-48db-8faa-aea9708afb50\",\"requestIndex\":0,\"httpRequestId\":\"cd5ba12e-4fd0-4efc-86f2-20afb718e490\"},\"type\":\"http\",\"response\":{\"id\":\"650887aa-ed07-47d1-b1bf-c9825d82ea66\",\"status\":\"OK\",\"code\":200,\"header\":[{\"key\":\"date\",\"value\":\"Wed, 08 Jul 2026 12:59:47 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"81\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"trailer\":[],\"stream\":{\"type\":\"Buffer\",\"data\":[123,34,105,116,101,109,95,105,100,34,58,49,50,51,44,34,105,116,101,109,34,58,123,34,110,97,109,101,34,58,34,84,111,109,34,44,34,100,101,115,99,114,105,112,116,105,111,110,34,58,110,117,108,108,44,34,112,114,105,99,101,34,58,49,50,46,51,52,44,34,116,97,120,34,58,110,117,108,108,125,125]},\"cookie\":[],\"responseTime\":4,\"responseSize\":81,\"downloadedBytes\":81,\"type\":\"http\",\"tempFilePath\":\"\",\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}},\"timingPhases\":{\"prepare\":0.795099999755621,\"wait\":0.9505000002682209,\"dns\":0,\"tcp\":0.24750000052154064,\"firstByte\":1.7301999991759658,\"download\":0.9590000007301569,\"process\":0.11099999956786633,\"total\":4.7933000000193715}},\"request\":{\"url\":{\"protocol\":\"http\",\"port\":\"8000\",\"path\":[\"items\",\"123\"],\"host\":[\"127\",\"0\",\"0\",\"1\"],\"query\":[],\"variable\":[]},\"header\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Content-Type\",\"value\":\"application/json\"},{\"key\":\"Accept\",\"value\":\"*/*\",\"system\":true},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\",\"system\":true},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\",\"system\":true},{\"key\":\"Connection\",\"value\":\"keep-alive\",\"system\":true},{\"key\":\"Content-Length\",\"value\":88,\"system\":true}],\"method\":\"POST\",\"baseUrl\":\"http://127.0.0.1:8000\",\"body\":{\"mode\":\"raw\",\"raw\":\"{\\r\\n    \\\"name\\\": \\\"Tom\\\",\\r\\n    \\\"description\\\": null,\\r\\n    \\\"price\\\": 12.34,\\r\\n    \\\"tax\\\": null\\r\\n}\",\"generateMode\":\"normal\",\"type\":\"application/json\"},\"type\":\"http\"},\"history\":{\"execution\":{\"verbose\":true,\"sessions\":{\"e9cb9287-7ada-49d2-a726-7bcc5e1a193d\":{\"addresses\":{\"local\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":9994},\"remote\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":8000}}}},\"data\":[{\"request\":{\"method\":\"POST\",\"href\":\"http://127.0.0.1:8000/items/123\",\"headers\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Content-Type\",\"value\":\"application/json\"},{\"key\":\"Accept\",\"value\":\"*/*\"},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\"},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\"},{\"key\":\"Connection\",\"value\":\"keep-alive\"},{\"key\":\"Content-Length\",\"value\":\"88\"}],\"httpVersion\":\"1.1\"},\"response\":{\"statusCode\":200,\"headers\":[{\"key\":\"date\",\"value\":\"Wed, 08 Jul 2026 12:59:47 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"81\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"httpVersion\":\"1.1\",\"downloadedBytes\":81},\"timings\":{\"start\":1783515587236,\"requestStart\":1783515587236,\"offset\":{\"request\":0.795099999755621,\"socket\":1.7456000000238419,\"connect\":1.9931000005453825,\"response\":3.7232999997213483,\"end\":4.682300000451505,\"lookup\":1.7456000000238419,\"done\":4.7933000000193715}},\"session\":{\"id\":\"e9cb9287-7ada-49d2-a726-7bcc5e1a193d\",\"reused\":false}}]}},\"responseValidation\":{\"schema\":{\"valid\":true,\"message\":\"\",\"errors\":null},\"responseCode\":{\"valid\":true}},\"passed\":true,\"timings\":{\"started\":1783515587230,\"preProcessorsStarted\":1783515587232,\"preProcessorsCompleted\":1783515587232,\"postProcessorsStarted\":1783515587241,\"postProcessorsCompleted\":1783515587241,\"completed\":1783515587243},\"metaInfo\":{\"httpApiId\":484306245,\"httpApiCaseId\":0,\"httpApiName\":\"2 - 同时包含请求体+路径参数+查询参数\",\"httpApiPath\":\"/items/123\",\"httpApiMethod\":\"post\",\"httpApiCaseName\":\"\",\"moduleId\":8127149,\"serverId\":\"default\"},\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}}}",
+                        "visibility": "INHERITED",
+                        "moduleId": 8127149,
+                        "categoryId": 0,
+                        "tagIds": [],
+                        "apiTestDataList": [],
+                        "preProcessors": [],
+                        "postProcessors": [],
+                        "inheritPostProcessors": {},
+                        "inheritPreProcessors": {}
+                      }
+                    ],
+                    "mocks": [],
+                    "customApiFields": "{}",
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "mockScript": {},
+                    "codeSamples": [],
+                    "commonResponseStatus": {},
+                    "responseChildren": [],
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "oasExtensions": "",
+                    "type": "http",
+                    "preProcessors": [],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  }
+                },
+                {
+                  "name": "4 - 包含多个请求体参数",
+                  "api": {
+                    "id": "484328105",
+                    "method": "post",
+                    "path": "/items/123",
+                    "parameters": {},
+                    "auth": {},
+                    "securityScheme": {},
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "responses": [
+                      {
+                        "id": "153839509",
+                        "code": 200,
+                        "name": "成功",
+                        "headers": [],
+                        "jsonSchema": {
+                          "type": "object",
+                          "properties": {}
+                        },
+                        "itemSchema": {},
+                        "description": "",
+                        "contentType": "json",
+                        "mediaType": ""
+                      }
+                    ],
+                    "responseExamples": [
+                      {
+                        "name": "成功",
+                        "data": "{\"name\":\"Tom\",\"description\":null,\"price\":12.92,\"tax\":null}",
+                        "responseId": "153839509"
+                      }
+                    ],
+                    "requestBody": {
+                      "type": "application/json",
+                      "parameters": [],
+                      "jsonSchema": {
+                        "type": "object",
+                        "properties": {}
+                      },
+                      "required": true,
+                      "mediaType": "",
+                      "examples": [
+                        {
+                          "mediaType": "application/json",
+                          "value": "{\r\n    \"item\": {\r\n        \"name\": \"Tom\",\r\n        \"description\": null,\r\n        \"price\": 12.92,\r\n        \"tax\": null\r\n    },\r\n    \"user\": {\r\n        \"username\": \"Tom\",\r\n        \"full_name\": \"Tom Cat\"\r\n    }\r\n}"
+                        }
+                      ],
+                      "oasExtensions": ""
+                    },
+                    "description": "",
+                    "tags": [],
+                    "status": "developing",
+                    "serverId": "",
+                    "operationId": "",
+                    "sourceUrl": "",
+                    "ordering": 15,
+                    "cases": [
+                      {
+                        "id": 391982164,
+                        "type": "DEBUG_CASE",
+                        "path": null,
+                        "name": "成功",
+                        "responseId": "153839509",
+                        "parameters": {
+                          "query": [],
+                          "path": [],
+                          "cookie": [],
+                          "header": []
+                        },
+                        "commonParameters": {
+                          "query": [],
+                          "body": [],
+                          "header": [],
+                          "cookie": []
+                        },
+                        "requestBody": {
+                          "parameters": [],
+                          "data": "{\r\n    \"item\": {\r\n        \"name\": \"Tom\",\r\n        \"description\": \"This is a description\",\r\n        \"price\": 12.92,\r\n        \"tax\": 20.33\r\n    },\r\n    \"user\": {\r\n        \"username\": \"Tom\",\r\n        \"full_name\": \"Tom Cat\"\r\n    }\r\n}",
+                          "generateMode": "normal"
+                        },
+                        "auth": {},
+                        "securityScheme": {},
+                        "advancedSettings": {
+                          "disabledSystemHeaders": {}
+                        },
+                        "requestResult": "{\"id\":\"temp.399bf118-8cb5-43e3-880d-5fc2bb793844\",\"cursor\":{\"position\":0,\"iteration\":0,\"length\":1,\"cycles\":1,\"empty\":false,\"eof\":false,\"bof\":true,\"cr\":false,\"ref\":\"399bf118-8cb5-43e3-880d-5fc2bb793844\",\"requestIndex\":0,\"httpRequestId\":\"ab4e2cc5-551f-410b-b589-96d055858950\"},\"type\":\"http\",\"response\":{\"id\":\"317ed58b-a76e-47aa-ad4b-014ecd196e60\",\"status\":\"OK\",\"code\":200,\"header\":[{\"key\":\"date\",\"value\":\"Wed, 08 Jul 2026 15:06:28 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"149\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"trailer\":[],\"stream\":{\"type\":\"Buffer\",\"data\":[123,34,105,116,101,109,95,105,100,34,58,49,50,51,44,34,105,116,101,109,34,58,123,34,110,97,109,101,34,58,34,84,111,109,34,44,34,100,101,115,99,114,105,112,116,105,111,110,34,58,34,84,104,105,115,32,105,115,32,97,32,100,101,115,99,114,105,112,116,105,111,110,34,44,34,112,114,105,99,101,34,58,49,50,46,57,50,44,34,116,97,120,34,58,50,48,46,51,51,125,44,34,117,115,101,114,34,58,123,34,117,115,101,114,110,97,109,101,34,58,34,84,111,109,34,44,34,102,117,108,108,95,110,97,109,101,34,58,34,84,111,109,32,67,97,116,34,125,125]},\"cookie\":[],\"responseTime\":3,\"responseSize\":149,\"downloadedBytes\":149,\"type\":\"http\",\"tempFilePath\":\"\",\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}},\"timingPhases\":{\"prepare\":0.35859999991953373,\"wait\":0.61739999987185,\"dns\":0,\"tcp\":0.12310000136494637,\"firstByte\":0.9578999988734722,\"download\":0.4014999996870756,\"process\":0.05290000140666962,\"total\":2.5114000011235476}},\"request\":{\"url\":{\"protocol\":\"http\",\"port\":\"8000\",\"path\":[\"items\",\"123\"],\"host\":[\"127\",\"0\",\"0\",\"1\"],\"query\":[],\"variable\":[]},\"header\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Content-Type\",\"value\":\"application/json\"},{\"key\":\"Accept\",\"value\":\"*/*\",\"system\":true},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\",\"system\":true},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\",\"system\":true},{\"key\":\"Connection\",\"value\":\"keep-alive\",\"system\":true},{\"key\":\"Content-Length\",\"value\":229,\"system\":true}],\"method\":\"POST\",\"baseUrl\":\"http://127.0.0.1:8000\",\"body\":{\"mode\":\"raw\",\"raw\":\"{\\r\\n    \\\"item\\\": {\\r\\n        \\\"name\\\": \\\"Tom\\\",\\r\\n        \\\"description\\\": \\\"This is a description\\\",\\r\\n        \\\"price\\\": 12.92,\\r\\n        \\\"tax\\\": 20.33\\r\\n    },\\r\\n    \\\"user\\\": {\\r\\n        \\\"username\\\": \\\"Tom\\\",\\r\\n        \\\"full_name\\\": \\\"Tom Cat\\\"\\r\\n    }\\r\\n}\",\"generateMode\":\"normal\",\"type\":\"application/json\"},\"type\":\"http\"},\"history\":{\"execution\":{\"verbose\":true,\"sessions\":{\"798cceff-4589-4c99-aeff-66cc9d05ea43\":{\"addresses\":{\"local\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":3824},\"remote\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":8000}}}},\"data\":[{\"request\":{\"method\":\"POST\",\"href\":\"http://127.0.0.1:8000/items/123\",\"headers\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Content-Type\",\"value\":\"application/json\"},{\"key\":\"Accept\",\"value\":\"*/*\"},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\"},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\"},{\"key\":\"Connection\",\"value\":\"keep-alive\"},{\"key\":\"Content-Length\",\"value\":\"229\"}],\"httpVersion\":\"1.1\"},\"response\":{\"statusCode\":200,\"headers\":[{\"key\":\"date\",\"value\":\"Wed, 08 Jul 2026 15:06:28 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"149\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"httpVersion\":\"1.1\",\"downloadedBytes\":149},\"timings\":{\"start\":1783523189667,\"requestStart\":1783523189668,\"offset\":{\"request\":0.35859999991953373,\"socket\":0.9759999997913837,\"connect\":1.09910000115633,\"response\":2.0570000000298023,\"end\":2.458499999716878,\"lookup\":0.9759999997913837,\"done\":2.5114000011235476}},\"session\":{\"id\":\"798cceff-4589-4c99-aeff-66cc9d05ea43\",\"reused\":false}}]}},\"responseValidation\":{\"schema\":{\"valid\":true,\"message\":\"\",\"errors\":null},\"responseCode\":{\"valid\":true}},\"passed\":true,\"timings\":{\"started\":1783523189660,\"preProcessorsStarted\":1783523189665,\"preProcessorsCompleted\":1783523189665,\"postProcessorsStarted\":1783523189670,\"postProcessorsCompleted\":1783523189670,\"completed\":1783523189671},\"metaInfo\":{\"httpApiId\":484328105,\"httpApiCaseId\":391982128,\"httpApiName\":\"4 - 包含多个请求体参数\",\"httpApiPath\":\"/items/123\",\"httpApiMethod\":\"post\",\"httpApiCaseName\":\"\",\"moduleId\":8127149,\"serverId\":\"default\"},\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}}}",
+                        "visibility": "INHERITED",
+                        "moduleId": 8127149,
+                        "categoryId": 0,
+                        "tagIds": [],
+                        "apiTestDataList": [],
+                        "preProcessors": [],
+                        "postProcessors": [],
+                        "inheritPostProcessors": {},
+                        "inheritPreProcessors": {}
+                      }
+                    ],
+                    "mocks": [],
+                    "customApiFields": "{}",
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "mockScript": {},
+                    "codeSamples": [],
+                    "commonResponseStatus": {},
+                    "responseChildren": [],
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "oasExtensions": "",
+                    "type": "http",
+                    "preProcessors": [],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  }
+                },
+                {
+                  "name": "5 - 请求体嵌套",
+                  "api": {
+                    "id": "484332308",
+                    "method": "post",
+                    "path": "/items/123",
+                    "parameters": {},
+                    "auth": {},
+                    "securityScheme": {},
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "responses": [
+                      {
+                        "id": "184729566",
+                        "code": 200,
+                        "name": "成功",
+                        "jsonSchema": {
+                          "type": "object",
+                          "properties": {}
+                        },
+                        "itemSchema": {},
+                        "contentType": "json"
+                      }
+                    ],
+                    "responseExamples": [
+                      {
+                        "name": "成功",
+                        "data": "{\"item_id\":123,\"item\":{\"name\":\"Foo\",\"description\":\"The pretender\",\"price\":42.0,\"tax\":3.2,\"tags\":[\"metal\",\"rock\",\"bar\"],\"image\":{\"url\":\"http://example.com/baz.jpg\",\"name\":\"The Foo live\"}}}",
+                        "responseId": "184729566"
+                      }
+                    ],
+                    "requestBody": {
+                      "type": "application/json",
+                      "parameters": [],
+                      "jsonSchema": {
+                        "type": "object",
+                        "properties": {}
+                      },
+                      "required": true,
+                      "mediaType": "",
+                      "examples": [
+                        {
+                          "mediaType": "application/json",
+                          "value": "{\r\n    \"name\": \"Foo\",\r\n    \"description\": \"The pretender\",\r\n    \"price\": 42.0,\r\n    \"tax\": 3.2,\r\n    \"tags\": [\"rock\", \"metal\", \"bar\"],\r\n    \"image\": {\r\n        \"url\": \"http://example.com/baz.jpg\",\r\n        \"name\": \"The Foo live\"\r\n    }\r\n}"
+                        }
+                      ],
+                      "oasExtensions": ""
+                    },
+                    "description": "",
+                    "tags": [],
+                    "status": "developing",
+                    "serverId": "",
+                    "operationId": "",
+                    "sourceUrl": "",
+                    "ordering": 36,
+                    "cases": [
+                      {
+                        "id": 391987014,
+                        "type": "DEBUG_CASE",
+                        "path": null,
+                        "name": "成功",
+                        "responseId": "184729566",
+                        "parameters": {
+                          "query": [],
+                          "path": [],
+                          "cookie": [],
+                          "header": []
+                        },
+                        "commonParameters": {
+                          "query": [],
+                          "body": [],
+                          "header": [],
+                          "cookie": []
+                        },
+                        "requestBody": {
+                          "parameters": [],
+                          "data": "{\r\n    \"name\": \"Foo\",\r\n    \"description\": \"The pretender\",\r\n    \"price\": 42.0,\r\n    \"tax\": 3.2,\r\n    \"tags\": [\"rock\", \"metal\", \"bar\"],\r\n    \"image\": {\r\n        \"url\": \"http://example.com/baz.jpg\",\r\n        \"name\": \"The Foo live\"\r\n    }\r\n}",
+                          "generateMode": "normal"
+                        },
+                        "auth": {},
+                        "securityScheme": {},
+                        "advancedSettings": {
+                          "disabledSystemHeaders": {}
+                        },
+                        "requestResult": "{\"id\":\"temp.fe4d8104-9bc8-4780-a8da-efe91af4c062\",\"cursor\":{\"position\":0,\"iteration\":0,\"length\":1,\"cycles\":1,\"empty\":false,\"eof\":false,\"bof\":true,\"cr\":false,\"ref\":\"fe4d8104-9bc8-4780-a8da-efe91af4c062\",\"requestIndex\":0,\"httpRequestId\":\"854b34ba-f5f3-42fa-9820-1cbdc9e1d66c\"},\"type\":\"http\",\"response\":{\"id\":\"015ebc90-aeb2-4330-867c-721de92b6895\",\"status\":\"OK\",\"code\":200,\"header\":[{\"key\":\"date\",\"value\":\"Wed, 08 Jul 2026 15:59:59 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"187\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"trailer\":[],\"stream\":{\"type\":\"Buffer\",\"data\":[123,34,105,116,101,109,95,105,100,34,58,49,50,51,44,34,105,116,101,109,34,58,123,34,110,97,109,101,34,58,34,70,111,111,34,44,34,100,101,115,99,114,105,112,116,105,111,110,34,58,34,84,104,101,32,112,114,101,116,101,110,100,101,114,34,44,34,112,114,105,99,101,34,58,52,50,46,48,44,34,116,97,120,34,58,51,46,50,44,34,116,97,103,115,34,58,91,34,109,101,116,97,108,34,44,34,114,111,99,107,34,44,34,98,97,114,34,93,44,34,105,109,97,103,101,34,58,123,34,117,114,108,34,58,34,104,116,116,112,58,47,47,101,120,97,109,112,108,101,46,99,111,109,47,98,97,122,46,106,112,103,34,44,34,110,97,109,101,34,58,34,84,104,101,32,70,111,111,32,108,105,118,101,34,125,125,125]},\"cookie\":[],\"responseTime\":5,\"responseSize\":187,\"downloadedBytes\":187,\"type\":\"http\",\"tempFilePath\":\"\",\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}},\"timingPhases\":{\"prepare\":0.7198000010102987,\"wait\":0.8388999998569489,\"dns\":0,\"tcp\":0.1842000000178814,\"firstByte\":2.1777999997138977,\"download\":0.8666999991983175,\"process\":0.0674000009894371,\"total\":4.854800000786781}},\"request\":{\"url\":{\"protocol\":\"http\",\"port\":\"8000\",\"path\":[\"items\",\"123\"],\"host\":[\"127\",\"0\",\"0\",\"1\"],\"query\":[],\"variable\":[]},\"header\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Content-Type\",\"value\":\"application/json\"},{\"key\":\"Accept\",\"value\":\"*/*\",\"system\":true},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\",\"system\":true},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\",\"system\":true},{\"key\":\"Connection\",\"value\":\"keep-alive\",\"system\":true},{\"key\":\"Content-Length\",\"value\":238,\"system\":true}],\"method\":\"POST\",\"baseUrl\":\"http://127.0.0.1:8000\",\"body\":{\"mode\":\"raw\",\"raw\":\"{\\r\\n    \\\"name\\\": \\\"Foo\\\",\\r\\n    \\\"description\\\": \\\"The pretender\\\",\\r\\n    \\\"price\\\": 42.0,\\r\\n    \\\"tax\\\": 3.2,\\r\\n    \\\"tags\\\": [\\\"rock\\\", \\\"metal\\\", \\\"bar\\\"],\\r\\n    \\\"image\\\": {\\r\\n        \\\"url\\\": \\\"http://example.com/baz.jpg\\\",\\r\\n        \\\"name\\\": \\\"The Foo live\\\"\\r\\n    }\\r\\n}\",\"generateMode\":\"normal\",\"type\":\"application/json\"},\"type\":\"http\"},\"history\":{\"execution\":{\"verbose\":true,\"sessions\":{\"31fd53db-847f-4c0b-b880-cd9caa75395c\":{\"addresses\":{\"local\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":1953},\"remote\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":8000}}}},\"data\":[{\"request\":{\"method\":\"POST\",\"href\":\"http://127.0.0.1:8000/items/123\",\"headers\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Content-Type\",\"value\":\"application/json\"},{\"key\":\"Accept\",\"value\":\"*/*\"},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\"},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\"},{\"key\":\"Connection\",\"value\":\"keep-alive\"},{\"key\":\"Content-Length\",\"value\":\"238\"}],\"httpVersion\":\"1.1\"},\"response\":{\"statusCode\":200,\"headers\":[{\"key\":\"date\",\"value\":\"Wed, 08 Jul 2026 15:59:59 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"187\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"httpVersion\":\"1.1\",\"downloadedBytes\":187},\"timings\":{\"start\":1783526399681,\"requestStart\":1783526399681,\"offset\":{\"request\":0.7198000010102987,\"socket\":1.5587000008672476,\"connect\":1.742900000885129,\"response\":3.9207000005990267,\"end\":4.787399999797344,\"lookup\":1.5587000008672476,\"done\":4.854800000786781}},\"session\":{\"id\":\"31fd53db-847f-4c0b-b880-cd9caa75395c\",\"reused\":false}}]}},\"responseValidation\":{\"schema\":{\"valid\":true,\"message\":\"\",\"errors\":null},\"responseCode\":{\"valid\":true}},\"passed\":true,\"timings\":{\"started\":1783526399676,\"preProcessorsStarted\":1783526399676,\"preProcessorsCompleted\":1783526399676,\"postProcessorsStarted\":1783526399686,\"postProcessorsCompleted\":1783526399686,\"completed\":1783526399688},\"metaInfo\":{\"httpApiId\":484332308,\"httpApiCaseId\":0,\"httpApiName\":\"5 - 请求体嵌套\",\"httpApiPath\":\"/items/123\",\"httpApiMethod\":\"post\",\"httpApiCaseName\":\"\",\"moduleId\":8127149,\"serverId\":\"default\"},\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}}}",
                         "visibility": "INHERITED",
                         "moduleId": 8127149,
                         "categoryId": 0,
@@ -5095,6 +5336,626 @@
                       "disabledSystemHeaders": {}
                     },
                     "requestResult": "{\"id\":\"temp.d950cc0b-5fd6-4c53-a898-a9e10386832b\",\"cursor\":{\"position\":0,\"iteration\":0,\"length\":1,\"cycles\":1,\"empty\":false,\"eof\":false,\"bof\":true,\"cr\":false,\"ref\":\"d950cc0b-5fd6-4c53-a898-a9e10386832b\",\"requestIndex\":0,\"httpRequestId\":\"a6086b2c-d0d9-4692-a693-2bc8e6bf2d71\"},\"type\":\"http\",\"response\":{\"id\":\"f10eb65d-ec02-43e6-848d-25325dc2a7a6\",\"status\":\"OK\",\"code\":200,\"header\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 17:08:15 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"73\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"trailer\":[],\"stream\":{\"type\":\"Buffer\",\"data\":[123,34,105,100,34,58,34,105,115,98,110,45,57,55,56,49,53,50,57,48,52,54,49,51,55,34,44,34,105,116,101,109,34,58,34,84,104,101,32,72,105,116,99,104,104,105,107,101,114,39,115,32,71,117,105,100,101,32,116,111,32,116,104,101,32,71,97,108,97,120,121,34,125]},\"cookie\":[],\"responseTime\":3,\"responseSize\":73,\"downloadedBytes\":73,\"type\":\"http\",\"tempFilePath\":\"\",\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}},\"timingPhases\":{\"prepare\":0.6013000002130866,\"wait\":0.769399999640882,\"dns\":0,\"tcp\":0.774100000038743,\"firstByte\":0.8916999995708466,\"download\":0.4559000004082918,\"process\":0.07759999949485064,\"total\":3.5699999993667006}},\"request\":{\"url\":{\"protocol\":\"http\",\"port\":\"8000\",\"path\":[\"items\",\"\"],\"host\":[\"127\",\"0\",\"0\",\"1\"],\"query\":[{\"key\":\"id\",\"value\":\"isbn-9781529046137\"}],\"variable\":[]},\"header\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\",\"system\":true},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\",\"system\":true},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\",\"system\":true},{\"key\":\"Connection\",\"value\":\"keep-alive\",\"system\":true}],\"method\":\"GET\",\"baseUrl\":\"http://127.0.0.1:8000\",\"body\":{},\"type\":\"http\"},\"history\":{\"execution\":{\"verbose\":true,\"sessions\":{\"865befe5-4675-435e-9d0c-516f707a1397\":{\"addresses\":{\"local\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":12778},\"remote\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":8000}}}},\"data\":[{\"request\":{\"method\":\"GET\",\"href\":\"http://127.0.0.1:8000/items/?id=isbn-9781529046137\",\"headers\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\"},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\"},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\"},{\"key\":\"Connection\",\"value\":\"keep-alive\"}],\"httpVersion\":\"1.1\"},\"response\":{\"statusCode\":200,\"headers\":[{\"key\":\"date\",\"value\":\"Tue, 07 Jul 2026 17:08:15 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"73\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"httpVersion\":\"1.1\",\"downloadedBytes\":73},\"timings\":{\"start\":1783444095853,\"requestStart\":1783444095853,\"offset\":{\"request\":0.6013000002130866,\"socket\":1.3706999998539686,\"connect\":2.1447999998927116,\"response\":3.036499999463558,\"end\":3.49239999987185,\"lookup\":1.3706999998539686,\"done\":3.5699999993667006}},\"session\":{\"id\":\"865befe5-4675-435e-9d0c-516f707a1397\",\"reused\":false}}]}},\"responseValidation\":{\"schema\":{\"valid\":true,\"message\":\"\",\"errors\":null},\"responseCode\":{\"valid\":true}},\"passed\":true,\"timings\":{\"started\":1783444095844,\"preProcessorsStarted\":1783444095846,\"preProcessorsCompleted\":1783444095846,\"postProcessorsStarted\":1783444095864,\"postProcessorsCompleted\":1783444095864,\"completed\":1783444095865},\"metaInfo\":{\"httpApiId\":483691355,\"httpApiCaseId\":391598867,\"httpApiName\":\"11 - 为参数设置自定义函数\",\"httpApiPath\":\"/items/\",\"httpApiMethod\":\"get\",\"httpApiCaseName\":\"成功\",\"moduleId\":8127149,\"serverId\":\"default\"},\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}}}",
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "categoryId": 0,
+                    "tagIds": [],
+                    "apiTestDataList": [],
+                    "preProcessors": [],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  }
+                ],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 8127149,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "12 - 设置查询参数模型",
+              "api": {
+                "id": "484323420",
+                "method": "get",
+                "path": "/items/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": false,
+                      "description": "",
+                      "type": "string",
+                      "id": "a6qoNZ2xaY",
+                      "enable": true,
+                      "name": "limit",
+                      "example": "10"
+                    },
+                    {
+                      "required": false,
+                      "description": "",
+                      "type": "string",
+                      "id": "vbsNyE0PvQ",
+                      "enable": true,
+                      "name": "offset",
+                      "example": "2"
+                    },
+                    {
+                      "required": false,
+                      "description": "",
+                      "type": "array",
+                      "id": "3ENv4ZTEhE",
+                      "enable": true,
+                      "name": "order_by",
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "example": [
+                        "created_at"
+                      ]
+                    },
+                    {
+                      "required": false,
+                      "description": "",
+                      "type": "array",
+                      "id": "Cf41qGYT8k",
+                      "enable": true,
+                      "name": "tags",
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "example": [
+                        "tom",
+                        "jerry"
+                      ]
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "117316465",
+                    "code": 200,
+                    "name": "成功",
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "itemSchema": {},
+                    "contentType": "json"
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功",
+                    "data": "{\"limit\":10,\"offset\":2,\"order_by\":\"created_at\",\"tags\":[\"tom\",\"jerry\"]}",
+                    "responseId": "117316465"
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "required": true,
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 116,
+                "cases": [
+                  {
+                    "id": 391978278,
+                    "type": "DEBUG_CASE",
+                    "path": null,
+                    "name": "成功",
+                    "responseId": "117316465",
+                    "parameters": {
+                      "query": [
+                        {
+                          "id": "bz7oDkJl2T",
+                          "relatedId": "a6qoNZ2xaY",
+                          "relatedName": "limit",
+                          "value": "10",
+                          "enable": true,
+                          "isDelete": false
+                        },
+                        {
+                          "id": "0SNC0vzPNu",
+                          "relatedId": "vbsNyE0PvQ",
+                          "relatedName": "offset",
+                          "value": "2",
+                          "enable": true,
+                          "isDelete": false
+                        },
+                        {
+                          "id": "UrFPPNDGQL",
+                          "relatedId": "3ENv4ZTEhE",
+                          "relatedName": "order_by",
+                          "value": [
+                            "created_at"
+                          ],
+                          "enable": true,
+                          "isDelete": false,
+                          "schema": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        {
+                          "id": "NBzZFjvzde",
+                          "relatedId": "Cf41qGYT8k",
+                          "relatedName": "tags",
+                          "value": [
+                            "tom",
+                            "jerry"
+                          ],
+                          "enable": true,
+                          "isDelete": false,
+                          "schema": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      ],
+                      "path": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "header": [],
+                      "cookie": []
+                    },
+                    "requestBody": {
+                      "parameters": [],
+                      "data": "",
+                      "generateMode": "normal"
+                    },
+                    "auth": {},
+                    "securityScheme": {},
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "requestResult": "{\"id\":\"temp.2e327ff3-2679-4e86-8081-71f0e2465b16\",\"cursor\":{\"position\":0,\"iteration\":0,\"length\":1,\"cycles\":1,\"empty\":false,\"eof\":false,\"bof\":true,\"cr\":false,\"ref\":\"2e327ff3-2679-4e86-8081-71f0e2465b16\",\"requestIndex\":0,\"httpRequestId\":\"89e0e018-4379-4d8e-924d-8fb43f379a2b\"},\"type\":\"http\",\"response\":{\"id\":\"b6a00529-1938-4d01-ad0b-bf510eef943f\",\"status\":\"OK\",\"code\":200,\"header\":[{\"key\":\"date\",\"value\":\"Wed, 08 Jul 2026 14:19:26 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"70\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"trailer\":[],\"stream\":{\"type\":\"Buffer\",\"data\":[123,34,108,105,109,105,116,34,58,49,48,44,34,111,102,102,115,101,116,34,58,50,44,34,111,114,100,101,114,95,98,121,34,58,34,99,114,101,97,116,101,100,95,97,116,34,44,34,116,97,103,115,34,58,91,34,116,111,109,34,44,34,106,101,114,114,121,34,93,125]},\"cookie\":[],\"responseTime\":4,\"responseSize\":70,\"downloadedBytes\":70,\"type\":\"http\",\"tempFilePath\":\"\",\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}},\"timingPhases\":{\"prepare\":0.7033000010997057,\"wait\":0.757099999114871,\"dns\":0,\"tcp\":0.27830000035464764,\"firstByte\":1.4585999995470047,\"download\":0.749600000679493,\"process\":0.07619999907910824,\"total\":4.02309999987483}},\"request\":{\"url\":{\"protocol\":\"http\",\"port\":\"8000\",\"path\":[\"items\",\"\"],\"host\":[\"127\",\"0\",\"0\",\"1\"],\"query\":[{\"key\":\"limit\",\"value\":\"10\"},{\"key\":\"offset\",\"value\":\"2\"},{\"key\":\"order_by\",\"value\":\"created_at\"},{\"key\":\"tags\",\"value\":\"tom\"},{\"key\":\"tags\",\"value\":\"jerry\"}],\"variable\":[]},\"header\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\",\"system\":true},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\",\"system\":true},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\",\"system\":true},{\"key\":\"Connection\",\"value\":\"keep-alive\",\"system\":true}],\"method\":\"GET\",\"baseUrl\":\"http://127.0.0.1:8000\",\"body\":{},\"type\":\"http\"},\"history\":{\"execution\":{\"verbose\":true,\"sessions\":{\"82ca8552-76f0-4a83-87a8-98b18110d2d2\":{\"addresses\":{\"local\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":6737},\"remote\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":8000}}}},\"data\":[{\"request\":{\"method\":\"GET\",\"href\":\"http://127.0.0.1:8000/items/?limit=10&offset=2&order_by=created_at&tags=tom&tags=jerry\",\"headers\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\"},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\"},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\"},{\"key\":\"Connection\",\"value\":\"keep-alive\"}],\"httpVersion\":\"1.1\"},\"response\":{\"statusCode\":200,\"headers\":[{\"key\":\"date\",\"value\":\"Wed, 08 Jul 2026 14:19:26 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"70\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"httpVersion\":\"1.1\",\"downloadedBytes\":70},\"timings\":{\"start\":1783520366918,\"requestStart\":1783520366918,\"offset\":{\"request\":0.7033000010997057,\"socket\":1.4604000002145767,\"connect\":1.7387000005692244,\"response\":3.197300000116229,\"end\":3.946900000795722,\"lookup\":1.4604000002145767,\"done\":4.02309999987483}},\"session\":{\"id\":\"82ca8552-76f0-4a83-87a8-98b18110d2d2\",\"reused\":false}}]}},\"responseValidation\":{\"schema\":{\"valid\":true,\"message\":\"\",\"errors\":null},\"responseCode\":{\"valid\":true}},\"passed\":true,\"timings\":{\"started\":1783520366904,\"preProcessorsStarted\":1783520366905,\"preProcessorsCompleted\":1783520366905,\"postProcessorsStarted\":1783520366933,\"postProcessorsCompleted\":1783520366933,\"completed\":1783520366934},\"metaInfo\":{\"httpApiId\":484323420,\"httpApiCaseId\":391978278,\"httpApiName\":\"12 - 设置查询参数模型\",\"httpApiPath\":\"/items/\",\"httpApiMethod\":\"get\",\"httpApiCaseName\":\"成功\",\"moduleId\":8127149,\"serverId\":\"default\"},\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}}}",
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "categoryId": 0,
+                    "tagIds": [],
+                    "apiTestDataList": [],
+                    "preProcessors": [],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  },
+                  {
+                    "id": 391978286,
+                    "type": "DEBUG_CASE",
+                    "path": null,
+                    "name": "参数有误",
+                    "responseId": "117316465",
+                    "parameters": {
+                      "query": [
+                        {
+                          "id": "bz7oDkJl2T",
+                          "relatedId": "a6qoNZ2xaY",
+                          "value": "10",
+                          "enable": true,
+                          "isDelete": false,
+                          "relatedName": "limit"
+                        },
+                        {
+                          "id": "0SNC0vzPNu",
+                          "relatedId": "vbsNyE0PvQ",
+                          "value": "2",
+                          "enable": true,
+                          "isDelete": false,
+                          "relatedName": "offset"
+                        },
+                        {
+                          "id": "UrFPPNDGQL",
+                          "relatedId": "3ENv4ZTEhE",
+                          "value": [
+                            "example"
+                          ],
+                          "enable": true,
+                          "isDelete": false,
+                          "schema": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "relatedName": "order_by"
+                        },
+                        {
+                          "id": "NBzZFjvzde",
+                          "relatedId": "Cf41qGYT8k",
+                          "value": [
+                            "tom",
+                            "jerry"
+                          ],
+                          "enable": true,
+                          "isDelete": false,
+                          "schema": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "relatedName": "tags"
+                        }
+                      ],
+                      "path": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "header": [],
+                      "cookie": []
+                    },
+                    "requestBody": {
+                      "parameters": [],
+                      "data": "",
+                      "generateMode": "normal"
+                    },
+                    "auth": {},
+                    "securityScheme": {},
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "requestResult": "{\"id\":\"temp.84f46e2c-fa97-4d9a-adb4-7b5e02950132\",\"cursor\":{\"position\":0,\"iteration\":0,\"length\":1,\"cycles\":1,\"empty\":false,\"eof\":false,\"bof\":true,\"cr\":false,\"ref\":\"84f46e2c-fa97-4d9a-adb4-7b5e02950132\",\"requestIndex\":0,\"httpRequestId\":\"90a7ca31-d41d-4833-857c-82e771e0c52f\"},\"type\":\"http\",\"response\":{\"id\":\"e8149b29-6fdd-4d58-91ce-db189cf042b4\",\"status\":\"Unprocessable Entity\",\"code\":422,\"header\":[{\"key\":\"date\",\"value\":\"Wed, 08 Jul 2026 14:19:33 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"185\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"trailer\":[],\"stream\":{\"type\":\"Buffer\",\"data\":[123,34,100,101,116,97,105,108,34,58,91,123,34,116,121,112,101,34,58,34,108,105,116,101,114,97,108,95,101,114,114,111,114,34,44,34,108,111,99,34,58,91,34,113,117,101,114,121,34,44,34,111,114,100,101,114,95,98,121,34,93,44,34,109,115,103,34,58,34,73,110,112,117,116,32,115,104,111,117,108,100,32,98,101,32,39,99,114,101,97,116,101,100,95,97,116,39,32,111,114,32,39,117,112,100,97,116,101,100,95,97,116,39,34,44,34,105,110,112,117,116,34,58,34,101,120,97,109,112,108,101,34,44,34,99,116,120,34,58,123,34,101,120,112,101,99,116,101,100,34,58,34,39,99,114,101,97,116,101,100,95,97,116,39,32,111,114,32,39,117,112,100,97,116,101,100,95,97,116,39,34,125,125,93,125]},\"cookie\":[],\"responseTime\":15,\"responseSize\":185,\"downloadedBytes\":185,\"type\":\"http\",\"tempFilePath\":\"\",\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}},\"timingPhases\":{\"prepare\":0.7327000014483929,\"wait\":0.9331999998539686,\"dns\":0,\"tcp\":0.2045999988913536,\"firstByte\":12.339600000530481,\"download\":0.8481000009924173,\"process\":0.10119999945163727,\"total\":15.159400001168251}},\"request\":{\"url\":{\"protocol\":\"http\",\"port\":\"8000\",\"path\":[\"items\",\"\"],\"host\":[\"127\",\"0\",\"0\",\"1\"],\"query\":[{\"key\":\"limit\",\"value\":\"10\"},{\"key\":\"offset\",\"value\":\"2\"},{\"key\":\"order_by\",\"value\":\"example\"},{\"key\":\"tags\",\"value\":\"tom\"},{\"key\":\"tags\",\"value\":\"jerry\"}],\"variable\":[]},\"header\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\",\"system\":true},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\",\"system\":true},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\",\"system\":true},{\"key\":\"Connection\",\"value\":\"keep-alive\",\"system\":true}],\"method\":\"GET\",\"baseUrl\":\"http://127.0.0.1:8000\",\"body\":{},\"type\":\"http\"},\"history\":{\"execution\":{\"verbose\":true,\"sessions\":{\"ad143fe8-43fa-46f6-bf16-8bb66445291c\":{\"addresses\":{\"local\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":6744},\"remote\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":8000}}}},\"data\":[{\"request\":{\"method\":\"GET\",\"href\":\"http://127.0.0.1:8000/items/?limit=10&offset=2&order_by=example&tags=tom&tags=jerry\",\"headers\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\"},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\"},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\"},{\"key\":\"Connection\",\"value\":\"keep-alive\"}],\"httpVersion\":\"1.1\"},\"response\":{\"statusCode\":422,\"headers\":[{\"key\":\"date\",\"value\":\"Wed, 08 Jul 2026 14:19:33 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"185\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"httpVersion\":\"1.1\",\"downloadedBytes\":185},\"timings\":{\"start\":1783520374416,\"requestStart\":1783520374417,\"offset\":{\"request\":0.7327000014483929,\"socket\":1.6659000013023615,\"connect\":1.870500000193715,\"response\":14.210100000724196,\"end\":15.058200001716614,\"lookup\":1.6659000013023615,\"done\":15.159400001168251}},\"session\":{\"id\":\"ad143fe8-43fa-46f6-bf16-8bb66445291c\",\"reused\":false}}]}},\"responseValidation\":{\"schema\":{\"valid\":true,\"message\":\"\",\"errors\":null},\"responseCode\":{\"valid\":false,\"result\":{\"actual\":422,\"expect\":200},\"message\":\"应当是 200 实际却是 422\"}},\"passed\":false,\"timings\":{\"started\":1783520374381,\"preProcessorsStarted\":1783520374382,\"preProcessorsCompleted\":1783520374382,\"postProcessorsStarted\":1783520374432,\"postProcessorsCompleted\":1783520374432,\"completed\":1783520374433},\"metaInfo\":{\"httpApiId\":484323420,\"httpApiCaseId\":0,\"httpApiName\":\"12 - 设置查询参数模型\",\"httpApiPath\":\"/items/\",\"httpApiMethod\":\"get\",\"httpApiCaseName\":\"\",\"moduleId\":8127149,\"serverId\":\"default\"},\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}}}",
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "categoryId": 0,
+                    "tagIds": [],
+                    "apiTestDataList": [],
+                    "preProcessors": [],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  }
+                ],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 8127149,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "13 - 明确禁止多余的查询参数",
+              "api": {
+                "id": "484324933",
+                "method": "get",
+                "path": "/items/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": false,
+                      "description": "",
+                      "type": "string",
+                      "id": "pmRCWrm5NI",
+                      "enable": true,
+                      "name": "limit",
+                      "example": "44"
+                    },
+                    {
+                      "required": false,
+                      "description": "",
+                      "type": "string",
+                      "id": "p21sQV9FMx",
+                      "enable": true,
+                      "name": "offset",
+                      "example": "3"
+                    },
+                    {
+                      "required": false,
+                      "description": "",
+                      "type": "array",
+                      "id": "Due322kXf1",
+                      "enable": true,
+                      "name": "order_by",
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "example": [
+                        "created_at"
+                      ]
+                    },
+                    {
+                      "required": false,
+                      "description": "",
+                      "type": "array",
+                      "id": "98CdEHRgnb",
+                      "enable": true,
+                      "name": "tags",
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "example": [
+                        "tom",
+                        "jerry"
+                      ]
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "108328351",
+                    "code": 200,
+                    "name": "成功",
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "itemSchema": {},
+                    "contentType": "json"
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功",
+                    "data": "{\"limit\":44,\"offset\":3,\"order_by\":\"created_at\",\"tags\":[\"tom\",\"jerry\"]}",
+                    "responseId": "108328351"
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "required": true,
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 126,
+                "cases": [
+                  {
+                    "id": 391978966,
+                    "type": "DEBUG_CASE",
+                    "path": null,
+                    "name": "成功",
+                    "responseId": "108328351",
+                    "parameters": {
+                      "query": [
+                        {
+                          "id": "dEuYJo1QgA",
+                          "relatedId": "pmRCWrm5NI",
+                          "value": "44",
+                          "enable": true,
+                          "isDelete": false,
+                          "relatedName": "limit"
+                        },
+                        {
+                          "id": "lK5Xf8dyPr",
+                          "relatedId": "p21sQV9FMx",
+                          "value": "3",
+                          "enable": true,
+                          "isDelete": false,
+                          "relatedName": "offset"
+                        },
+                        {
+                          "id": "fTsIhA6O3q",
+                          "relatedId": "Due322kXf1",
+                          "value": [
+                            "created_at"
+                          ],
+                          "enable": true,
+                          "isDelete": false,
+                          "schema": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "relatedName": "order_by"
+                        },
+                        {
+                          "id": "apDhCw7IUD",
+                          "relatedId": "98CdEHRgnb",
+                          "value": [
+                            "tom",
+                            "jerry"
+                          ],
+                          "enable": true,
+                          "isDelete": false,
+                          "schema": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "relatedName": "tags"
+                        }
+                      ],
+                      "path": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "header": [],
+                      "cookie": []
+                    },
+                    "requestBody": {
+                      "parameters": [],
+                      "data": "",
+                      "generateMode": "normal"
+                    },
+                    "auth": {},
+                    "securityScheme": {},
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "requestResult": null,
+                    "visibility": "INHERITED",
+                    "moduleId": 8127149,
+                    "categoryId": 0,
+                    "tagIds": [],
+                    "apiTestDataList": [],
+                    "preProcessors": [],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  },
+                  {
+                    "id": 391978968,
+                    "type": "DEBUG_CASE",
+                    "path": null,
+                    "name": "参数有误",
+                    "responseId": "108328351",
+                    "parameters": {
+                      "query": [
+                        {
+                          "id": "dEuYJo1QgA",
+                          "relatedId": "pmRCWrm5NI",
+                          "relatedName": "limit",
+                          "value": "44",
+                          "enable": true,
+                          "isDelete": false
+                        },
+                        {
+                          "id": "lK5Xf8dyPr",
+                          "relatedId": "p21sQV9FMx",
+                          "relatedName": "offset",
+                          "value": "3",
+                          "enable": true,
+                          "isDelete": false
+                        },
+                        {
+                          "id": "fTsIhA6O3q",
+                          "relatedId": "Due322kXf1",
+                          "relatedName": "order_by",
+                          "value": [
+                            "created_at"
+                          ],
+                          "enable": true,
+                          "isDelete": false,
+                          "schema": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        {
+                          "id": "apDhCw7IUD",
+                          "relatedId": "98CdEHRgnb",
+                          "relatedName": "tags",
+                          "value": [
+                            "tom",
+                            "jerry"
+                          ],
+                          "enable": true,
+                          "isDelete": false,
+                          "schema": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        {
+                          "id": "M6xpU0DH4D",
+                          "relatedName": "extra_param",
+                          "name": "extra_param",
+                          "value": "123",
+                          "type": "string",
+                          "description": "",
+                          "enable": true,
+                          "isDelete": false
+                        }
+                      ],
+                      "path": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "header": [],
+                      "cookie": []
+                    },
+                    "requestBody": {
+                      "parameters": [],
+                      "data": "",
+                      "generateMode": "normal"
+                    },
+                    "auth": {},
+                    "securityScheme": {},
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "requestResult": "{\"id\":\"temp.2b681b90-d7be-4c09-bd2c-6792cf3cab06\",\"cursor\":{\"position\":0,\"iteration\":0,\"length\":1,\"cycles\":1,\"empty\":false,\"eof\":false,\"bof\":true,\"cr\":false,\"ref\":\"2b681b90-d7be-4c09-bd2c-6792cf3cab06\",\"requestIndex\":0,\"httpRequestId\":\"3a039cd9-8309-43ab-ac94-d78bd3b79122\"},\"type\":\"http\",\"response\":{\"id\":\"a153e026-a1b2-4831-984a-def1e7f247fe\",\"status\":\"Unprocessable Entity\",\"code\":422,\"header\":[{\"key\":\"date\",\"value\":\"Wed, 08 Jul 2026 14:37:11 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"122\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"trailer\":[],\"stream\":{\"type\":\"Buffer\",\"data\":[123,34,100,101,116,97,105,108,34,58,91,123,34,116,121,112,101,34,58,34,101,120,116,114,97,95,102,111,114,98,105,100,100,101,110,34,44,34,108,111,99,34,58,91,34,113,117,101,114,121,34,44,34,101,120,116,114,97,95,112,97,114,97,109,34,93,44,34,109,115,103,34,58,34,69,120,116,114,97,32,105,110,112,117,116,115,32,97,114,101,32,110,111,116,32,112,101,114,109,105,116,116,101,100,34,44,34,105,110,112,117,116,34,58,34,49,50,51,34,125,93,125]},\"cookie\":[],\"responseTime\":3,\"responseSize\":122,\"downloadedBytes\":122,\"type\":\"http\",\"tempFilePath\":\"\",\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}},\"timingPhases\":{\"prepare\":1.0421999990940094,\"wait\":0.6692999992519617,\"dns\":0,\"tcp\":0.23850000090897083,\"firstByte\":1.527699999511242,\"download\":0.5303000006824732,\"process\":0.08530000038444996,\"total\":4.093299999833107}},\"request\":{\"url\":{\"protocol\":\"http\",\"port\":\"8000\",\"path\":[\"items\",\"\"],\"host\":[\"127\",\"0\",\"0\",\"1\"],\"query\":[{\"key\":\"limit\",\"value\":\"44\"},{\"key\":\"offset\",\"value\":\"3\"},{\"key\":\"order_by\",\"value\":\"created_at\"},{\"key\":\"tags\",\"value\":\"tom\"},{\"key\":\"tags\",\"value\":\"jerry\"},{\"key\":\"extra_param\",\"value\":\"123\"}],\"variable\":[]},\"header\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\",\"system\":true},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\",\"system\":true},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\",\"system\":true},{\"key\":\"Connection\",\"value\":\"keep-alive\",\"system\":true}],\"method\":\"GET\",\"baseUrl\":\"http://127.0.0.1:8000\",\"body\":{},\"type\":\"http\"},\"history\":{\"execution\":{\"verbose\":true,\"sessions\":{\"368e99b2-b6c3-4589-ab7d-92092824854c\":{\"addresses\":{\"local\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":8168},\"remote\":{\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":8000}}}},\"data\":[{\"request\":{\"method\":\"GET\",\"href\":\"http://127.0.0.1:8000/items/?limit=44&offset=3&order_by=created_at&tags=tom&tags=jerry&extra_param=123\",\"headers\":[{\"key\":\"User-Agent\",\"value\":\"Apifox/1.0.0 (https://apifox.com)\"},{\"key\":\"Accept\",\"value\":\"*/*\"},{\"key\":\"Host\",\"value\":\"127.0.0.1:8000\"},{\"key\":\"Accept-Encoding\",\"value\":\"gzip, deflate, br\"},{\"key\":\"Connection\",\"value\":\"keep-alive\"}],\"httpVersion\":\"1.1\"},\"response\":{\"statusCode\":422,\"headers\":[{\"key\":\"date\",\"value\":\"Wed, 08 Jul 2026 14:37:11 GMT\"},{\"key\":\"server\",\"value\":\"uvicorn\"},{\"key\":\"content-length\",\"value\":\"122\"},{\"key\":\"content-type\",\"value\":\"application/json\"}],\"httpVersion\":\"1.1\",\"downloadedBytes\":122},\"timings\":{\"start\":1783521431802,\"requestStart\":1783521431803,\"offset\":{\"request\":1.0421999990940094,\"socket\":1.711499998345971,\"connect\":1.949999999254942,\"response\":3.477699998766184,\"end\":4.007999999448657,\"lookup\":1.711499998345971,\"done\":4.093299999833107}},\"session\":{\"id\":\"368e99b2-b6c3-4589-ab7d-92092824854c\",\"reused\":false}}]}},\"responseValidation\":{\"schema\":{\"valid\":true,\"message\":\"\",\"errors\":null},\"responseCode\":{\"valid\":false,\"result\":{\"actual\":422,\"expect\":200},\"message\":\"应当是 200 实际却是 422\"}},\"passed\":false,\"timings\":{\"started\":1783521431785,\"preProcessorsStarted\":1783521431788,\"preProcessorsCompleted\":1783521431788,\"postProcessorsStarted\":1783521431818,\"postProcessorsCompleted\":1783521431818,\"completed\":1783521431819},\"metaInfo\":{\"httpApiId\":484324933,\"httpApiCaseId\":391978967,\"httpApiName\":\"13 - 明确禁止多余的查询参数\",\"httpApiPath\":\"/items/\",\"httpApiMethod\":\"get\",\"httpApiCaseName\":\"\",\"moduleId\":8127149,\"serverId\":\"default\"},\"socketSession\":{\"addresses\":{\"local\":\"127.0.0.1\",\"remote\":\"127.0.0.1\"},\"httpVersion\":\"1.1\",\"tls\":{\"protocol\":\"\",\"cipherName\":\"\"},\"cert\":{\"subjectCN\":\"\",\"issuerCN\":\"\",\"validUntil\":\"\"}}}",
                     "visibility": "INHERITED",
                     "moduleId": 8127149,
                     "categoryId": 0,
