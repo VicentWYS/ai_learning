@@ -1,14 +1,13 @@
 """
-路径参数
+约束路径参数使用预定义枚举值
 
-参考：https://fastapi.org.cn/tutorial/path-params/
+这里参数中只能选择给定的三个枚举值，传入其他的值会报错。这一点在Swagger中会表现为下拉框。
 
 文档：
 Swagger: http://127.0.0.1:8000/docs
 ReDoc: http://127.0.0.1:8000/redoc
 
-
-这里参数中只能选择给定的三个枚举值，传入其他的值会报错。这一点在Swagger中会表现为下拉框。
+参考：https://fastapi.org.cn/tutorial/path-params/
 """
 
 from fastapi import FastAPI

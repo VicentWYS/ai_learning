@@ -6,9 +6,6 @@ FastAPI 将识别它们中的每一个，并从正确的地方获取数据。
 - 如果参数也在路径中声明，它将被用作路径参数。
 - 如果参数是标量类型（如 int、float、str、bool 等），它将被解释为查询参数。
 - 如果参数被声明为 Pydantic 模型类型，它将被解释为请求体。
-
-
-参考：https://fastapi.org.cn/tutorial/body/
 """
 
 from fastapi import FastAPI

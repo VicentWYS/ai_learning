@@ -1,7 +1,5 @@
 """
-路径参数
-
-参考：https://fastapi.org.cn/tutorial/path-params/
+路径参数添加类型约束
 
 - 路径参数 item_id 的值将作为参数 item_id 传递给你的函数
 - 在此例中，item_id 被声明为 int 类型，这将为你提供函数内部的编辑器支持，包括错误检查、补全等功能
@@ -11,6 +9,8 @@
 文档：
 Swagger: http://127.0.0.1:8000/docs
 ReDoc: http://127.0.0.1:8000/redoc
+
+参考：https://fastapi.org.cn/tutorial/path-params/
 """
 
 from fastapi import FastAPI

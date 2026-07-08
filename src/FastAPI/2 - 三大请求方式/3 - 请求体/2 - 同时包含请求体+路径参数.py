@@ -2,8 +2,6 @@
 可以同时声明 路径参数+请求体。
 
 FastAPI 将识别出与路径参数匹配的函数参数应该从路径中获取，而声明为 Pydantic 模型的函数参数应该从请求体中获取。
-
-参考：https://fastapi.org.cn/tutorial/body/
 """
 
 from fastapi import FastAPI

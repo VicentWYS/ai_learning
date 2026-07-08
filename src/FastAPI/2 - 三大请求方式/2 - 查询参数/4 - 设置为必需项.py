@@ -1,10 +1,8 @@
 """
 查询参数中：
-- 给出默认值的：非必需项；
-- 未给出默认值的：必需项；
+- 无默认值 -- 非必需项；
+- 有默认值 -- 必需项；
 
-参考：https://fastapi.org.cn/tutorial/path-params/
-文档：
 Swagger: http://127.0.0.1:8000/docs
 ReDoc: http://127.0.0.1:8000/redoc
 """

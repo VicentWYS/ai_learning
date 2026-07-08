@@ -6,10 +6,11 @@
 - skip: 值为 0
 - limit: 值为 10
 
-参考：https://fastapi.org.cn/tutorial/path-params/
 文档：
 Swagger: http://127.0.0.1:8000/docs
 ReDoc: http://127.0.0.1:8000/redoc
+
+参考：https://fastapi.org.cn/tutorial/path-params/
 """
 
 from fastapi import FastAPI

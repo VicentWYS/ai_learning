@@ -11,8 +11,6 @@
 - 这些架构将成为生成的 OpenAPI 架构的一部分，并被自动文档 UI 所使用。
 
 模型的 JSON Schema 将成为 OpenAPI 生成的架构的一部分，并显示在交互式 API 文档中
-
-参考：https://fastapi.org.cn/tutorial/body/
 """
 
 from fastapi import FastAPI
@@ -20,9 +18,9 @@ from pydantic import BaseModel
 
 
 class Item(BaseModel):
-    name: str  # 必需
+    name: str
     description: str | None = None  # 有默认值，可选
-    price: float  # 必需
+    price: float
     tax: float | None = None  # 有默认值，可选
 
 
@@ -42,7 +40,6 @@ async def create_item(item: Item):
 
 
 def main():
-
     import uvicorn
 
     uvicorn.run(app, host="127.0.0.1", port=8000)
