@@ -13,6 +13,8 @@ dependencies = [
     "llama-index-embeddings-dashscope>=0.5.0",
     "llama-index-llms-openai-like>=0.7.2",
     "openai>=2.38.0",
+    "pydantic[email]>=2.13.4",
     "python-dotenv>=1.2.2",
+    "python-multipart>=0.0.32",
     "uvicorn[standard]>=0.50.0",
 ]
