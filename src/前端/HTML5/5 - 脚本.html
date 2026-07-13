@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程</title>
+</head>
+
+<body>
+    <h1>HTML教程</h1>
+    <p>HTML概念介绍</p>
+    <p>
+        <a href="http://www.baidu.com">百度</a>
+    </p>
+    <p>
+        <img src="image.jpg" alt="An example image">
+    </p>
+
+    <script>
+        document.querySelector('a[href="http://www.baidu.com"]').addEventListener('click', function (event) {
+            event.preventDefault(); // 阻止默认的跳转行为
+            document.write("Hello World!"); // 在页面上输出
+        });
+    </script>
+</body>
+
+</html>
