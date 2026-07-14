@@ -4,6 +4,7 @@ function window_alert() {
 }
 
 // 操作html元素
+// 向 id="demo" 的 HTML 元素输出文本 
 function inner_html() {
     document.getElementById("demo").innerHTML = "内容已修改"
 }
@@ -15,6 +16,6 @@ function document_write() {
 }
 
 // 写到控制台
-function console_log(){
+function console_log() {
     console.log(12)
 }
