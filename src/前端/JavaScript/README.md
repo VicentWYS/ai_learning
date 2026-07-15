@@ -28,3 +28,22 @@ JavaScript 可以通过不同的方式来输出数据：
 - 使用 console.log() 写入到浏览器的控制台。
 
 
+## 事件
+onchange ->     HTML 元素改变
+onclick ->  	用户点击 HTML 元素
+onmouseover ->  鼠标指针移动到指定的元素上时发生
+onmouseout ->   用户从一个 HTML 元素上移开鼠标时发生
+onkeydown ->    用户按下键盘按键
+onload ->   	浏览器已完成页面的加载
+
+
+## 正则表达式
+正则表达式（英语：Regular Expression，在代码中常简写为regex、regexp或RE）使用单个字符串来描述、匹配一系列符合某个句法规则的字符串搜索模式。
+搜索模式可用于文本搜索和文本替换。
+
+这部分可以结合提示词工程，先编写提示词描述需求，然后让大模型给出对应的正则表达式。
+
+
+
+
+
