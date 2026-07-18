@@ -10,6 +10,9 @@
 - Python >= 3.11
 - [uv](https://docs.astral.sh/uv/) 包管理器（推荐）
 
+### 开发工具
+- 推荐使用 [VS Code](https://code.visualstudio.com/) 作为开发工具。
+
 ### 1. 安装 uv
 
 ```bash
