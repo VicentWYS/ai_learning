@@ -5,6 +5,7 @@ Vue是一款用于构建用户界面的 JavaScript 框架。它基于标准 HTML
 - 官网：https://cn.vuejs.org/
 - 官方教程：https://cn.vuejs.org/guide/introduction.html
 - 互动教程（推荐）：https://cn.vuejs.org/tutorial/
+- 示例：https://cn.vuejs.org/examples/#hello-world
 
 
 | 天数   | 学习内容                    | 输出         |
