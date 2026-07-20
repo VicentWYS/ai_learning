@@ -73,57 +73,18 @@ uv run python main.py
 
 ## 前端项目 (Vue3)
 
-### 环境要求
+### 配置环境
+- 电脑上安装 vscode, 安装 vue(official) 插件。
+- 电脑上安装 Node.js（推荐使用最新的 LTS 版本）。
+- 验证：在终端中输入 `node -v`，如果显示版本号，则表示安装成功。
 
-- [Node.js](https://nodejs.org/) `^22.18.0` 或 `>=24.12.0`
-- npm（随 Node.js 一起安装）
+### 创建
+- 进入前端目录：`cd 前端项目目录`
+- 创建vue项目: `npm create vue@latest`
 
-### IDE 配置
-
-推荐安装 [Vue - Official (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) VS Code 插件，提供 `.vue` 文件的语法高亮、类型检查和组件提示。
-
-### 1. 进入前端项目
-
-```bash
-cd 项目
-```
-
-### 2. 安装依赖
-
-```bash
-npm install
-```
-
-### 3. 启动开发服务器
-
-```bash
-npm run dev
-```
-
-启动后浏览器访问终端输出的本地地址（默认 `http://localhost:5173`），即可查看 Vue 练习页面。
-
-关闭服务：`q + Enter`
-
-### 4. 构建生产版本
-
-```bash
-npm run build
-```
-
-构建产物输出到 `dist/` 目录，可部署至任意静态服务器。
-
-### 5. 预览生产构建
-
-```bash
-npm run preview
-```
-
-在本地预览构建结果，确认无误后再部署。
-
-### 6. 类型检查
-
-```bash
-npm run type-check
-```
-
-对项目进行 TypeScript + Vue 类型检查，确保类型正确。
+### 运行
+- 进入vue项目：`cd 项目名称`
+- 安装依赖：`npm install`
+- 运行项目：`npm run dev`
+- 发布到生产环境：`npm run build`
+- 关闭：`q+Enter`
