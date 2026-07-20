@@ -1,5 +1,4 @@
 <script setup lang="ts">
-// import FirstDemo from './components/1 - 互动教程/1 - 基础示例.vue'
 import FirstDemo from '../components/1 - InteractiveDemos/1 - 基础示例.vue'
 import ReactiveDemo from '../components/1 - InteractiveDemos/2 - 响应式.vue'
 import AttributiBind from '../components/1 - InteractiveDemos/3 - Attribute 绑定.vue'

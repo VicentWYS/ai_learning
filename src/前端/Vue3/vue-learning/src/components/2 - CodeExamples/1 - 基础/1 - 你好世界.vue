@@ -5,5 +5,6 @@ const message = ref('Hello World!')
 </script>
 
 <template>
-    <h1>{{ message }}</h1>
+    <h1>1. Hello World!</h1>
+    <p>{{ message }}</p>
 </template>
