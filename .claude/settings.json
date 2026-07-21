@@ -4,7 +4,13 @@
       "Bash(uv run *)",
       "Bash(python \"src/Pydantic/1 - 基本使用.py\")",
       "Bash(pip list *)",
-      "Bash(pip install *)"
+      "Bash(pip install *)",
+      "Bash(npm install *)",
+      "Bash(rm -rf \"d:\\\\Me\\\\技术\\\\Coding\\\\Project\\\\ai_learning\\\\ai_learning\\\\src\\\\前端\\\\Vue3\\\\vue-learning\\\\node_modules\\\\.vite\")",
+      "Read(//d/me/技术/Coding/Project/ai_learning/ai_learning/src/前端/Vue3/vue-learning/src/components/2 - CodeExamples/2 - 实战/2 - 获取数据/**)"
+    ],
+    "additionalDirectories": [
+      "d:\\Me\\技术\\Coding\\Project\\ai_learning\\ai_learning\\src\\前端\\Vue3\\vue-learning\\node_modules\\.vite"
     ]
   }
 }

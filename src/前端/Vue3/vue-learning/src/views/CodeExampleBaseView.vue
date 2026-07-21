@@ -8,7 +8,6 @@ import SimpleDemo from '../components/2 - CodeExamples/1 - 基础/6 - 简单组�
 </script>
 
 <template>
-    <!-- 1. 基础 -->
     <BaseHelloWorld />
     <InputExecDemo />
     <AttributeBind />

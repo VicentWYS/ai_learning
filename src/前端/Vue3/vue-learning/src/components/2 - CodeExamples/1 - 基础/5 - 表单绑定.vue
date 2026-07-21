@@ -24,7 +24,7 @@ const multiSelected = ref(['A'])
     <div>
         <h2>Checkbox</h2>
         <input type="checkbox" id="checkbox" v-model="checked">
-        <!-- <label for="xxx"> 会和 id="xxx" 的表单控件绑定在一起。当用户点击 label 文本时，浏览器会自动把焦点移到对应的控件上。 -->
+        <!-- <label for="xxx"> 会和 id="xxx" 的表单控件绑定在一起。当用户点击 label 文本时，浏览器会自动把焦点移到对应的控件上 -->
         <!-- 即：点击 "Checked: true" 这段文字也能勾选/取消 -->
         <label for="checkbox">Checked: {{ checked }}</label>
     </div>
