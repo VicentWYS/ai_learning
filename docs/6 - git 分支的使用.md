@@ -66,17 +66,46 @@ git switch develop
 git merge main
 ```
 
-# 4. 查看提交记录
+# 4. 推送到远程 GitHub 仓库
+本地提交、合并、打 tag 都只影响本地仓库，需要单独用 `git push` 推送到 GitHub。
+
+## 4.1 关联远程仓库（只需一次）
+先在 GitHub 上建一个空仓库，然后在本地执行：
+
+```bash
+git remote add origin https://github.com/你的用户名/仓库名.git
+git remote -v   # 确认已关联
+```
+
+## 4.2 推送分支
+本流程涉及 `main` 和 `develop` 两个分支，都要推上去：
+
+```bash
+# 首次推送 main，并让本地 main 跟踪远程
+git push -u origin main
+
+# 推送 develop
+git push -u origin develop
+```
+
+`-u`（`--set-upstream`）只需第一次加，之后在对应分支上直接 `git push` 即可。
+
+## 4.3 推送标签（tag）
+tag 默认不会随分支推送，要单独推：
+
+```bash
+git push origin v1.0
+# 或者一次性推送所有本地 tag
+git push origin --tags
+```
+
+> 推送需要 GitHub 账号凭证。GitHub 从 2021 年起不再支持账号密码推送，需要用 **Personal Access Token (PAT)**，或配置 **SSH 密钥**。
+
+
+# 5. 查看提交记录
 切换到 main 分支。可通过以下指令，只关注打了tag的记录，从而快速得到一条 main 分支干净的版本线。
 
 ```bash
 # main 分支上只查看包含tag的记录
 git log --oneline --tags --simplify-by-decoration
 ```
-
-
-
-# 示意图
-
-![](file-20260725180820468.png)
-
